@@ -1,0 +1,208 @@
+body {
+
+    margin: 0;
+    background-color: rgb(var(--color4));
+    font-family: Alexandria;
+    min-height: 100vh;
+}
+
+
+/* colors */
+
+:root {
+
+    --color1: 51, 51, 51;
+    --color2: 42, 109, 3;
+    --color3: 54, 141, 4;
+    --color4: 240, 240, 240;
+    --color5: 255, 255, 255;
+}
+
+
+/* fonts */
+
+@font-face {
+    font-family: Alexandria;
+    src: url(../fonts/Alexandria-VariableFont_wght.ttf);
+}
+
+
+/* navigation bar */
+
+nav {
+
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    top: 0;
+    margin: 0 0 -55px 0;
+
+    background-color: rgb(var(--color3));
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+nav a {
+
+    padding: 0 10px;
+    box-sizing: border-box;
+    height: 55px;
+    
+    text-decoration: none;
+    color: rgb(var(--color5));
+    transition: .15s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a:hover:not([img]) {background-color: rgb(var(--color2));}
+nav a[in="y"]{background-color: rgb(var(--color2));}
+nav a[img]{
+    
+    position: absolute;
+    left: 0;
+}
+nav img {height: 70%;}
+
+
+/* video stlye */
+
+.videoContainer {
+
+    object-fit: contain;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    outline: 2px solid rgb(var(--color3));
+    aspect-ratio: 16/9;
+}
+.videoContainer video {
+    width: 100%;
+    height: 100%;
+}
+.videoContainer .controls {
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: .2s;
+    transform: translateY(100px);
+    background-image: linear-gradient(transparent 2.5%, rgba(var(--color1), .5));
+    box-sizing: border-box;
+}
+.videoContainer:hover .controls {transform: translateY(0);}
+.videoContainer .controls button {
+
+    background-color: rgb(var(--color4));
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: none;
+    margin: 0 5px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    color: rgb(var(--color2));
+    font-weight: bold;
+    font-size: 2%;
+}
+.videoContainer .controls .timeline {
+
+    width: 100%;
+    height: 5px;
+    align-items: center;
+    border: none;
+    background-color: rgb(var(--color2));
+    margin: 20px 10px 0 10px;
+    position: relative;
+}
+.videoContainer .controls .timeline .bar {
+
+    height: 100%;
+    width: 0;
+    background-color: rgb(var(--color3));
+    position: absolute;
+}
+.videoContainer .controls .play .btn {
+
+    background-color: rgb(var(--color2));
+    transform:  scale(150%, 100%) translateX(-25%) rotateZ(45deg);
+    width: 50%;
+    height: 50%;
+    background-image: linear-gradient(to top right, rgb(var(--color4)) 50%, transparent 50%);
+    transition: .1s;
+}
+.videoContainer .controls .seek::before {
+
+    content: " ";
+    display: block;
+    background-color: rgb(var(--color2));
+    transform: rotateZ(45deg);
+    width: 50%;
+    height: 50%;
+}
+.videoContainer .controls .seek::after {
+
+    content: " ";
+    display: block;
+    background-color: rgb(var(--color4));
+    transform:  translateX(-50%) rotateZ(45deg);
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+.videoContainer .controls .settings img {transition: .2s;}
+.videoContainer .controls .settings {overflow: visible;}
+.videoContainer .controls .list {
+
+    height: 0;
+    left: 0;
+    bottom: 40px;
+    transition: .1s;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: absolute;
+    background-color: rgba(var(--color1), .5);
+    color: rgb(var(--color5));
+}
+.videoContainer .controls .list h1 {margin: 5px;}
+.videoContainer .controls .list div {
+
+    width: 100px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videoContainer .controls .list div:hover {background-color: rgba(var(--color1), .5);}
+.videoContainer:hover .controls .settings:focus img {transform: rotateZ(45deg);}
+.videoContainer:hover .controls .settings:focus .list {height: 80px;}
+
+
+/* footer */
+
+footer {
+
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(var(--color3));
+    position: absolute;
+    bottom: 0;
+    color: rgb(var(--color5));
+    text-align: center;
+}
