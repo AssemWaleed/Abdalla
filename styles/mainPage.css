@@ -83,6 +83,7 @@ content {
     #login {
 
         width: 60%;
+        font-size: 20px;
         height: 30%;
         outline: 2px solid rgb(var(--color3));
         padding: 1%;
