@@ -1,6 +1,6 @@
 const numbers = [
-    ["5547", "0"],
-    ["1", "5"],
+    ["5547"],
+    ["1973"],
     ["2", "8"]
 ];
 
@@ -51,14 +51,20 @@ function loggedIn() {
 function pickVideo(n) {
 
     if (n == 0) {
-  
-        $(".video").attr("src", "videos/Senior 2 Rectilinear Motion Secondterm Mechanics Essay Questions.mp4");
+      
+        $(".video").attr("src", "https://screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
+    
+       
         $("h1[title]").text("Rectilinear Motion Mechanics Essay Questions");
     }
+    
     if (n == 1) {
 
-        $("video").attr("src", "videos/madshit.mp4");
-        $("h1[title]").text("تجربة 2");
+       
+        $(".video").attr("src", "https://screenpal.com/player/cZnOqXVKFN1?width=100%&height=100%&ff=1&title=0");
+    
+       
+        $("h1[title]").text("Senior 2 Math Arithmetic Sequences");
     }
     if (n == 2) {
 
