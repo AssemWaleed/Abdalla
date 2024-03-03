@@ -73,3 +73,46 @@ content {
     cursor: pointer;
     font-size: 15px;
 }
+
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    #login {
+
+        width: 60%;
+        height: 30%;
+        outline: 2px solid rgb(var(--color3));
+        padding: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgb(var(--color5));
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height .2s, opacity .25s;
+    }
+    
+    #login input[type="text"] {
+
+        font-size: 40px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 100vw;
+    }
+
+    #login h1 {
+    
+        margin: 50px auto;
+    }
+
+    
+    #video {
+
+        text-align: right;
+        width: 95%;
+    }
+
+}
