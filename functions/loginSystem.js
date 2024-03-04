@@ -1,74 +1,68 @@
-const numbers = [
-    ["5547"],
-    ["1973"],
-    ["2", "8"]
-];
+<!DOCTYPE html>
 
-var tries = [];
+<html>
 
-$(document).ready(() => {
+    <head>
 
-    $("button[enter]").click(()=>{
+        <meta charset="UTF-8">
+        <title>Abdalla Mostafa | الصفحة الرئيسية</title>
 
-        for (let i = 0; i < numbers.length; i++) {
+        <link rel="stylesheet" href="styles/generalStyles.css">
+        <link rel="stylesheet" href="styles/mainPage.css">
 
-            if (numbers[i].includes($("input[type='text']").val())) {
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-                tries[i] = true;
+    </head>
 
-                loggedIn();
+    <body>
+        
+        <nav>
 
-                pickVideo(i);
+            <a href="" img><img src="images/logo.svg" alt="Logo"></a>
 
-            } else {tries[i] = false; }
+            <a href="" in="y">الصفحة الرئيسية</a>
+            <a href="" in="z">الحصص</a>
+            <a href="">الحصص الإضافية</a>
+            <a href="">للتواصل</a>
 
-            if (tries.includes(false)) {
+        </nav>
 
-                $("p[err]").text("لا يوجد هذا الرقم");
-            }
-        }
-    });
-});
+        <content>
 
-function switchPages(f, t) {
+            <div id="login">
+                <h1>سجل دخول</h1>
 
-    $("a").eq(f).attr("in", "n");
-    $("a").eq(t).attr("in", "y");
-}
+                <div id="enterLogin">
+                    <label>ادخل كلمة المرور</label>
+                    <input type="text" placeholder="Ex. 3223">
+                    <p err style="color:red;"></p>
+                </div>
 
-function loggedIn() {
+                <button enter>تسجيل</button>
+            </div>
 
-    $("#login").hide(500,"swing");
+            <div id="video" style="display: none;">
 
-    switchPages(1,2);
+                <h1 title></h1>
 
-    setTimeout(() => {
+                <div class="videoContainer">
+                    <iframe class="video" width="100%" height="100%" style="border:0;" scrolling="no" src="" allowfullscreen="true"></iframe>
                 
-        $("#video").toggle(500, "swing");
-    }, 500);
-}
+                    <div class="timeline">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <p class="counter">مشاهدات : <span class="counter-value">1</span></p>
+            </div>
 
-function pickVideo(n) {
+        </content>
 
-    if (n == 0) {
-      
-        $(".video").attr("src", "https://screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
-    
-       
-        $("h1[title]").text("Rectilinear Motion Mechanics Essay Questions");
-    }
-    
-    if (n == 1) {
+        <footer>© موقع مستر عبدالله مصطفي الرسمي</footer>
 
-       
-        $(".video").attr("src", "https://screenpal.com/player/cZnOqXVKFN1?width=100%&height=100%&ff=1&title=0");
-    
-       
-        $("h1[title]").text("Senior 2 Math Arithmetic Sequences");
-    }
-    if (n == 2) {
+        <script src="functions/videoPlayer.js"></script>
+        <script src="functions/countViewers.js"></script>
+        <script src="functions/loginSystem.js"></script>
 
-        $("video").attr("src", "link goes here");
-        $("h1[title]").text("تجربة 3");
-    }
-}
+    </body>
+
+</html>
