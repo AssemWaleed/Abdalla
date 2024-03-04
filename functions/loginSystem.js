@@ -7,7 +7,9 @@ const numbers = [
 
 var tries = [];
 
+
 $(document).ready(() => {
+   
 
     $("button[enter]").click(()=>{
 
@@ -56,7 +58,7 @@ function pickVideo(n) {
         $(".video").attr("src", "https://screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
     
        
-        $("h1[title]").text("Rectilinear Motion Mechanics Essay Questions");
+        $("h1[title]").text("Rectilinear Motion Mechanics Essay Questions").css("text-align", "left");
     }
     
     if (n == 1) {
@@ -65,14 +67,14 @@ function pickVideo(n) {
         $(".video").attr("src", "https://screenpal.com/player/cZnOqXVKFN1?width=100%&height=100%&ff=1&title=0");
     
        
-        $("h1[title]").text("Senior 2 Math Arithmetic Sequences");
+        $("h1[title]").text("Senior 2 Math Arithmetic Sequences").css("text-align", "left");;
     }
     if (n == 2) {
 
         $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
     
        
-        $("h1[title]").text("Senior 1 Math Trignometric Identities");
+        $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");;
     }
 
  
@@ -81,7 +83,7 @@ function pickVideo(n) {
 
     
         $(".video").attr("src", "https://screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Calculus Rate Of Change");
+        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");;
         
     }
     
