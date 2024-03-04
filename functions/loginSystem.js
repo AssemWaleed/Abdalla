@@ -1,68 +1,89 @@
-<!DOCTYPE html>
+const numbers = [
+    ["5547"],  //اسم الطالب
+    ["1973"],
+    ["4457"],
+    ["5674"]   
+];
 
-<html>
+var tries = [];
 
-    <head>
+$(document).ready(() => {
 
-        <meta charset="UTF-8">
-        <title>Abdalla Mostafa | الصفحة الرئيسية</title>
+    $("button[enter]").click(()=>{
 
-        <link rel="stylesheet" href="styles/generalStyles.css">
-        <link rel="stylesheet" href="styles/mainPage.css">
+        for (let i = 0; i < numbers.length; i++) {
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+            if (numbers[i].includes($("input[type='text']").val())) {
 
-    </head>
+                tries[i] = true;
 
-    <body>
-        
-        <nav>
+                loggedIn();
 
-            <a href="" img><img src="images/logo.svg" alt="Logo"></a>
+                pickVideo(i);
 
-            <a href="" in="y">الصفحة الرئيسية</a>
-            <a href="" in="z">الحصص</a>
-            <a href="">الحصص الإضافية</a>
-            <a href="">للتواصل</a>
+            } else {tries[i] = false; }
 
-        </nav>
+            if (tries.includes(false)) {
 
-        <content>
+                $("p[err]").text("لا يوجد هذا الرقم");
+            }
+        }
+    });
+});
 
-            <div id="login">
-                <h1>سجل دخول</h1>
+function switchPages(f, t) {
 
-                <div id="enterLogin">
-                    <label>ادخل كلمة المرور</label>
-                    <input type="text" placeholder="Ex. 3223">
-                    <p err style="color:red;"></p>
-                </div>
+    $("a").eq(f).attr("in", "n");
+    $("a").eq(t).attr("in", "y");
+}
 
-                <button enter>تسجيل</button>
-            </div>
+function loggedIn() {
 
-            <div id="video" style="display: none;">
+    $("#login").hide(500,"swing");
 
-                <h1 title></h1>
+    switchPages(1,2);
 
-                <div class="videoContainer">
-                    <iframe class="video" width="100%" height="100%" style="border:0;" scrolling="no" src="" allowfullscreen="true"></iframe>
+    setTimeout(() => {
                 
-                    <div class="timeline">
-                        <div class="bar"></div>
-                    </div>
-                </div>
-                <p class="counter">مشاهدات : <span class="counter-value">1</span></p>
-            </div>
+        $("#video").toggle(500, "swing");
+    }, 500);
+}
 
-        </content>
+function pickVideo(n) {
 
-        <footer>© موقع مستر عبدالله مصطفي الرسمي</footer>
+    if (n == 0) {
+      
+        $(".video").attr("src", "https://screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
+    
+       
+        $("h1[title]").text("Rectilinear Motion Mechanics Essay Questions");
+    }
+    
+    if (n == 1) {
 
-        <script src="functions/videoPlayer.js"></script>
-        <script src="functions/countViewers.js"></script>
-        <script src="functions/loginSystem.js"></script>
+       
+        $(".video").attr("src", "https://screenpal.com/player/cZnOqXVKFN1?width=100%&height=100%&ff=1&title=0");
+    
+       
+        $("h1[title]").text("Senior 2 Math Arithmetic Sequences");
+    }
+    if (n == 2) {
 
-    </body>
+        $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+    
+       
+        $("h1[title]").text("Senior 1 Math Trignometric Identities");
+    }
 
-</html>
+ 
+    
+    if (n === 3) {
+
+    
+        $(".video").attr("src", "https://screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Calculus Rate Of Change");
+        
+    }
+    
+        
+}
