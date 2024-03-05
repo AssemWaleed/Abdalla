@@ -1,8 +1,8 @@
 const numbers = [
-    ["5547"],  //اسم الطالب
-    ["1973"],
-    ["4457"],
-    ["5674"]   
+    ["5547"],  // Samir Yasser
+    ["1973"],  // Shahd Mansour
+    ["4457"],  // Fares waleed
+    ["5674"]   // Aya Medhat 
 ];
 
 var tries = [];
@@ -51,38 +51,43 @@ function loggedIn() {
     }, 500);
 }
 
-function pickVideo(n) {
+function pickVideo(n) { // Samir Yasser 5547
 
     if (n == 0) {
       
-        $(".video").attr("src", "https://screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
     
        
-        $("h1[title]").text("Rectilinear Motion Mechanics Essay Questions").css("text-align", "left");
+        $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");
+
     }
     
-    if (n == 1) {
+    if (n == 1) {  // Shahd Mansour 1973
 
        
-        $(".video").attr("src", "https://screenpal.com/player/cZnOqXVKFN1?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
     
        
-        $("h1[title]").text("Senior 2 Math Arithmetic Sequences").css("text-align", "left");;
+        $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");
+
     }
-    if (n == 2) {
+    if (n == 2) {   //  Fares waleed 4457
 
-        $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
     
        
-        $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");;
+        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");;
     }
 
  
     
-    if (n === 3) {
+    if (n === 3) {   // Aya Medhat 5674
 
     
-        $(".video").attr("src", "https://screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
+      
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
+    
+       
         $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");;
         
     }
