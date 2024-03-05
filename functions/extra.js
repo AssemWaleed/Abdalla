@@ -53,6 +53,8 @@ function loggedIn() {
 
 function pickVideo(n) {
 
+   
+
     if (n == 0) {
       
         $(".video").attr("src", "https://screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
@@ -83,9 +85,31 @@ function pickVideo(n) {
 
     
         $(".video").attr("src", "https://screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");;
-        
-    }
+        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
     
+        // Create a single button to toggle visibility of all container divs
+        var buttonContainers = document.querySelectorAll('.button-container');
+        $("button#myButton").click(() => {
+            $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+        });
+
+        $("button#myButton2").click(() => {
+            $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+        });
+
+        $("button#myButton3").click(() => {
+            $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+        });
+
+        $("button#myButton4").click(() => {
+            $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+        });
+
+       
+    
+  
+        buttonContainers[0].appendChild(toggleButton);
+
+    }
         
 }
