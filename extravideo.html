@@ -10,8 +10,39 @@
         <link rel="stylesheet" href="styles/generalStyles.css">
         <link rel="stylesheet" href="styles/mainPage.css">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <style>
+            /* CSS for button containers */
+            .button-container {
+                display: flex; /* Use flexbox layout */
+                flex-direction: row; /* Arrange children elements in a row */
+                justify-content: space-between; /* Space out the containers */
+                border: 1px solid #ccc; /* Add a border for visual separation */
+                padding: 10px; /* Add padding for spacing */
+                margin-bottom: 10px; /* Add margin between containers */
+            }
+        
+            .button-container button {
+                /* Optional button styling */
+                padding: 5px 10px;
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                cursor: pointer;
+        
+                
+                transition: transform 0.2s ease; /* Apply transition to transform property */
+            }
+        
+            /* Hover effect */
+            .button-container button:hover {
+                background-color: #e0e0e0; /* Change background color on hover */
+                transform: scale(1.1); /* Increase size by 10% on hover */
+            }
+        </style>
+        
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      
     </head>
 
     <body>
@@ -23,12 +54,12 @@
             <a href="" in="">الحصص</a>
             <a href="extravideo.html" in="y">الحصص الإضافية</a>
             <a href="contact.html" in="">للتواصل</a>
-
-
+            
         </nav>
+        
 
         <content>
-
+            
             <div id="login">
                 <h1>الحصص الإضافية</h1>
 
@@ -40,19 +71,36 @@
 
                 <button enter>تسجيل</button>
             </div>
-
+            
             <div id="video" style="display: none;">
 
                 <h1 title></h1>
 
                 <div class="videoContainer">
+                    
                     <iframe class="video" width="100%" height="100%" style="border:0;" scrolling="no" src="" allowfullscreen="true"></iframe>
                 
                     <div class="timeline">
                         <div class="bar"></div>
                     </div>
                 </div>
+                
+
+                <div id="buttonContainer" class="button-container">
+                    <!-- Buttons will be added here dynamically -->
+                    <button id="myButton">Velocity</button>
+                    <button id="myButton2">althmetic squance</button>
+                    <button id="myButton3">Trig Angle Of Elevation And Depression</button>
+                    <button id="myButton4">Sequence</button>
+                  </div>
+
+                <audio id="hoverSound">
+                    <source src="fastwhoosh.mp3" type="audio/mp3">
+                </audio>
+                  
+                
                 <p class="counter">مشاهدات : <span class="counter-value">1</span></p>
+
             </div>
 
         </content>
@@ -61,8 +109,19 @@
 
 
         <script src="functions/extra.js"></script>
-
+        <script>
+            // JavaScript code
+            // Add event listeners to buttons to play sound on hover
+            document.querySelectorAll('.button-container button').forEach(button => {
+                button.addEventListener('mouseover', function() {
+                    // Play the sound
+                    document.getElementById('hoverSound').play();
+                });
+            });
+            </script>
 
     </body>
+
+    
 
 </html>
