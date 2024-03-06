@@ -9,6 +9,11 @@
 
         <link rel="stylesheet" href="styles/generalStyles.css">
         <link rel="stylesheet" href="styles/mainPage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-uyfGjt9Y3lmxhQvzv9k2wqQ1Hhuw5fc0wShKoF3PpF3qHVlZqET+ZrPmWpLRyLZkxd2fRz8v4YXhjSMvygrgLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+
+
+        
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
@@ -34,7 +39,9 @@
 
                 <div id="enterLogin">
                     <label>ادخل كلمة المرور</label>
-                    <input type="text" placeholder="Ex. 3223">
+                    
+                    <input type="text" placeholder="Ex. 3223">    
+                    
                     <p err style="color:red;"></p>
                 </div>
 
@@ -47,13 +54,19 @@
 
                 <div class="videoContainer">
                     <iframe class="video" width="100%" height="100%" style="border:0;" scrolling="no" src="" allowfullscreen="true"></iframe>
+                   
                 
                     <div class="timeline">
                         <div class="bar"></div>
                     </div>
                 </div>
-                <p class="counter">مشاهدات : <span class="counter-value">1</span></p>
+                <div class="watch"></div>
             </div>
+            <audio id="error">
+                <source src="error.mp3" type="audio/mp3">
+            </audio>
+
+           
 
         </content>
 
