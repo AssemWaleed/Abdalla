@@ -100,7 +100,7 @@ function pickVideo(n) { // Samir Yasser 5547
             }
 
             if (count === count) {
-                count = 0;
+                count = -1;
             }
 
             
