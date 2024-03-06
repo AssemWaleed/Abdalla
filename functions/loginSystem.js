@@ -85,7 +85,7 @@ function pickVideo(n) { // Samir Yasser 5547
 
         if (n == 0) {
 
-            alert("تنبيه لديك مشاهدتين فقط ")
+            
 
 
             $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
@@ -99,8 +99,9 @@ function pickVideo(n) { // Samir Yasser 5547
                 count = 0;
             }
 
-          
 
+            
+           
             
             
             
@@ -121,6 +122,18 @@ function pickVideo(n) { // Samir Yasser 5547
            
             h3Element.textContent = 'مشاهدات : ' + count;
 
+
+            if (count === 1) {
+                alert("تنبيه: لديك مشاهدتين فقط ");
+
+            } else if (count === 2) {
+                alert("تنبيه: لديك مشاهدة واحدة فقط");
+
+            }
+               
+
+            
+
             if (count >= 3) {
                 
                 document.getElementById('error').play();
@@ -129,8 +142,12 @@ function pickVideo(n) { // Samir Yasser 5547
 
             }
 
+           
 
             localStorage.setItem('viewCount0', count);
+
+           
+            
 
            
 
@@ -147,7 +164,6 @@ function pickVideo(n) { // Samir Yasser 5547
    
     if (n == 1) {  // Shahd Mansour 1973
 
-        alert("تنبيه لديك مشاهدتين فقط ")
 
        
         $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
@@ -161,7 +177,7 @@ function pickVideo(n) { // Samir Yasser 5547
             count1 = 0;
         }
 
-
+       
         
         
         var watchDiv = document.querySelector('.watch');
@@ -180,6 +196,17 @@ function pickVideo(n) { // Samir Yasser 5547
 
        
         h3Element1.textContent = 'مشاهدات : ' + count1;
+
+
+        if (count1 === 1) {
+            alert("تنبيه: لديك مشاهدتين فقط ");
+
+        } else if (count1 === 2) {
+            alert("تنبيه: لديك مشاهدة واحدة فقط");
+
+        }
+           
+
 
         if (count1 >= 3) {
             document.getElementById('error').play();
@@ -206,7 +233,7 @@ function pickVideo(n) { // Samir Yasser 5547
     
     if (n == 2) {   //  Fares waleed 4457
 
-        alert("تنبيه لديك مشاهدتين فقط ")
+        
 
         $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
     
@@ -219,7 +246,6 @@ function pickVideo(n) { // Samir Yasser 5547
             count2 = 0;
         }
 
-        
         
         
         
@@ -239,6 +265,18 @@ function pickVideo(n) { // Samir Yasser 5547
 
        
         h3Element2.textContent = 'مشاهدات : ' + count2;
+
+
+
+        if (count2 === 1) {
+            alert("تنبيه: لديك مشاهدتين فقط ");
+
+        } else if (count2 === 2) {
+            alert("تنبيه: لديك مشاهدة واحدة فقط");
+
+        }
+           
+               
 
         if (count2 >= 3) {
             document.getElementById('error').play();
@@ -267,17 +305,23 @@ function pickVideo(n) { // Samir Yasser 5547
  
     
     if (n === 3) {   // Aya Medhat 5674
-        alert("تنبيه لديك مشاهدتين فقط ");
+       
         
         $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
         $(".video").attr("controlsList", "nodownload");
         $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
     
-        var count3 = parseInt(localStorage.getItem('viewCount3'));
-        if (isNaN(count3)) { // Check if count3 is NaN
+        var count3 = localStorage.getItem('viewCount3');
+
+        if (count3 === null) {
             count3 = 0;
         }
-    
+        
+
+        
+
+
+
         var watchDiv = document.querySelector('.watch');
         var h3Element3 = document.createElement('h3');
     
@@ -289,6 +333,16 @@ function pickVideo(n) { // Samir Yasser 5547
         count3++;
     
         h3Element3.textContent = 'مشاهدات : ' + count3;
+
+        if (count3 === 1) {
+            alert("تنبيه: لديك مشاهدتين فقط ");
+
+        } else if (count3 === 2) {
+            alert("تنبيه: لديك مشاهدة واحدة فقط");
+
+        }
+           
+        
     
         if (count3 >= 3) {
             document.getElementById('error').play();
@@ -297,6 +351,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount3', count3);
+
     
         if (count3 >= 3) {
             $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
