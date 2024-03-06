@@ -145,6 +145,7 @@ function pickVideo(n) { // Samir Yasser 5547
            
 
             localStorage.setItem('viewCount0', count);
+            localStorage.setItem('viewCount0', 0);
 
            
             
@@ -217,6 +218,7 @@ function pickVideo(n) { // Samir Yasser 5547
 
 
         localStorage.setItem('viewCount1', count1);
+        localStorage.setItem('viewCount1', 0);
 
        
 
@@ -287,6 +289,7 @@ function pickVideo(n) { // Samir Yasser 5547
 
 
         localStorage.setItem('viewCount2', count2);
+        localStorage.setItem('viewCount2', 0);
 
        
 
@@ -351,6 +354,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount3', count3);
+        localStorage.setItem('viewCount3', 0);
 
     
         if (count3 >= 3) {
