@@ -167,7 +167,7 @@ function pickVideo(n) { // Samir Yasser 5547
 
 
        
-        $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
         $(".video").attr("controlsList", "nodownload");
         $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");
 
