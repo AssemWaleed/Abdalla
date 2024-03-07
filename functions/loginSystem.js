@@ -218,6 +218,7 @@ function pickVideo(n) { // Samir Yasser 5547
 
 
         localStorage.setItem('viewCount1', count1);
+        localStorage.setItem('viewCount1', 0);
         
 
        
@@ -356,6 +357,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount3', count3);
+       
         
        
 
