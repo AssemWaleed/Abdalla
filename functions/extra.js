@@ -1,5 +1,5 @@
 const numbers = [
-    ["5547"],  //اسم الطالب
+    ["2375"],  //عبدالرحمان
     ["1973"],
     ["4457"],
     ["5674"]   
@@ -57,10 +57,27 @@ function pickVideo(n) {
 
     if (n == 0) {
       
-        $(".video").attr("src", "https://screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZnF3hVdLMr?width=100%&height=100%&ff=1&title=0");
     
        
-        $("h1[title]").text("Rectilinear Motion Mechanics Essay Questions").css("text-align", "left");
+        
+
+        var buttonContainers = document.querySelectorAll('.button-container');
+        $("button#myButton").click(() => {
+            $(".video").attr("src", "https://go.screenpal.com/player/cZnOqXVKFN1?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Math Arithmetic Sequences").css("text-align", "left");
+        });
+
+        $("button#myButton2").click(() => {
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
+        });
+
+        $("button#myButton3").click(() => {
+            $(".video").attr("src", "https://go.screenpal.com/player/cZnF3hVdLMr?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Sequence & Series").css("text-align", "left");
+        });
+
     }
     
     if (n == 1) {
@@ -87,23 +104,8 @@ function pickVideo(n) {
         $(".video").attr("src", "https://screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
         $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
     
-        // Create a single button to toggle visibility of all container divs
-        var buttonContainers = document.querySelectorAll('.button-container');
-        $("button#myButton").click(() => {
-            $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
-        });
-
-        $("button#myButton2").click(() => {
-            $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
-        });
-
-        $("button#myButton3").click(() => {
-            $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
-        });
-
-        $("button#myButton4").click(() => {
-            $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
-        });
+        
+       
 
        
     
