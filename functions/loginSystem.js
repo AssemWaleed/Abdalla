@@ -357,6 +357,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount3', count3);
+        localStorage.setItem('viewCount3', 0);
         
         
         
