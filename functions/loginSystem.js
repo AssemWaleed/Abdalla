@@ -414,7 +414,7 @@ function pickVideo(n) { // Samir Yasser 5547
         
         $(".video").attr("src", "https://go.screenpal.com/player/cZei3oVKNhc?width=100%&height=100%&ff=1&title=0");
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
+        $("h1[title]").text("Senior 2  Rectilinear motion with uniform acceleration").css("text-align", "left");
     
         var count3 = localStorage.getItem('viewCount3');
 
@@ -456,7 +456,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount3', count3);
-        localStorage.setItem('viewCount3', 0);
+        
        
 
     
