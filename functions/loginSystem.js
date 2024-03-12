@@ -3,7 +3,8 @@ const numbers = [
     ["1973"],  // Shahd Mansour
     ["4457"],  // Fares waleed
     ["5674"],   // Aya Medhat 
-    ["7893"]  // Farah Hassan
+    ["7893"],  // Farah Hassan
+    ["6647"]  // Malak Yousryy
 ];
 
 var tries = [];
@@ -115,9 +116,8 @@ function pickVideo(n) { // Samir Yasser 5547
             h3Element.textContent = 'مشاهدات : ' + count;
             h3Element.style.textAlign = 'right';
 
-            document.body.appendChild(h3Element);
-
-            watchDiv.appendChild(h3Element);
+            var buttonContainer = document.getElementById('buttonContainer');
+            buttonContainer.appendChild(h3Element);
 
             count++;
 
@@ -218,14 +218,16 @@ function pickVideo(n) { // Samir Yasser 5547
         var watchDiv = document.querySelector('.watch');
 
         var h3Element1 = document.createElement('h3');
-
+        
+    
        
         h3Element1.textContent = 'مشاهدات : ' + count1;
         h3Element1.style.textAlign = 'right';
 
-        document.body.appendChild(h3Element1);
-
-        watchDiv.appendChild(h3Element1);
+        var buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.appendChild(h3Element1);
+        
+       
 
         count1++;
 
@@ -252,6 +254,7 @@ function pickVideo(n) { // Samir Yasser 5547
 
         
         localStorage.setItem('viewCount1', count1);
+        
         
         
         
@@ -329,9 +332,8 @@ function pickVideo(n) { // Samir Yasser 5547
         h3Element2.textContent = 'مشاهدات : ' + count2;
         h3Element2.style.textAlign = 'right';
 
-        document.body.appendChild(h3Element2);
-
-        watchDiv.appendChild(h3Element2);
+        var buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.appendChild(h3Element2);
 
         count2++;
 
@@ -412,9 +414,9 @@ function pickVideo(n) { // Samir Yasser 5547
     if (n === 3) {   // Aya Medhat 5674
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZei3oVKNhc?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2  Rectilinear motion with uniform acceleration").css("text-align", "left");
+        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
     
         var count3 = localStorage.getItem('viewCount3');
 
@@ -433,7 +435,8 @@ function pickVideo(n) { // Samir Yasser 5547
         h3Element3.textContent = 'مشاهدات : ' + count3;
         h3Element3.style.textAlign = 'right';
     
-        watchDiv.appendChild(h3Element3);
+        var buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.appendChild(h3Element3);
     
         count3++;
     
@@ -456,7 +459,6 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount3', count3);
-        
        
 
     
@@ -498,102 +500,195 @@ function pickVideo(n) { // Samir Yasser 5547
        
         });
 
+        
+
+    
     }
 
-        if (n === 4) {   // Farah Hassan 7893
+     
+    if (n === 4) {   // farah hassan 7893
+       
         
-            
-            $(".video").attr("src", "https://go.screenpal.com/player/cZei3oVKNhc?width=100%&height=100%&ff=1&title=0");
-            $(".video").attr("controlsList", "nodownload");
-            $("h1[title]").text("Senior 2  Rectilinear motion with uniform acceleration").css("text-align", "left");
-        
-            var count4 = localStorage.getItem('viewCount4');
+        $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
+        $(".video").attr("controlsList", "nodownload");
+        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
+    
+        var count4 = localStorage.getItem('viewCount4');
 
-            if (count4 === null) {
-                count4 = 0;
-            }
-            
-
-            
-
-
-
-            var watchDiv = document.querySelector('.watch');
-            var h3Element4 = document.createElement('h3');
-        
-            h3Element4.textContent = 'مشاهدات : ' + count4;
-            h3Element4.style.textAlign = 'right';
-        
-            watchDiv.appendChild(h3Element4);
-        
-            count4++;
-        
-            h3Element4.textContent = 'مشاهدات : ' + count4;
-
-            if (count4 === 1) {
-                alert("تنبيه: لديك مشاهدتين فقط ");
-
-            } else if (count4 === 2) {
-                alert("تنبيه: لديك مشاهدة واحدة فقط");
-
-            }
-            
-            
-        
-            if (count4 >= 3) {
-                document.getElementById('error').play();
-                alert("لقد انتهت المشاهدات عندك");
-                h3Element4.textContent = 'تم انتهاء عدد المشاهدات';
-            }
-        
-            localStorage.setItem('viewCount4', count4);
-            
-           
-           
+        if (count4 === null) {
+            count4 = 0;
+        }
         
 
-        
-            if (count4 >= 3) {
-                $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
-                    e.preventDefault();
-                });;
-            }
 
-            $("button#myButton2").click(() => {  // فديو الواجب
-                const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
-                
-                if (result) {
-                    $(".video").attr("src", "https://www.youtube.com/watch?v=iiWMFn_gBiA");
-                    $("#myButton2").css("color", "#15920a");
-                    $("#myButton").css("color", "black");
-                    $("#myButton3").css("color", "black");
-                    $("#myButton4").css("color", "black");
-                } else {
-                    return; // or perform some other action here
-                }
-            });
-            
-            
-            $("button#myButton4").click(() => {  // الامتحان
-                const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
-            
-                if (result) {
-                    $(".video").attr("src", "");
-                    $("#myButton4").css("color", "#15920a");
-                    $("#myButton").css("color", "black");
-                    $("#myButton2").css("color", "black");
-                    $("#myButton3").css("color", "black");
-                } else {
-                    return; // or perform some other action here
-                }
-            });
-            
+
+        var watchDiv = document.querySelector('.watch');
+        var h3Element4 = document.createElement('h3');
+    
+        h3Element4.textContent = 'مشاهدات : ' + count4;
+        h3Element4.style.textAlign = 'right';
+    
+        var buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.appendChild(h3Element4);
+    
+        count4++;
+    
+        h3Element4.textContent = 'مشاهدات : ' + count4;
+
+        if (count4 === 1) {
+            alert("تنبيه: لديك مشاهدتين فقط ");
+
+        } else if (count4 === 2) {
+            alert("تنبيه: لديك مشاهدة واحدة فقط");
 
         }
-
-
-
+           
         
-        buttonContainers[0].appendChild(toggleButton);
+    
+        if (count4 >= 3) {
+            document.getElementById('error').play();
+            alert("لقد انتهت المشاهدات عندك");
+            h3Element4.textContent = 'تم انتهاء عدد المشاهدات';
+        }
+    
+        localStorage.setItem('viewCount4', count4);
+       
+
+    
+        if (count4 >= 3) {
+            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });;
+        }
+
+        $("button#myButton2").click(() => {  // فديو الواجب
+            const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (result) {
+                $(".video").attr("src", "https://www.youtube.com/embed/Kkp8-qHWWno?start=1370");
+                $("#myButton2").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton3").css("color", "black");
+                $("#myButton4").css("color", "black");
+            } else {
+                none;
+            }
+           
+        });
+
+
+
+        $("button#myButton4").click(() => {  // الامتحان
+            //const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (result) {
+                $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+                $("#myButton4").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton2").css("color", "black");
+                $("#myButton3").css("color", "black");
+            } else {
+                none;
+            }
+       
+        });
+    }
+
+    if (n === 5) {   // Malak Yousryy 6647
+       
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZei3oVKNhc?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("controlsList", "nodownload");
+        $("h1[title]").text("Senior 2  Rectilinear motion with uniform acceleration").css("text-align", "left");
+    
+        var count5 = localStorage.getItem('viewCount5');
+
+        if (count5 === null) {
+            count5 = 0;
+        }
+        
+
+
+
+        var watchDiv = document.querySelector('.watch');
+        var h3Element5 = document.createElement('h3');
+    
+        h3Element5.textContent = 'مشاهدات : ' + count5;
+        h3Element5.style.textAlign = 'right';
+    
+        var buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.appendChild(h3Element5);
+    
+        count5++;
+    
+        h3Element5.textContent = 'مشاهدات : ' + count5;
+
+        if (count5 === 1) {
+            alert("تنبيه: لديك مشاهدتين فقط ");
+
+        } else if (count5 === 2) {
+            alert("تنبيه: لديك مشاهدة واحدة فقط");
+
+        }
+           
+        
+    
+        if (count5 >= 3) {
+            document.getElementById('error').play();
+            alert("لقد انتهت المشاهدات عندك");
+            h3Element5.textContent = 'تم انتهاء عدد المشاهدات';
+        }
+    
+        localStorage.setItem('viewCount5', count5);
+        
+       
+
+    
+        if (count5 >= 3) {
+            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });;
+        }
+
+        $("button#myButton2").click(() => {  // فديو الواجب
+            //const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (result) {
+                $(".video").attr("src", "https://www.youtube.com/embed/Kkp8-qHWWno?start=1370");
+                $("#myButton2").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton3").css("color", "black");
+                $("#myButton4").css("color", "black");
+            } else {
+                none;
+            }
+           
+        });
+
+
+
+        $("button#myButton4").click(() => {  // الامتحان
+            //const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (result) {
+                $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+                $("#myButton4").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton2").css("color", "black");
+                $("#myButton3").css("color", "black");
+            } else {
+                none;
+            }
+       
+        });
+    }
+
+    
+
+    
+        
+        buttonContainer.appendChild(h3Element1);
+  
+
         
 }
