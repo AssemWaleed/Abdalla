@@ -10,7 +10,43 @@
         <link rel="stylesheet" href="styles/generalStyles.css">
         <link rel="stylesheet" href="styles/mainPage.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-uyfGjt9Y3lmxhQvzv9k2wqQ1Hhuw5fc0wShKoF3PpF3qHVlZqET+ZrPmWpLRyLZkxd2fRz8v4YXhjSMvygrgLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            
+            /* CSS for button containers */
+            .button-container {
+                display:flex;
+                flex-direction: row; 
+                justify-content: space-between; 
+                border: 1px solid #ccc; 
+                padding: 15px; /* Add padding for spacing */
+                margin-bottom: 10px; /* Add margin between containers */
+                
+            }
         
+            .button-container button {
+                /* Optional button styling */
+                padding: 5px 10px;
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                cursor: pointer;
+               
+        
+                
+                transition: transform 0.2s ease; /* Apply transition to transform property */
+            }
+        
+            /* Hover effect */
+            .button-container button:hover {
+                background-color: #e0e0e0; /* Change background color on hover */
+                transform: scale(1.1); /* Increase size by 10% on hover */
+            }
+
+            
+        
+
+
+        </style>
 
 
         
@@ -22,17 +58,21 @@
     <body>
         
         <nav>
-
             <a href="index.html" img><img src="images/logo.svg" alt="Logo"></a>
 
             <a href="index.html" in="y">الصفحة الرئيسية</a>
             <a href="" in="">الحصص</a>
             <a href="extravideo.html" in="">الحصص الإضافية</a>
             <a href="contact.html" class="contact">للتواصل</a>
-
         </nav>
+        
+        
+
+        
 
         <content>
+            
+           
 
             <div id="login">
                 <h1>سجل دخول</h1>
@@ -59,23 +99,56 @@
                     <div class="timeline">
                         <div class="bar"></div>
                     </div>
+
+    
+
                 </div>
+
+                
+
+                <div id="buttonContainer" class="button-container">
+
+                    
+                   <!--<button id="myButton4" style="font-size: 30px; text-align: left;">الامتحان</button>--> 
+                   <button id="myButton2" style="font-size: 30px; text-align: right;">فديو الواجب</button>
+                    
+                   
+                    
+                    
+                  </div>
+    
                 <div class="watch"></div>
             </div>
             <audio id="error">
                 <source src="error.mp3" type="audio/mp3">
             </audio>
+            <audio id="hoverSound">
+                <source src="fastwhoosh.mp3" type="audio/mp3">
+            </audio>
 
-           
-
+            
+            
         </content>
+
+        
 
         <footer>© موقع مستر عبدالله مصطفي الرسمي</footer>
 
         <script src="functions/videoPlayer.js"></script>
         <script src="functions/countViewers.js"></script>
         <script src="functions/loginSystem.js"></script>
-        <script src="telebot/welcome_bot.js"></script>
+        <script>
+            
+            document.querySelectorAll('.button-container button').forEach(button => {
+                button.addEventListener('mouseover', function() {
+                    document.getElementById('hoverSound').play();
+                });
+            });
+
+          
+
+
+            </script>
 
     </body>
 
