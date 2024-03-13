@@ -4,7 +4,8 @@ const numbers = [
     ["4457"],  // Fares waleed
     ["5674"],   // Aya Medhat 
     ["7893"],  // Farah Hassan
-    ["6647"]  // Malak Yousryy
+    ["6647"],  // Malak Yousryy
+    ["1515"]  // Malak momen
 ];
 
 var tries = [];
@@ -165,7 +166,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
    
         $("button#myButton2").click(() => {  // فديو الواجب
-            const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+           const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
 
             if (result) {
                 $(".video").attr("src", "https://www.youtube.com/embed/Kkp8-qHWWno?start=1370");
@@ -270,9 +271,9 @@ function pickVideo(n) { // Samir Yasser 5547
         }
 
         $("button#myButton2").click(() => {  // فديو الواجب
-            const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+            const result1 = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
 
-            if (result) {
+            if (result1) {
                 $(".video").attr("src", "https://www.youtube.com/embed/Kkp8-qHWWno?start=1370");
                 $("#myButton2").css("color", "#15920a");
                 $("#myButton").css("color", "black");
@@ -287,7 +288,7 @@ function pickVideo(n) { // Samir Yasser 5547
 
 
         $("button#myButton4").click(() => {  // الامتحان
-            const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+            //const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
 
             if (result) {
                 $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
@@ -375,9 +376,9 @@ function pickVideo(n) { // Samir Yasser 5547
         
 
         $("button#myButton2").click(() => {  // فديو الواجب
-            const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+            const result2 = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
 
-            if (result) {
+            if (result2) {
                 $(".video").attr("src", "https://www.youtube.com/embed/Kkp8-qHWWno?start=1370");
                 $("#myButton2").css("color", "#15920a");
                 $("#myButton").css("color", "black");
@@ -469,9 +470,9 @@ function pickVideo(n) { // Samir Yasser 5547
         }
 
         $("button#myButton2").click(() => {  // فديو الواجب
-            const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+            const result3 = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
 
-            if (result) {
+            if (result3) {
                 $(".video").attr("src", "https://www.youtube.com/embed/Kkp8-qHWWno?start=1370");
                 $("#myButton2").css("color", "#15920a");
                 $("#myButton").css("color", "black");
@@ -562,9 +563,9 @@ function pickVideo(n) { // Samir Yasser 5547
         }
 
         $("button#myButton2").click(() => {  // فديو الواجب
-            const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+            const result4 = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
 
-            if (result) {
+            if (result4) {
                 $(".video").attr("src", "https://www.youtube.com/embed/Kkp8-qHWWno?start=1370");
                 $("#myButton2").css("color", "#15920a");
                 $("#myButton").css("color", "black");
@@ -640,7 +641,6 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount5', count5);
-       
         
        
 
@@ -652,10 +652,99 @@ function pickVideo(n) { // Samir Yasser 5547
         }
 
         $("button#myButton2").click(() => {  // فديو الواجب
-            //const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+            const result5 = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (result5) {
+                $(".video").attr("src", "https://www.youtube.com/embed/Kkp8-qHWWno?start=1370");
+                $("#myButton2").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton3").css("color", "black");
+                $("#myButton4").css("color", "black");
+            } else {
+                none;
+            }
+           
+        });
+
+
+
+        $("button#myButton4").click(() => {  // الامتحان
+            //result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
 
             if (result) {
-                $(".video").attr("src", "https://www.youtube.com/embed/Kkp8-qHWWno?start=1370");
+                $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+                $("#myButton4").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton2").css("color", "black");
+                $("#myButton3").css("color", "black");
+            } else {
+                none;
+            }
+       
+        });
+    }
+
+    if (n === 6) {   // Malak momen 1515
+       
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("controlsList", "nodownload");
+        $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
+    
+        var count6 = localStorage.getItem('viewCount6');
+
+        if (count6 === null) {
+            count6 = 0;
+        }
+        
+
+
+
+        var watchDiv = document.querySelector('.watch');
+        var h3Element6 = document.createElement('h3');
+    
+        h3Element6.textContent = 'مشاهدات : ' + count6;
+        h3Element6.style.textAlign = 'right';
+    
+        var buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.appendChild(h3Element6);
+    
+        count6++;
+    
+        h3Element6.textContent = 'مشاهدات : ' + count6;
+
+        if (count6 === 1) {
+            alert("تنبيه: لديك مشاهدتين فقط ");
+
+        } else if (count6 === 2) {
+            alert("تنبيه: لديك مشاهدة واحدة فقط");
+
+        }
+           
+        
+    
+        if (count6 >= 3) {
+            document.getElementById('error').play();
+            alert("لقد انتهت المشاهدات عندك");
+            h3Element6.textContent = 'تم انتهاء عدد المشاهدات';
+        }
+    
+        localStorage.setItem('viewCount6', count6);
+        
+       
+
+    
+        if (count6 >= 3) {
+            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });;
+        }
+
+        $("button#myButton2").click(() => {  // فديو الواجب
+            const result6 = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (result6) {
+                $(".video").attr("src", "https://youtu.be/wM7joX-DvN8?si=rWIetVNnG34NyKPN");
                 $("#myButton2").css("color", "#15920a");
                 $("#myButton").css("color", "black");
                 $("#myButton3").css("color", "black");
@@ -683,6 +772,7 @@ function pickVideo(n) { // Samir Yasser 5547
        
         });
     }
+
 
     
 
