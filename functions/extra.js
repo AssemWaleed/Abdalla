@@ -1,8 +1,9 @@
 const numbers = [
     ["2375"],  //عبدالرحمان
-    ["1973"],
+    ["4040"], // Malak mohammed
     ["4457"],
-    ["5674"]   
+    ["5674"],
+
 ];
 
 var tries = [];
@@ -80,14 +81,53 @@ function pickVideo(n) {
 
     }
     
-    if (n == 1) {
+    if (n == 1) {   // Malak mohammed 4040
 
        
-        $(".video").attr("src", "https://screenpal.com/player/cZnOqXVKFN1?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
     
-       
-        $("h1[title]").text("Senior 2 Math Arithmetic Sequences").css("text-align", "left");;
+        
+        var button1 = document.createElement("button");
+
+        button1.innerText = "Calculus Rate Of Change";
+        button1.style.fontSize = '20px';
+
+
+        button1.addEventListener("click", function() {
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Calculus Rate Of Change").css("text-align", "left");
+        });
+
+
+        var button2 = document.createElement("button");
+
+        button2.innerText = "Calculas Differentiation";
+        button2.style.fontSize = '20px';
+
+        button2.addEventListener("click", function() {
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeIcLV7iGq?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Calculas Differentiation").css("text-align", "left");
+        });
+
+
+        var container = document.getElementById("buttonContainer");
+
+
+        container.appendChild(button1);
+        container.appendChild(button2);
+
+
+        
+
+
+
     }
+
+
+
+
+
+
     if (n == 2) {
 
         $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
