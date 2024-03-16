@@ -1,7 +1,7 @@
 const numbers = [
     ["2375"],  //عبدالرحمان
     ["4040"], // Malak mohammed
-    ["4457"],
+    ["1450"], // saloma
     ["5674"],
 
 ];
@@ -85,6 +85,7 @@ function pickVideo(n) {
 
        
         $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Calculus Rate Of Change").css("text-align", "left");
     
         
         var button1 = document.createElement("button");
@@ -123,18 +124,52 @@ function pickVideo(n) {
 
     }
 
+    if (n == 2) {    // saloma 1450
 
-
-
-
-
-    if (n == 2) {
-
-        $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
-    
        
-        $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");;
+        $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");
+    
+        
+        var button3 = document.createElement("button");
+
+        button3.innerText = "Math Trignometric Identities";
+        button3.style.fontSize = '20px';
+
+
+        button3.addEventListener("click", function() {
+            $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Math Trignometric Identities").css("text-align", "left");
+        });
+
+
+        var button4 = document.createElement("button");
+
+        button4.innerText = "Multiplying Matrices";
+        button4.style.fontSize = '20px';
+
+        button4.addEventListener("click", function() {
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
+        });
+
+
+        var container = document.getElementById("buttonContainer");
+
+
+        container.appendChild(button3);
+        container.appendChild(button4);
+
+
+        
+
+
+
     }
+
+
+
+
 
  
     
