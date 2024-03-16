@@ -7,8 +7,8 @@ const numbers = [
     ["6647"],  // Malak Yousryy
     ["1515"],  // Malak momen
     ["2054"], // Jana Essam
-    ["1150"] // remas
-    
+    ["1150"], // remas
+    ["2252"]   // Ahmed reda
     
 
 ];
@@ -904,7 +904,7 @@ function pickVideo(n) { // Samir Yasser 5547
         if (count8 >= 3) {
             document.getElementById('error').play();
             alert("لقد انتهت المشاهدات عندك");
-            h3Element7.textContent = 'تم انتهاء عدد المشاهدات';
+            h3Element8.textContent = 'تم انتهاء عدد المشاهدات';
         }
     
         localStorage.setItem('viewCount8', count8);
@@ -952,6 +952,102 @@ function pickVideo(n) { // Samir Yasser 5547
        
         });
     }
+
+
+    if (n === 9) {   // Ahmed reda 2252
+       
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("controlsList", "nodownload");
+        $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
+    
+        var count9 = localStorage.getItem('viewCount9');
+
+        if (count9 === null) {
+            count9 = 0;
+        }
+        
+
+
+
+        var watchDiv = document.querySelector('.watch');
+        var h3Element9 = document.createElement('h3');
+    
+        h3Element9.textContent = 'مشاهدات : ' + count9;
+        h3Element9.style.textAlign = 'right';
+    
+        var buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.appendChild(h3Element9);
+    
+        count9++;
+    
+        h3Element9.textContent = 'مشاهدات : ' + count9;
+
+        if (count9 === 1) {
+            alert("تنبيه: لديك مشاهدتين فقط ");
+
+        } else if (count9 === 2) {
+            alert("تنبيه: لديك مشاهدة واحدة فقط");
+
+        }
+           
+        
+    
+        if (count9 >= 3) {
+            document.getElementById('error').play();
+            alert("لقد انتهت المشاهدات عندك");
+            h3Element9.textContent = 'تم انتهاء عدد المشاهدات';
+        }
+    
+        localStorage.setItem('viewCount9', count9);
+        localStorage.setItem('viewCount9', 0);
+        
+        
+        
+       
+
+    
+        if (count9 >= 3) {
+            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });;
+        }
+
+        $("button#myButton2").click(() => {  // فديو الواجب
+            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (re) {
+                $(".video").attr("src", "https://www.youtube.com/embed/wM7joX-DvN8");
+                $("#myButton2").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton3").css("color", "black");
+                $("#myButton4").css("color", "black");
+            } else {
+                none;
+            }
+           
+        });
+
+
+
+        $("button#myButton4").click(() => {  // الامتحان
+            //const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (result) {
+                $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+                $("#myButton4").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton2").css("color", "black");
+                $("#myButton3").css("color", "black");
+            } else {
+                none;
+            }
+       
+        });
+    }
+   
+
+
    
 
 
