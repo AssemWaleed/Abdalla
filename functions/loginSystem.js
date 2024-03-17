@@ -509,9 +509,9 @@ function pickVideo(n) { // Samir Yasser 5547
     if (n === 4) {   // farah hassan 7893
        
         
-        $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeD0jV7YUG?width=100%&height=100%&ff=1&title=0");
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
+        $("h1[title]").text("Senior 2 Mechanics Motion Under Effect Of Gravity").css("text-align", "left");
     
         var count4 = localStorage.getItem('viewCount4');
 
@@ -552,6 +552,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount4', count4);
+        
        
 
     
@@ -561,11 +562,19 @@ function pickVideo(n) { // Samir Yasser 5547
             });;
         }
 
-        $("button#myButton2").click(() => {  // فديو الواجب
-            const result4 = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        var button = document.createElement("button");
+        
+        button.innerText = "فديو الواجب";
+        button.style.fontSize = '30px';
+        button.style.paddingTop = '9px';
 
-            if (result4) {
-                $(".video").attr("src", "https://www.youtube.com/embed/Kkp8-qHWWno?start=1370");
+        
+        
+        button.addEventListener("click", function() {  // الواجب
+            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        
+            if (re) {
+                $(".video").attr("src", "https://www.youtube.com/embed/L9jzv2PXNjU");
                 $("#myButton2").css("color", "#15920a");
                 $("#myButton").css("color", "black");
                 $("#myButton3").css("color", "black");
@@ -573,9 +582,13 @@ function pickVideo(n) { // Samir Yasser 5547
             } else {
                 none;
             }
-           
+        
         });
-
+        
+        
+        var container = document.getElementById("watcher");
+        container.appendChild(button);
+        
 
 
         $("button#myButton4").click(() => {  // الامتحان
@@ -1014,7 +1027,7 @@ function pickVideo(n) { // Samir Yasser 5547
 
         
         
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function() {  // الواجب
             const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
         
             if (re) {
