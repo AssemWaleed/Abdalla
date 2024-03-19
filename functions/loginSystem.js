@@ -414,9 +414,9 @@ function pickVideo(n) { // Samir Yasser 5547
     if (n === 3) {   // Aya Medhat 5674
        
         
-        $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeD0jV7YUG?width=100%&height=100%&ff=1&title=0");
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
+        $("h1[title]").text("Senior 2 Mechanics Motion Under Effect Of Gravity").css("text-align", "left");
     
         var count3 = localStorage.getItem('viewCount3');
 
@@ -459,6 +459,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount3', count3);
+        localStorage.setItem('viewCount3', 0);
        
 
     
@@ -468,20 +469,31 @@ function pickVideo(n) { // Samir Yasser 5547
             });;
         }
 
-        $("button#myButton2").click(() => {  // فديو الواجب
-            const result3 = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
 
-            if (result3) {
-                $(".video").attr("src", "https://www.youtube.com/embed/Kkp8-qHWWno?start=1370");
+        var button = document.createElement("button");
+        button.innerText = "فديو الواجب";
+        button.style.fontSize = '30px';
+        button.style.paddingTop = '9px';
+
+        button.addEventListener("click", function() {  
+            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (re) {
+                $(".video").attr("src", "https://www.youtube.com/embed/L9jzv2PXNjU");
+                // Change the text color of the button to green
+                button.style.color = "#15920a";
                 $("#myButton2").css("color", "#15920a");
-                $("#myButton").css("color", "black");
+                $("#myButton").css("color", "#15920a");
                 $("#myButton3").css("color", "black");
                 $("#myButton4").css("color", "black");
             } else {
-                none;
+                // Do nothing if the user cancels the action
             }
-           
+
         });
+
+        var container = document.getElementById("watcher");
+        container.appendChild(button);
 
 
 
