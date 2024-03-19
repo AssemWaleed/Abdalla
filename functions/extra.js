@@ -2,7 +2,7 @@ const numbers = [
     ["2375"],  //عبدالرحمان
     ["4040"], // Malak mohammed
     ["1450"], // saloma
-    ["5674"],
+    ["1111"], // سمير ياسر سمير Free
 
 ];
 
@@ -173,19 +173,44 @@ function pickVideo(n) {
 
  
     
-    if (n === 3) {
+    if (n === 3) {   // سمير ياسر سمير Free 1111
 
     
-        $(".video").attr("src", "https://screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
     
         
-       
+        var button5 = document.createElement("button");
 
-       
-    
-  
-        buttonContainers[0].appendChild(toggleButton);
+        button5.innerText = "Senior 1 Multiplying Matrices";
+        button5.style.fontSize = '20px';
+
+
+        button5.addEventListener("click", function() {
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Math Trignometric Identities").css("text-align", "left");
+        });
+
+
+        var button6 = document.createElement("button");
+
+        button6.innerText = "غير متوفره حاليا";
+        button6.style.fontSize = '20px';
+        
+
+        button6.addEventListener("click", function() {
+            document.getElementById('error').play();
+            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
+            $("h1[title]").text("الحصه غير موجوده حاليا").css("text-align", "right");
+        });
+
+
+        var container = document.getElementById("buttonContainer");
+
+
+        container.appendChild(button5);
+        container.appendChild(button6);
+
 
     }
         
