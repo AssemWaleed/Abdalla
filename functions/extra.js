@@ -3,7 +3,7 @@ const numbers = [
     ["4040"], // Malak mohammed
     ["1450"], // saloma
     ["1111"], // سمير ياسر سمير Free
-
+    ["2211"], // فريده احمد 
 ];
 
 var tries = [];
@@ -188,7 +188,7 @@ function pickVideo(n) {
 
         button5.addEventListener("click", function() {
             $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Math Trignometric Identities").css("text-align", "left");
+            $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
         });
 
 
@@ -210,6 +210,68 @@ function pickVideo(n) {
 
         container.appendChild(button5);
         container.appendChild(button6);
+
+        var videoTextElement = document.querySelector('.videoText');
+
+
+    }
+
+
+    if (n === 4) {   //  فريده احمد 2211
+
+    
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
+    
+        
+        var button7 = document.createElement("button");
+
+        button7.innerText = "Calculus Rate Of Change";
+        button7.style.fontSize = '20px';
+
+
+        button7.addEventListener("click", function() {
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
+        
+        });
+
+
+        var button8 = document.createElement("button");
+
+        button8.innerText = "Calculas Differentiation";
+        button8.style.fontSize = '20px';
+        
+
+        button8.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeIcLV7iGq?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Calculas Differentiation").css("text-align", "left");
+        });
+
+
+
+        var button9 = document.createElement("button");
+
+        button9.innerText = "غير متوفره حاليا";
+        button9.style.fontSize = '20px';
+        
+
+        button9.addEventListener("click", function() {
+            document.getElementById('error').play();
+            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
+            $("h1[title]").text("الحصه غير موجوده حاليا").css("text-align", "right");
+        });
+
+
+        var container = document.getElementById("buttonContainer");
+
+
+        container.appendChild(button7);
+        container.appendChild(button8);
+        container.appendChild(button9);
+
+        
 
 
     }
