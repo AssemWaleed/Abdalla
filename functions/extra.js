@@ -293,14 +293,14 @@ function pickVideo(n) {
 
         var button9 = document.createElement("button");
 
-        button9.innerText = "غير متوفره حاليا";
+        button9.innerText = "Arithmetic Series";
         button9.style.fontSize = '20px';
         
 
         button9.addEventListener("click", function() {
-            document.getElementById('error').play();
-            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
-            $("h1[title]").text("الحصه غير موجوده حاليا").css("text-align", "right");
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeY34V744q?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Math Arithmetic Series").css("text-align", "right");
         });
 
 
