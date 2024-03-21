@@ -8,8 +8,8 @@ const numbers = [
     ["1515"],  // Malak momen
     ["2054"], // Jana Essam
     ["1150"], // remas
-    ["2252"]   // Ahmed reda
-    
+    ["2252"],   // Ahmed reda
+    ["2314"],   // Fareda hethm 
 
 ];
 
@@ -1023,7 +1023,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
         
         localStorage.setItem('viewCount9', count9);
-        localStorage.setItem('viewCount9', 0);
+        
         
         if (count9 >= 3) {
             $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
@@ -1052,6 +1052,112 @@ function pickVideo(n) { // Samir Yasser 5547
                 none;
             }
         
+        });
+        
+        
+        var container = document.getElementById("watcher");
+        container.appendChild(button);
+        
+        
+
+        
+
+
+        $("button#myButton4").click(() => {  // الامتحان
+            //const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (result) {
+                $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+                $("#myButton4").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton2").css("color", "black");
+                $("#myButton3").css("color", "black");
+            } else {
+                none;
+            }
+       
+        });
+    }
+
+
+    if (n === 10) {   // Fareda hethm 2314
+       
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeY34V744q?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("controlsList", "nodownload");
+        $("h1[title]").text("Senior 2 Math Arithmetic Series").css("text-align", "left");
+    
+        var count10 = localStorage.getItem('viewCount10');
+
+        if (count10 === null) {
+            count10 = 0;
+        }
+        
+
+
+
+        var watchDiv = document.querySelector('.watch');
+        var h3Element10 = document.createElement('h3');
+        
+        h3Element10.textContent = 'مشاهدات : ' + count10;
+        h3Element10.style.textAlign = 'right';
+        
+        var buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.appendChild(h3Element10);
+        
+        count10++;
+        
+        h3Element10.textContent = 'مشاهدات : ' + count10;
+        
+        if (count10 === 1) {
+            alert("تنبيه: لديك مشاهدتين فقط ");
+        
+        } else if (count10 === 2) {
+            alert("تنبيه: لديك مشاهدة واحدة فقط");
+        
+        }
+        
+        if (count10 >= 3) {
+            document.getElementById('error').play();
+            alert("لقد انتهت المشاهدات عندك");
+            h3Element9.textContent = 'تم انتهاء عدد المشاهدات';
+        }
+        
+        localStorage.setItem('viewCount10', count10);
+        
+        
+        if (count9 >= 3) {
+            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });;
+        }
+        
+        var button = document.createElement("button");
+        
+        button.innerText = "فديو الواجب";
+        button.style.fontSize = '30px';
+        button.style.paddingTop = '9px';
+        button.style.color = 'red';
+
+
+        
+        
+        button.addEventListener("click", function() {  // الواجب
+            document.getElementById('error').play();
+            alert("الحصه غير متوفره حاليا")
+
+            /*const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        
+            if (re) {
+                $(".video").attr("src", "https://www.youtube.com/embed/wM7joX-DvN8");
+                $("#myButton2").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton3").css("color", "black");
+                $("#myButton4").css("color", "black");
+            } else {
+                none;
+            }
+        */
         });
         
         
