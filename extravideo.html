@@ -5,7 +5,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Abdalla Mostafa | الصفحة الرئيسية</title>
+        <title>Abdalla Mostafa | الحصص الإضافية</title>
 
         <link rel="stylesheet" href="styles/generalStyles.css">
         <link rel="stylesheet" href="styles/mainPage.css">
@@ -37,7 +37,64 @@
             .button-container button:hover {
                 background-color: #e0e0e0; /* Change background color on hover */
                 transform: scale(1.1); /* Increase size by 10% on hover */
+
+
+
             }
+
+
+
+
+            .videoContainer {
+                position: relative;
+                width: 100%; /* Adjust as needed */
+                height: 100%; /* Adjust as needed */
+                overflow: hidden; /* Ensure the text doesn't overflow */
+            }
+
+            .videoWrapper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
+            .videoText {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 9999; /* Ensure the text is on top of the video */
+                color: white; /* Adjust text color as needed */
+                font-size: 24px; /* Adjust font size as needed */
+                text-align: center;
+                cursor: default;
+                pointer-events: none; /* Ignore cursor interactions */
+                animation: slideDiagonal1 100s infinite alternate, slideDiagonal2 100s infinite alternate; /* Animation properties */
+            }
+
+            @keyframes slideDiagonal1 {
+                0% {
+                    top: 0;
+                    left: 0;
+                }
+                100% {
+                    top: 100%;
+                    left: 100%;
+                }
+            }
+
+            @keyframes slideDiagonal2 {
+                0% {
+                    top: 100%;
+                    left: 100%;
+                }
+                100% {
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+
         </style>
         
 
@@ -77,9 +134,10 @@
                 <h1 title></h1>
 
                 <div class="videoContainer">
-                    
-                    <iframe class="video" width="100%" height="100%" style="border:0;" scrolling="no" src="" allowfullscreen="true"></iframe>
-                
+                    <div class="videoWrapper">
+                        <iframe class="video" width="100%" height="100%" style="border:0;" scrolling="no" src="" allowfullscreen="true"></iframe>
+                        <h1 class="videoText"></h1>
+                    </div>
                     <div class="timeline">
                         <div class="bar"></div>
                     </div>
@@ -87,6 +145,8 @@
                 
 
                 <div id="buttonContainer" class="button-container">
+
+                    
                    
                    
                   </div>
