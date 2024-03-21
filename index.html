@@ -83,15 +83,6 @@
                 cursor: default;
             }
 
-
-           /* .ramadan-frame {
-                border: 5px solid #564caf; /* Green border */
-              /*  padding: 20px; /* Add padding */
-               /* border-radius: 15px; /* Rounded corners */
-               /* background-color: #f8f8f8; /* Light grey background */
-           /* }
-            */
-
             @media (max-width:1023px){
                 .popup {
                     background-color: #fff;
@@ -151,14 +142,12 @@
             <div class="popup-overlay" id="popup-overlay">
                 <div class="popup" id="popup">
                     <span class="close-btn" id="close-btn">&times;</span>
-                    <div class="ramadan-frame"> <!-- Added frame div -->
-                        <p class="p1" style="font-size: 30px;">🌙 رمضان كريم ومبارك عليكم الشهر </p> 
-                        <p class="p1" style="font-size: 25px;">: نـحـب نذكركم بدعاء المذاكره</p>
-                        <p class="p1" style="color: #07861c; font-size: 26px;">"اللهم إنى أسألك سرعة الحفظ والفهم والبديهة وقوة الملاحظة"</p>
-                        <p class="p1" style="color: #07861c; font-size: 26px;">"اللهم إني أستودعك ما قرأت وما حفظت، وما تعلمت، فرده عند حاجتي إليه، إنك على كل شيء قدير، حسبنا الله ونعم الوكيل"</p>   
-                        <p class="p1" style="color: #07861c; font-size: 26px;">اللهم اجعل ألستنا عامرة بذكرك، وقلوبنا بخشيتك</p>
-                        <p class="p1" style="color: #07861c; font-size: 26px;">وأسرارنا بطاعتك، إنك على كل شيء قدير وبالإجابة جدير</p> 
-                    </div>   
+                    <p class="p1" style="font-size: 30px;">🌙 رمضان كريم ومبارك عليكم الشهر </p> 
+                    <p class="p1" style="font-size: 25px;">: نـحـب نذكركم بدعاء المذاكره</p>
+                    <p class="p1" style="color: #07861c; font-size: 26px;">"اللهم إنى أسألك سرعة الحفظ والفهم والبديهة وقوة الملاحظة"</p>
+                    <p class="p1" style="color: #07861c; font-size: 26px;">"اللهم إني أستودعك ما قرأت وما حفظت، وما تعلمت، فرده عند حاجتي إليه، إنك على كل شيء قدير، حسبنا الله ونعم الوكيل"</p>   
+                    <p class="p1" style="color: #07861c; font-size: 26px;">اللهم اجعل ألستنا عامرة بذكرك، وقلوبنا بخشيتك</p>
+                    <p class="p1" style="color: #07861c; font-size: 26px;">وأسرارنا بطاعتك، إنك على كل شيء قدير وبالإجابة جدير</p>    
                 </div>
             </div>
             
@@ -212,15 +201,14 @@
             <audio id="error">
                 <source src="error.mp3" type="audio/mp3">
             </audio>
-            <audio id="hoverSound" >
+            <audio id="hoverSound">
                 <source src="fastwhoosh.mp3" type="audio/mp3">
             </audio>
 
             
-            <audio id="popSound" autoplay>
+            <audio id="popSound">
                 <source src="popSound.mp3" type="audio/mp3">
             </audio>
-            
             
             
         </content>
@@ -234,14 +222,7 @@
         <script src="functions/loginSystem.js"></script>
         <script>
             
-            window.onload = function() {
-                document.getElementById("popSound").play();
-            }
             
-        </script>
-
-
-        <script>
 
             document.querySelectorAll('.button-container button').forEach(button => {
                 button.addEventListener('mouseover', function() {
@@ -249,14 +230,24 @@
                 });
             });
             
-            
-            
-           
             document.addEventListener("DOMContentLoaded", function() {
             const popupOverlay = document.getElementById("popup-overlay");
             const popup = document.getElementById("popup");
             const closeBtn = document.getElementById("close-btn");
             const popSound = document.getElementById("popSound");
+
+            // Function to play pop sound after a delay
+            function playPopSoundWithDelay() {
+                setTimeout(function() {
+                    if (popSound) {
+                        popSound.play().catch(error => {
+                            console.error("Error playing sound:", error);
+                        });
+                    } else {
+                        console.error("Audio element not found");
+                    }
+                }, 50); // 1000 milliseconds = 1 second
+            }
 
             // Show the popup when the page loads
             popupOverlay.style.display = "flex";
@@ -264,15 +255,25 @@
             // Add animation class to show popup
             popup.classList.add('show');
 
-            
+            // Play sound effect after a delay
+            playPopSoundWithDelay();
+
+            // Close the popup when close button is clicked
+            closeBtn.addEventListener("click", function() {
+                popupOverlay.style.display = "none";
+            });
+
+            // Close the popup when clicked outside of it
+            window.addEventListener("click", function(event) {
+                if (event.target === popupOverlay) {
+                    popupOverlay.style.display = "none";
+                }
+            });
         });
 
       
 
             </script>
-
-
-           
 
     </body>
 
