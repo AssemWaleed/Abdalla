@@ -4,6 +4,7 @@ const numbers = [
     ["1450"], // saloma
     ["1111"], // سمير ياسر سمير Free
     ["2211"], // فريده احمد 
+    ["2048"], // Sama Mohamed 
 ];
 
 var tries = [];
@@ -310,6 +311,103 @@ function pickVideo(n) {
         container.appendChild(button7);
         container.appendChild(button8);
         container.appendChild(button9);
+
+        
+
+
+    }
+
+
+    if (n === 5) {  // Sama Mohamed 2048
+
+    
+        $(".video").attr("src", "https://go.screenpal.com/player/cZnOFdVKFKJ?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Scalars And Vectors").css("text-align", "left");
+    
+        
+        var button10 = document.createElement("button");
+
+        button10.innerText = "1-Scalars & Vectors";
+        button10.style.fontSize = '20px';
+        button10.style.color = '#15920a';
+
+
+        button10.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZnOFdVKFKJ?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Scalars And Vectors").css("text-align", "left");
+            button10.style.color = '#15920a';
+            button11.style.color = 'black';
+            button12.style.color = 'black';
+            button13.style.color = 'red';
+        
+        });
+
+
+        var button11 = document.createElement("button");
+
+        button11.innerText = "2-Trignometric Identities";
+        button11.style.fontSize = '20px';
+        
+
+        button11.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");
+            button11.style.color = '#15920a';
+            button10.style.color = 'black';
+            button12.style.color = 'black';
+            button13.style.color = 'red';
+        });
+
+
+
+        var button12 = document.createElement("button");
+
+        button12.innerText = "3-Multiplying Matrices";
+        button12.style.fontSize = '20px';
+        
+
+        button12.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
+            button12.style.color = '#15920a';
+            button11.style.color = 'black';
+            button10.style.color = 'black';
+            button13.style.color = 'red';
+
+        });
+
+
+        
+        var button13 = document.createElement("button");
+
+        button13.innerText = "غير متوفره حاليا";
+        button13.style.fontSize = '20px';
+        button13.style.color = 'red';
+        
+
+        button13.addEventListener("click", function() {
+            button13.style.color = 'red';
+            button10.style.color = 'black';
+            button11.style.color = 'black';
+            button12.style.color = 'black'
+            document.getElementById('error').play();
+            alert("الحصه غير متوفره حاليا")
+        });
+        
+
+        var container = document.getElementById("buttonContainer");
+
+
+        container.appendChild(button10);
+        container.appendChild(button11);
+        container.appendChild(button12);
+        container.appendChild(button13);
+
+
+
 
         
 
