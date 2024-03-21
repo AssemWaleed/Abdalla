@@ -5,6 +5,7 @@ const numbers = [
     ["1111"], // سمير ياسر سمير Free
     ["2211"], // فريده احمد 
     ["2048"], // Sama Mohamed 
+    ["6969"], // sara
 ];
 
 var tries = [];
@@ -405,6 +406,63 @@ function pickVideo(n) {
         container.appendChild(button11);
         container.appendChild(button12);
         container.appendChild(button13);
+
+
+
+
+        
+
+
+    }
+
+
+    if (n === 6) {  // sara 6969
+
+    
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
+    
+        
+        var button14 = document.createElement("button");
+
+        button14.innerText = "1-Rate Of Change";
+        button14.style.fontSize = '20px';
+        button14.style.color = '#15920a';
+
+
+        button14.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
+            button14.style.color = '#15920a';
+            button15.style.color = 'black';
+           
+        });
+
+
+        var button15 = document.createElement("button");
+
+        button15.innerText = "2-Differentiation";
+        button15.style.fontSize = '20px';
+        
+
+        button15.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Calculas Differentiation").css("text-align", "left");
+            button15.style.color = '#15920a';
+            button14.style.color = 'black';
+    
+        });
+
+        
+
+        var container = document.getElementById("buttonContainer");
+
+
+        container.appendChild(button14);
+        container.appendChild(button15);
+
 
 
 
