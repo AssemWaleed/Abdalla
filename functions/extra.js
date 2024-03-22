@@ -344,7 +344,7 @@ function pickVideo(n) {
             button10.style.color = '#15920a';
             button11.style.color = 'black';
             button12.style.color = 'black';
-            button13.style.color = 'red';
+            button13.style.color = 'black';
         
         });
 
@@ -362,7 +362,7 @@ function pickVideo(n) {
             button11.style.color = '#15920a';
             button10.style.color = 'black';
             button12.style.color = 'black';
-            button13.style.color = 'red';
+            button13.style.color = 'black';
         });
 
 
@@ -380,7 +380,7 @@ function pickVideo(n) {
             button12.style.color = '#15920a';
             button11.style.color = 'black';
             button10.style.color = 'black';
-            button13.style.color = 'red';
+            button13.style.color = 'black';
 
         });
 
@@ -388,18 +388,17 @@ function pickVideo(n) {
         
         var button13 = document.createElement("button");
 
-        button13.innerText = "غير متوفره حاليا";
+        button13.innerText = "4-Operation On Vector"
         button13.style.fontSize = '20px';
-        button13.style.color = 'red';
+        
         
 
         button13.addEventListener("click", function() {
-            button13.style.color = 'red';
+            $(".video").attr("src", "https://go.screenpal.com/player/cZe3cmV7B9u?width=100%&height=100%&ff=1&title=0")
+            button13.style.color = '#15920a';
             button10.style.color = 'black';
             button11.style.color = 'black';
             button12.style.color = 'black'
-            document.getElementById('error').play();
-            alert("الحصه غير متوفره حاليا")
         });
         
 
