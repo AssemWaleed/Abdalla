@@ -224,26 +224,30 @@ function pickVideo(n) {
         
         var button5 = document.createElement("button");
 
-        button5.innerText = "Senior 1 Multiplying Matrices";
+        button5.innerText = "Multiplying Matrices";
         button5.style.fontSize = '20px';
+        button5.style.color = '#15920a';
 
 
         button5.addEventListener("click", function() {
             $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
             $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
+            button5.style.color = '#15920a';
+            button6.style.color = 'black';
         });
 
 
         var button6 = document.createElement("button");
 
-        button6.innerText = "غير متوفره حاليا";
+        button6.innerText = "Operation On Vector";
         button6.style.fontSize = '20px';
         
 
         button6.addEventListener("click", function() {
-            document.getElementById('error').play();
-            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
-            $("h1[title]").text("الحصه غير موجوده حاليا").css("text-align", "right");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZe3cmV7B9u?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Operation On Vector").css("text-align", "left");
+            button6.style.color = '#15920a';
+            button5.style.color = 'black';
         });
 
 
