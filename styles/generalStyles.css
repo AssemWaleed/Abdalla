@@ -236,7 +236,7 @@ footer {
         
         
         box-sizing: border-box;
-        height: 60px;
+        height: 55px;
         text-decoration: none;
         color: rgb(var(--color5));
         transition: .15s;
@@ -257,6 +257,12 @@ footer {
     }
     nav img {height: 90%;}
 
+    a[img] img[src="images/logo.svg"] {
+        width: 175px; /* Adjust the width of the image */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    
 
     footer {
         box-sizing: border-box;
