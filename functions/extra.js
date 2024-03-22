@@ -53,7 +53,7 @@ function addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID
     tooltip.style.backgroundColor = "#05660a";
     tooltip.style.color = "white";
     tooltip.style.padding = "15px"; // Increased padding
-    tooltip.style.fontSize = "22px";
+    tooltip.style.fontSize = "20px";
      
   
 
@@ -116,7 +116,7 @@ function pickVideo(n) {
 
         var imageSrc = 'images/profileMan.png';
         var altText = 'avatar';
-        var tooltipText = 'Name is Abdulrahman Id is <span style="color:red; cursor:pointer;" >2375</span>';
+        var tooltipText = 'Name is Abdulrahman , Id is <span style="color:red; cursor:pointer;" >2375</span>';
         var tooltipTextID = '2375';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
  
@@ -189,7 +189,7 @@ function pickVideo(n) {
 
         var imageSrc = 'images/profile.png';
         var altText = 'avatar';
-        var tooltipText = 'Name is Malak Id is <span style="color:red; cursor:pointer;" >4040</span>';
+        var tooltipText = 'Name is Malak , Id is <span style="color:red; cursor:pointer;" >4040</span>';
         var tooltipTextID = '4040';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
  
@@ -239,7 +239,7 @@ function pickVideo(n) {
 
         var imageSrc = 'images/profile.png';
         var altText = 'avatar';
-        var tooltipText = 'Name is Salma Id is <span style="color:red; cursor:pointer;" >1450</span>';
+        var tooltipText = 'Name is Salma , Id is <span style="color:red; cursor:pointer;" >1450</span>';
         var tooltipTextID = '1450';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
  
@@ -296,7 +296,7 @@ function pickVideo(n) {
       
         var imageSrc = 'images/profileMan.png';
         var altText = 'avatar';
-        var tooltipText = 'Name is Samer Id is <span style="color:red; cursor:pointer;" >1111</span>';
+        var tooltipText = 'Name is Samer , Id is <span style="color:red; cursor:pointer;" >1111</span>';
         var tooltipTextID = '1111';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
@@ -352,7 +352,7 @@ function pickVideo(n) {
 
         var imageSrc = 'images/profile.png';
         var altText = 'avatar';
-        var tooltipText = 'Name is Farida Id is <span style="color:red; cursor:pointer;" >2211</span>';
+        var tooltipText = 'Name is Farida , Id is <span style="color:red; cursor:pointer;" >2211</span>';
         var tooltipTextID = '2211';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
@@ -419,7 +419,7 @@ function pickVideo(n) {
         
         var imageSrc = 'images/profile.png';
         var altText = 'avatar';
-        var tooltipText = 'Name is Sama Id is <span style="color:red; cursor:pointer;" >2048</span>';
+        var tooltipText = 'Name is Sama , Id is <span style="color:red; cursor:pointer;" >2048</span>';
         var tooltipTextID = '2048';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
@@ -522,7 +522,7 @@ function pickVideo(n) {
 
         var imageSrc = 'images/profile.png';
         var altText = 'avatar';
-        var tooltipText = 'Name is Sara Id is <span style="color:red; cursor:pointer;" >6969</span>';
+        var tooltipText = 'Name is Sara , Id is <span style="color:red; cursor:pointer;" >6969</span>';
         var tooltipTextID = '6969';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
