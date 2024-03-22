@@ -200,9 +200,9 @@ function pickVideo(n) { // Samir Yasser 5547
 
 
        
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0")
+        $(".video").attr("src", "https://go.screenpal.com/player/cZe3cmV7B9u?width=100%&height=100%&ff=1&title=0")
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
+        $("h1[title]").text("Senior 1 Operation On Vector").css("text-align", "left");
 
 
         var count1 = localStorage.getItem('viewCount1');
@@ -269,20 +269,28 @@ function pickVideo(n) { // Samir Yasser 5547
             });;
         }
 
-        $("button#myButton2").click(() => {  // فديو الواجب
-            const result1 = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        var button = document.createElement("button");
+        
+        button.innerText = "فديو الواجب";
+        button.style.fontSize = '30px';
+        button.style.paddingTop = '9px';
+        
 
-            if (result1) {
-                $(".video").attr("src", "https://youtu.be/wM7joX-DvN8?si=BCdkk4odZgeXtaWR");
-                $("#myButton2").css("color", "#15920a");
-                $("#myButton").css("color", "black");
-                $("#myButton3").css("color", "black");
-                $("#myButton4").css("color", "black");
+
+        
+        
+        button.addEventListener("click", function() {  // الواجب
+            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        
+            if (re) {
+                $(".video").attr("src", "https://www.youtube.com/embed/PagPq000t5M?autoplay=1");
+                button.style.color = "#15920a"
             } else {
                 none;
             }
-           
+        
         });
+        
 
 
 
@@ -301,7 +309,8 @@ function pickVideo(n) { // Samir Yasser 5547
        
         });
 
-        
+        var container = document.getElementById("watcher");
+        container.appendChild(button); 
         
 
     }
