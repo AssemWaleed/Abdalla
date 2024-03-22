@@ -38,6 +38,58 @@ function myFunction() {
 
 
 
+function addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID) {
+    // Creating a new <img> element
+    var newImg = document.createElement('img');
+
+    // Set attributes for the image
+    newImg.setAttribute('src', imageSrc); // Set the image source
+    newImg.setAttribute('alt', altText); // Set the alt attribute
+
+    // Creating a div for the tooltip
+    var tooltip = document.createElement('div');
+    tooltip.innerHTML = tooltipText.replace(tooltipTextID, `<span style="color:red; cursor:pointer;" onclick="copyToClipboard('${tooltipTextID}')">${tooltipTextID}</span>`);
+    tooltip.style.display = "none"; // Initially hide the tooltip
+    tooltip.style.position = "absolute";
+    tooltip.style.backgroundColor = "#05660a";
+    tooltip.style.color = "white";
+    tooltip.style.padding = "15px"; // Increased padding
+    tooltip.style.fontSize = "20px";
+     
+  
+
+    tooltip.style.lineHeight = "20px"; // Adjusted line height
+    tooltip.style.top = "100%"; // Position the tooltip below the image
+    tooltip.style.left = "50%"; // Position the tooltip centered horizontally
+    tooltip.style.borderRadius = "5px";
+
+    // Finding the existing <a> element with class "Profile"
+    var existingLink = document.querySelector('.Profile');
+
+    // Appending the new <img> element inside the existing <a> element
+    existingLink.appendChild(newImg);
+
+    // Appending the tooltip inside the existing <a> element
+    existingLink.appendChild(tooltip);
+
+    // Event listener for mouseover event on the image
+    newImg.addEventListener('mouseover', function() {
+        tooltip.style.display = "block"; // Display the tooltip
+    });
+
+    // Event listener for mouseout event on the image
+    newImg.addEventListener('mouseout', function() {
+        tooltip.style.display = "none"; // Hide the tooltip
+    });
+}
+
+// Function to copy text to clipboard
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text);
+    alert('ID copied to clipboard!');
+}
+
+
 
 $(document).ready(() => {
    
@@ -74,7 +126,7 @@ function loggedIn() {
 
     $("#login").hide(500,"swing");
 
-    switchPages(1,2);
+    switchPages(2,3);
 
     setTimeout(() => {
                 
@@ -87,7 +139,11 @@ function pickVideo(n) { // Samir Yasser 5547
 
         if (n == 0) {
 
-            
+            var imageSrc = 'images/profile.png';
+            var altText = 'avatar';
+            var tooltipText = 'Name is Samir Id is <span style="color:red; cursor:pointer;" >5547</span>';
+            var tooltipTextID = '5547';
+            addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
 
             $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0")
@@ -197,6 +253,12 @@ function pickVideo(n) { // Samir Yasser 5547
 
    
     if (n == 1) {  // Shahd Mansour 1973
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Shahd Id is <span style="color:red; cursor:pointer;" >1973</span>';
+        var tooltipTextID = '1973';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
 
        
@@ -317,6 +379,12 @@ function pickVideo(n) { // Samir Yasser 5547
     
     if (n == 2) {   //  Fares waleed 4457
 
+        var imageSrc = 'images/profileMan.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Fares Id is <span style="color:red; cursor:pointer;" >4457</span>';
+        var tooltipTextID = '4457';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+
         
 
         $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560");
@@ -421,6 +489,12 @@ function pickVideo(n) { // Samir Yasser 5547
  
     
     if (n === 3) {   // Aya Medhat 5674
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Aya Id is <span style="color:red; cursor:pointer;" >5674</span>';
+        var tooltipTextID = '5674';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
         $(".video").attr("src", "https://go.screenpal.com/player/cZeD0jV7YUG?width=100%&height=100%&ff=1&title=0");
@@ -528,6 +602,12 @@ function pickVideo(n) { // Samir Yasser 5547
 
      
     if (n === 4) {   // farah hassan 7893
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Farah Id is <span style="color:red; cursor:pointer;" >7893</span>';
+        var tooltipTextID = '7893';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
         $(".video").attr("src", "https://go.screenpal.com/player/cZeD0jV7YUG?width=100%&height=100%&ff=1&title=0");
@@ -629,6 +709,12 @@ function pickVideo(n) { // Samir Yasser 5547
     }
 
     if (n === 5) {   // Malak Yousryy 6647
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Malak Id is <span style="color:red; cursor:pointer;" >6647</span>';
+        var tooltipTextID = '6647';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
         $(".video").attr("src", "https://go.screenpal.com/player/cZei3oVKNhc?width=100%&height=100%&ff=1&title=0");
@@ -718,6 +804,13 @@ function pickVideo(n) { // Samir Yasser 5547
     }
 
     if (n === 6) {   // Malak momen 1515
+
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Malak Momen Id is <span style="color:red; cursor:pointer;" >1515</span>';
+        var tooltipTextID = '1515';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
         $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
@@ -807,6 +900,12 @@ function pickVideo(n) { // Samir Yasser 5547
     }
 
     if (n === 7) {   // Jana Essam 2054
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Jana Id is <span style="color:red; cursor:pointer;" >2054</span>';
+        var tooltipTextID = '2054';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
         $(".video").attr("src", "https://go.screenpal.com/player/cZeIcLV7iGq?width=100%&height=100%&ff=1&title=0");
@@ -897,6 +996,12 @@ function pickVideo(n) { // Samir Yasser 5547
     }
 
     if (n === 8) {   // remas 1150
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Remas Id is <span style="color:red; cursor:pointer;" >1150</span>';
+        var tooltipTextID = '1150';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
         $(".video").attr("src", "https://go.screenpal.com/player/cZeIcLV7iGq?width=100%&height=100%&ff=1&title=0");
@@ -989,6 +1094,12 @@ function pickVideo(n) { // Samir Yasser 5547
 
 
     if (n === 9) {   // Ahmed reda 2252
+
+        var imageSrc = 'images/profileMan.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Ahmed Reda Id is <span style="color:red; cursor:pointer;" >2252</span>';
+        var tooltipTextID = '2252';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
         $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
@@ -1090,6 +1201,12 @@ function pickVideo(n) { // Samir Yasser 5547
 
 
     if (n === 10) {   // Fareda hethm 2314
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Farida Hesham Id is <span style="color:red; cursor:pointer;" >2314</span>';
+        var tooltipTextID = '2314';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
         $(".video").attr("src", "https://go.screenpal.com/player/cZeY34V744q?width=100%&height=100%&ff=1&title=0");
