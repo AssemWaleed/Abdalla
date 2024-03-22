@@ -36,6 +36,60 @@ $(document).ready(() => {
     });
 });
 
+
+function addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID) {
+    // Creating a new <img> element
+    var newImg = document.createElement('img');
+
+    // Set attributes for the image
+    newImg.setAttribute('src', imageSrc); // Set the image source
+    newImg.setAttribute('alt', altText); // Set the alt attribute
+
+    // Creating a div for the tooltip
+    var tooltip = document.createElement('div');
+    tooltip.innerHTML = tooltipText.replace(tooltipTextID, `<span style="color:red; cursor:pointer;" onclick="copyToClipboard('${tooltipTextID}')">${tooltipTextID}</span>`);
+    tooltip.style.display = "none"; // Initially hide the tooltip
+    tooltip.style.position = "absolute";
+    tooltip.style.backgroundColor = "#05660a";
+    tooltip.style.color = "white";
+    tooltip.style.padding = "15px"; // Increased padding
+    tooltip.style.fontSize = "22px";
+     
+  
+
+    tooltip.style.lineHeight = "20px"; // Adjusted line height
+    tooltip.style.top = "100%"; // Position the tooltip below the image
+    tooltip.style.left = "50%"; // Position the tooltip centered horizontally
+    tooltip.style.borderRadius = "5px";
+
+    // Finding the existing <a> element with class "Profile"
+    var existingLink = document.querySelector('.Profile');
+
+    // Appending the new <img> element inside the existing <a> element
+    existingLink.appendChild(newImg);
+
+    // Appending the tooltip inside the existing <a> element
+    existingLink.appendChild(tooltip);
+
+    // Event listener for mouseover event on the image
+    newImg.addEventListener('mouseover', function() {
+        tooltip.style.display = "block"; // Display the tooltip
+    });
+
+    // Event listener for mouseout event on the image
+    newImg.addEventListener('mouseout', function() {
+        tooltip.style.display = "none"; // Hide the tooltip
+    });
+}
+
+// Function to copy text to clipboard
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text);
+    alert('ID copied to clipboard!');
+}
+
+
+
 function switchPages(f, t) {
 
     $("a").eq(f).attr("in", "n");
@@ -46,7 +100,7 @@ function loggedIn() {
 
     $("#login").hide(500,"swing");
 
-    switchPages(1,3);
+    switchPages(1,4);
 
     setTimeout(() => {
                 
@@ -59,6 +113,13 @@ function pickVideo(n) {
    
 
     if (n == 0) { // عبدالرحمان 2375
+
+        var imageSrc = 'images/profileMan.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Abdulrahman Id is <span style="color:red; cursor:pointer;" >2375</span>';
+        var tooltipTextID = '2375';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+ 
       
         $(".video").attr("src", "https://go.screenpal.com/player/cZnOqXVKFN1?width=100%&height=100%&ff=1&title=0");
         $("h1[title]").text("Senior 2 Math Arithmetic Sequences").css("text-align", "left");
@@ -125,6 +186,14 @@ function pickVideo(n) {
     
     if (n == 1) {   // Malak mohammed 4040
 
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Malak Id is <span style="color:red; cursor:pointer;" >4040</span>';
+        var tooltipTextID = '4040';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+ 
+
        
         $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
         $("h1[title]").text("Calculus Rate Of Change").css("text-align", "left");
@@ -167,6 +236,13 @@ function pickVideo(n) {
     }
 
     if (n == 2) {    // saloma 1450
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Salma Id is <span style="color:red; cursor:pointer;" >1450</span>';
+        var tooltipTextID = '1450';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+ 
 
        
         $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
@@ -217,6 +293,13 @@ function pickVideo(n) {
     
     if (n === 3) {   // سمير ياسر سمير Free 1111
 
+      
+        var imageSrc = 'images/profileMan.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Samer Id is <span style="color:red; cursor:pointer;" >1111</span>';
+        var tooltipTextID = '1111';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+
     
         $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
         $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
@@ -260,10 +343,18 @@ function pickVideo(n) {
         var videoTextElement = document.querySelector('.videoText');
 
 
+
+       
     }
 
 
     if (n === 4) {   //  فريده احمد 2211
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Farida Id is <span style="color:red; cursor:pointer;" >2211</span>';
+        var tooltipTextID = '2211';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
     
         $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
@@ -324,6 +415,13 @@ function pickVideo(n) {
 
 
     if (n === 5) {  // Sama Mohamed 2048
+
+        
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Sama Id is <span style="color:red; cursor:pointer;" >2048</span>';
+        var tooltipTextID = '2048';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
     
         $(".video").attr("src", "https://go.screenpal.com/player/cZnOFdVKFKJ?width=100%&height=100%&ff=1&title=0");
@@ -420,6 +518,14 @@ function pickVideo(n) {
 
 
     if (n === 6) {  // sara 6969
+
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Sara Id is <span style="color:red; cursor:pointer;" >6969</span>';
+        var tooltipTextID = '6969';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+
 
     
         $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
