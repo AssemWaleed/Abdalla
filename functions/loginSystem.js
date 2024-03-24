@@ -10,8 +10,8 @@ const numbers = [
     ["1150"], // remas
     ["2252"],   // Ahmed reda
     ["2314"],   // Fareda hethm 
-    ["2771"],   // Roaia Elsafi 2771
-
+    ["2771"],   // Roaia Elsafi 
+    ["4441"],   // Jana Mahmoud 
 ];
 
 var tries = [];
@@ -1366,6 +1366,115 @@ function pickVideo(n) { // Samir Yasser 5547
         
         
         if (count11 >= 3) {
+            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });;
+        }
+        
+        var button = document.createElement("button");
+        
+        button.innerText = "فديو الواجب";
+        button.style.fontSize = '30px';
+        button.style.paddingTop = '9px';
+        
+
+
+        
+        
+        button.addEventListener("click", function() {  // الواجب
+
+            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        
+            if (re) {
+                $(".video").attr("src", "https://www.youtube.com/embed/ZSxXoTyPXkk");
+                button.style.color = '#15920a';
+            } else {
+                none;
+            }
+
+        });
+        
+        
+        var container = document.getElementById("watcher");
+        container.appendChild(button);
+        
+        
+
+        
+
+
+        $("button#myButton4").click(() => {  // الامتحان
+            //const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (result) {
+                $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+                $("#myButton4").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton2").css("color", "black");
+                $("#myButton3").css("color", "black");
+            } else {
+                none;
+            }
+       
+        });
+    }
+
+
+    if (n === 12) {  // Jana Mahmoud 4441
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Jana Mahmoud , Id is <span style="color:red; cursor:pointer;" >4441</span>';
+        var tooltipTextID = '4441';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeIcLV7iGq?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("controlsList", "nodownload");
+        $("h1[title]").text("Senior 2 Calculas Differentiation").css("text-align", "left");
+    
+        var count12 = localStorage.getItem('viewCount12');
+
+        if (count12 === null) {
+            count12 = 0;
+        }
+        
+
+
+
+        var watchDiv = document.querySelector('.watch');
+        var h3Element12 = document.createElement('h3');
+        
+        h3Element12.textContent = 'مشاهدات : ' + count12;
+        h3Element12.style.textAlign = 'right';
+        
+        var buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.appendChild(h3Element12);
+        
+        count12++;
+        
+        h3Element12.textContent = 'مشاهدات : ' + count12;
+        
+        if (count12 === 1) {
+            alert("تنبيه: لديك مشاهدتين فقط ");
+        
+        } else if (count12 === 2) {
+            alert("تنبيه: لديك مشاهدة واحدة فقط");
+        
+        }
+        
+        if (count12 >= 3) {
+            document.getElementById('error').play();
+            alert("لقد انتهت المشاهدات عندك");
+            h3Element9.textContent = 'تم انتهاء عدد المشاهدات';
+        }
+        
+        localStorage.setItem('viewCount12', count12);
+        localStorage.setItem('viewCount12', 0);
+        
+        
+        
+        if (count12 >= 3) {
             $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
                 e.preventDefault();
             });;
