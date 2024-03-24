@@ -610,9 +610,9 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeD0jV7YUG?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZe3VqV7BWD?width=100%&height=100%&ff=1&title=0");
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2 Mechanics Motion Under Effect Of Gravity").css("text-align", "left");
+        $("h1[title]").text("Senior 2 Newton Universal Gravitation Law").css("text-align", "left");
     
         var count4 = localStorage.getItem('viewCount4');
 
@@ -663,7 +663,7 @@ function pickVideo(n) { // Samir Yasser 5547
             });;
         }
 
-        var button = document.createElement("button");
+       // var button = document.createElement("button");
         
         button.innerText = "فديو الواجب";
         button.style.fontSize = '30px';
@@ -675,7 +675,7 @@ function pickVideo(n) { // Samir Yasser 5547
             const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
         
             if (re) {
-                $(".video").attr("src", "https://www.youtube.com/embed/L9jzv2PXNjU");
+                $(".video").attr("src", "");
                 $("#myButton2").css("color", "#15920a");
                 $("#myButton").css("color", "black");
                 $("#myButton3").css("color", "black");
