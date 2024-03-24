@@ -1103,9 +1103,9 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZe3cmV7B9u?width=100%&height=100%&ff=1&title=0");
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
+        $("h1[title]").text("Senior 1 Operation On Vector").css("text-align", "left");
     
         var count9 = localStorage.getItem('viewCount9');
 
@@ -1144,6 +1144,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
         
         localStorage.setItem('viewCount9', count9);
+        localStorage.setItem('viewCount9', 0);
         
         
         if (count9 >= 3) {
@@ -1164,11 +1165,9 @@ function pickVideo(n) { // Samir Yasser 5547
             const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
         
             if (re) {
-                $(".video").attr("src", "https://www.youtube.com/embed/wM7joX-DvN8");
-                $("#myButton2").css("color", "#15920a");
-                $("#myButton").css("color", "black");
-                $("#myButton3").css("color", "black");
-                $("#myButton4").css("color", "black");
+                $(".video").attr("src", "https://www.youtube.com/embed/PagPq000t5M?start=695");
+                button.style.color = '#15920a';
+
             } else {
                 none;
             }
