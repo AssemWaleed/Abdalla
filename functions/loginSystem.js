@@ -1321,9 +1321,9 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeIcLV7iGq?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeY34V744q?width=100%&height=100%&ff=1&title=0");
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2 Calculas Differentiation").css("text-align", "left");
+        $("h1[title]").text("Senior 2 Math Arithmetic Series").css("text-align", "left");
     
         var count11 = localStorage.getItem('viewCount11');
 
@@ -1386,7 +1386,7 @@ function pickVideo(n) { // Samir Yasser 5547
             const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
         
             if (re) {
-                $(".video").attr("src", "https://www.youtube.com/embed/ZSxXoTyPXkk");
+                $(".video").attr("src", "https://www.youtube.com/embed/XNpffJd6Cn8");
                 button.style.color = '#15920a';
             } else {
                 none;
