@@ -263,9 +263,9 @@ function pickVideo(n) { // Samir Yasser 5547
 
 
        
-        $(".video").attr("src", "https://go.screenpal.com/player/cZe3cmV7B9u?width=100%&height=100%&ff=1&title=0")
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeODfV77qZ?width=100%&height=100%&ff=1&title=0")
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 1 Operation On Vector").css("text-align", "left");
+        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
 
 
         var count1 = localStorage.getItem('viewCount1');
