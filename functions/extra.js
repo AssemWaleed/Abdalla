@@ -301,22 +301,75 @@ function pickVideo(n) {
         var tooltipTextID = '1111';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
-        
-        var videoContainer = document.querySelector('.videoContainer');
+// Function to obfuscate video URLs (example only)
+function obfuscateUrl(url) {
+    // Implement your URL obfuscation logic here
+    // Example: Add a random token to the URL
+    var token = Math.random().toString(36).substr(2, 8);
+    return url + '?token=' + token;
+}
 
-        var videoElement = document.createElement('video');
-        videoElement.src = 'videos/Senior 1 Determinants.mp4';
-        videoElement.controls = true; 
-        videoElement.disablePictureInPicture = true;
-        videoElement.poster = 'images/1.png';
-        videoElement.setAttribute('controlsList', 'nodownload');
-        
-        videoElement.oncontextmenu = function(event) {
-            event.preventDefault();
-        };
-        
-        videoContainer.appendChild(videoElement);
-        
+// Function to check referrer URL
+function checkReferrer() {
+    var referrer = document.referrer;
+    // Implement your referrer checking logic here
+    // Example: Allow access only if the referrer is your website
+    return referrer.includes('yourwebsite.com');
+}
+
+// Function to generate a token for authenticated access
+function generateToken() {
+    // Implement your token generation logic here
+    // Example: Generate a random token
+    return Math.random().toString(36).substr(2, 8);
+}
+
+// Function to encrypt video files (example only)
+function encryptVideo(videoUrl) {
+    // Implement your encryption logic here
+    // Example: Add encryption parameters to the video URL
+    return videoUrl + '?encrypted=true';
+}
+
+// Example usage
+document.addEventListener('DOMContentLoaded', function() {
+    var videoElement = document.createElement('video');
+    var videoUrl = 'videos/Senior 1 Determinants.mp4';
+
+    // Apply obfuscation
+    var obfuscatedUrl = obfuscateUrl(videoUrl);
+
+    // Apply referrer checking
+    if (!checkReferrer()) {
+        console.log('Access denied. Referrer not authorized.');
+        return;
+    }
+
+    // Apply token-based authentication
+    var token = generateToken();
+    var tokenizedUrl = videoUrl + '?token=' + token;
+
+    // Apply encryption
+    var encryptedUrl = encryptVideo(videoUrl);
+
+    // Set video source to the obfuscated, tokenized, or encrypted URL
+    videoElement.src = obfuscatedUrl; // Change to tokenizedUrl or encryptedUrl as needed
+
+    // Other video settings
+    videoElement.controls = true; 
+    videoElement.poster = 'images/1.png';
+    videoElement.disablePictureInPicture = true;
+
+    // Prevent right-click context menu on the video element
+    videoElement.oncontextmenu = function(event) {
+        event.preventDefault();
+    };
+
+    // Append video element to the document
+    var videoContainer = document.querySelector('.videoContainer');
+    videoContainer.appendChild(videoElement);
+});
+
         // Create the text element
         var Code = document.createElement('h3');
         Code.innerText = ' سمير ياسر : 1111 ';
