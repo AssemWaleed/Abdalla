@@ -300,10 +300,8 @@ function pickVideo(n) {
         var tooltipTextID = '1111';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
-       
-        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/f698bb7e-6cc3-4ac3-915e-5d847c1ed224?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
-
-
+    
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
         $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
     
         
