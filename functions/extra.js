@@ -54,7 +54,6 @@ function addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID
     tooltip.style.color = "white";
     tooltip.style.padding = "15px"; // Increased padding
     tooltip.style.fontSize = "20px";
-    
      
   
 
@@ -301,116 +300,9 @@ function pickVideo(n) {
         var tooltipTextID = '1111';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
-// Function to obfuscate video URLs (example only)
-function obfuscateUrl(url) {
-    // Implement your URL obfuscation logic here
-    // Example: Add a random token to the URL
-    var token = Math.random().toString(36).substr(2, 8);
-    return url + '?token=' + token;
-}
-
-// Function to check referrer URL
-function checkReferrer() {
-    var referrer = document.referrer;
-    // Implement your referrer checking logic here
-    // Example: Allow access only if the referrer is your website
-    return referrer.includes('yourwebsite.com');
-}
-
-// Function to generate a token for authenticated access
-function generateToken() {
-    // Implement your token generation logic here
-    // Example: Generate a random token
-    return Math.random().toString(36).substr(2, 8);
-}
-
-// Function to encrypt video files (example only)
-function encryptVideo(videoUrl) {
-    // Implement your encryption logic here
-    // Example: Add encryption parameters to the video URL
-    return videoUrl + '?encrypted=true';
-}
-
-// Example usage
-document.addEventListener('DOMContentLoaded', function() {
-    var videoElement = document.createElement('video');
-    var videoUrl = 'videos/Senior 1 Determinants.mp4';
-
-    // Apply obfuscation
-    var obfuscatedUrl = obfuscateUrl(videoUrl);
-
-    // Apply referrer checking
-    if (!checkReferrer()) {
-        console.log('Access denied. Referrer not authorized.');
-        return;
-    }
-
-    // Apply token-based authentication
-    var token = generateToken();
-    var tokenizedUrl = videoUrl + '?token=' + token;
-
-    // Apply encryption
-    var encryptedUrl = encryptVideo(videoUrl);
-
-    // Set video source to the obfuscated, tokenized, or encrypted URL
-    videoElement.src = obfuscatedUrl; // Change to tokenizedUrl or encryptedUrl as needed
-
-    // Other video settings
-    videoElement.controls = true; 
-    videoElement.poster = 'images/1.png';
-    videoElement.disablePictureInPicture = true;
-
-    // Prevent right-click context menu on the video element
-    videoElement.oncontextmenu = function(event) {
-        event.preventDefault();
-    };
-
-    // Append video element to the document
-    var videoContainer = document.querySelector('.videoContainer');
-    videoContainer.appendChild(videoElement);
-});
-
-        // Create the text element
-        var Code = document.createElement('h3');
-        Code.innerText = ' سمير ياسر : 1111 ';
-        Code.style.color = 'red';
-        Code.style.position = 'absolute'; 
-        Code.style.zIndex = '10000'; // Set a higher z-index
-        Code.style.userSelect = 'none'; 
-        Code.style.opacity = '0'; // Initially set the opacity to 0
-        
-        // Function to make the text appear suddenly
-        function makeTextAppear() {
-            Code.style.opacity = '0.5'; // Set opacity to 1 to make it appear suddenly
-        }
-        
-        // Function to change the text position every 11 seconds
-        function changeTextPosition() {
-            var left = Math.floor(Math.random() * (videoElement.offsetWidth - Code.offsetWidth));
-            var top = Math.floor(Math.random() * (videoElement.offsetHeight - Code.offsetHeight));
-            Code.style.left = left + 'px';
-            Code.style.top = top + 'px';
-        }
-        
-        // Call the function to make the text appear
-        makeTextAppear();
-        
-        // Call the function to change text position every 11 seconds
-        setInterval(changeTextPosition, 21000);
-        
-        // Append the text to the videoContainer
-        videoContainer.appendChild(Code);
-       
-        
-        
-        
-
-        
+    
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
         $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
-        
-        
-        
-        
     
         
         var button5 = document.createElement("button");
