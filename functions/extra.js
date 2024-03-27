@@ -54,6 +54,7 @@ function addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID
     tooltip.style.color = "white";
     tooltip.style.padding = "15px"; // Increased padding
     tooltip.style.fontSize = "20px";
+    
      
   
 
@@ -300,9 +301,72 @@ function pickVideo(n) {
         var tooltipTextID = '1111';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
-    
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            var videoElement = document.createElement('video');
+            videoElement.src = 'videos/Senior 1 Determinants.mp4';
+            videoElement.controls = true; 
+            videoElement.disablePictureInPicture = true;
+            videoElement.poster = 'images/1.png';
+        
+            videoElement.oncontextmenu = function(event) {
+                event.preventDefault();
+            };
+        
+            // Create the text element
+            var Code = document.createElement('h3');
+            Code.innerText = ' سمير ياسر : 1111 ';
+            Code.style.color = 'red';
+            Code.style.position = 'absolute'; 
+            Code.style.zIndex = '10000'; // Set a higher z-index
+            Code.style.userSelect = 'none'; 
+            Code.style.opacity = '0'; // Initially set the opacity to 0
+        
+            // Function to make the text appear suddenly
+            function makeTextAppear() {
+                Code.style.opacity = '0.5'; // Set opacity to 1 to make it appear suddenly
+            }
+        
+            // Function to change the text position every 11 seconds
+            function changeTextPosition() {
+                var left = Math.floor(Math.random() * (videoElement.offsetWidth - Code.offsetWidth));
+                var top = Math.floor(Math.random() * (videoElement.offsetHeight - Code.offsetHeight));
+                Code.style.left = left + 'px';
+                Code.style.top = top + 'px';
+            }
+        
+            // Call the function to make the text appear
+            makeTextAppear();
+        
+            // Call the function to change text position every 21 seconds
+            setInterval(changeTextPosition, 21000);
+        
+            // Append the text to the videoElement
+            videoElement.appendChild(Code);
+        
+            // Intercept click event on the fullscreen button
+            videoElement.addEventListener('click', function(event) {
+                if (event.target.classList.contains('fullscreen-button')) {
+                    event.preventDefault(); // Prevent default behavior of fullscreen button
+                    videoElement.style.width = '100%'; // Set video width to 100% of container
+                }
+            });
+        
+            var videoContainer = document.querySelector('.videoContainer');
+            videoContainer.appendChild(videoElement);
+        });
+        
+       
+        
+        
+        
+
+        
         $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
+        
+        
+        
+        
     
         
         var button5 = document.createElement("button");
