@@ -1429,9 +1429,9 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeIcLV7iGq?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeOVAV7JdX?width=100%&height=100%&ff=1&title=0");
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2 Calculas Differentiation").css("text-align", "left");
+        $("h1[title]").text("Senior 2 Lesson 5 And 6 Geometric Sequence").css("text-align", "left");
     
         var count12 = localStorage.getItem('viewCount12');
 
@@ -1470,7 +1470,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
         
         localStorage.setItem('viewCount12', count12);
-        localStorage.setItem('viewCount12', 0);
+       
         
         
         
@@ -1492,7 +1492,7 @@ function pickVideo(n) { // Samir Yasser 5547
         
         button.addEventListener("click", function() {  // الواجب
 
-            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+            //const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
         
             if (re) {
                 $(".video").attr("src", "https://www.youtube.com/embed/ZSxXoTyPXkk");
