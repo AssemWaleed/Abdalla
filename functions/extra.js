@@ -309,6 +309,7 @@ function pickVideo(n) {
         videoElement.controls = true; 
         videoElement.disablePictureInPicture = true;
         videoElement.poster = 'images/1.png';
+        videoElement.setAttribute('controlsList', 'nodownload');
         
         videoElement.oncontextmenu = function(event) {
             event.preventDefault();
@@ -345,7 +346,7 @@ function pickVideo(n) {
         setInterval(changeTextPosition, 21000);
         
         // Append the text to the videoContainer
-        videoElement.appendChild(Code);
+        videoContainer.appendChild(Code);
        
         
         
