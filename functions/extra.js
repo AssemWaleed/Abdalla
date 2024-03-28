@@ -242,13 +242,13 @@ function pickVideo(n) {
         var tooltipTextID = '1450';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
     
-        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/8c16ed20-acec-4278-9f59-eae061814f0a?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
-        $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZnOFdVKFKJ?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Scalars And Vectors").css("text-align", "left");
     
         var button3 = document.createElement("button");
-        button3.innerText = "Multiplying Matrices";
+        button3.innerText = "3- Multiplying Matrices";
         button3.style.fontSize = '20px';
-        button3.style.color = '#15920a';
+        
         button3.addEventListener("click", function() {
             $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/8c16ed20-acec-4278-9f59-eae061814f0a?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
             $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
@@ -257,7 +257,7 @@ function pickVideo(n) {
         });
     
         var button4 = document.createElement("button");
-        button4.innerText = "Determinants";
+        button4.innerText = "5- Determinants";
         button4.style.fontSize = '20px';
         button4.addEventListener("click", function() {
             $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/2f3d5fd1-90e0-4222-a98f-3927466e5b9b?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
@@ -265,10 +265,54 @@ function pickVideo(n) {
             button4.style.color = '#15920a';
             button3.style.color = 'black';
         });
+
+        var button5 = document.createElement("button");
+        button5.innerText = "2- Trignometric Identities";
+        button5.style.fontSize = '20px';
+        button5.addEventListener("click", function() {
+            $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");
+            button5.style.color = '#15920a';
+            button3.style.color = 'black';
+            button4.style.color = 'black';
+        });
+
+        var button6 = document.createElement("button");
+        button6.innerText = "4- Operation On Vector";
+        button6.style.fontSize = '20px';
+        button6.addEventListener("click", function() {
+            $(".video").attr("src", "https://go.screenpal.com/player/cZe3cmV7B9u?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Operation On Vector").css("text-align", "left");
+            button6.style.color = '#15920a';
+            button5.style.color = 'black';
+            button4.style.color = 'black';
+            button3.style.color = 'black';
+        });
+
+
+        var button7 = document.createElement("button");
+        button7.innerText = "1- Scalars And Vectors";
+        button7.style.fontSize = '20px';
+        button7.style.color = '#15920a';
+        button7.addEventListener("click", function() {
+            $(".video").attr("src", "https://go.screenpal.com/player/cZnOFdVKFKJ?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Scalars And Vectors").css("text-align", "left");
+            button7.style.color = '#15920a';
+            button6.style.color = 'black';
+            button5.style.color = 'black';
+            button4.style.color = 'black';
+            button3.style.color = 'black';
+        });
+    
     
         var container = document.getElementById("buttonContainer");
+        container.appendChild(button7);
+        container.appendChild(button5);
         container.appendChild(button3);
+        container.appendChild(button6);
         container.appendChild(button4);
+        
+        
     }
     
 
