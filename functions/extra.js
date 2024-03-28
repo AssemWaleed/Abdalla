@@ -253,7 +253,10 @@ function pickVideo(n) {
             $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/8c16ed20-acec-4278-9f59-eae061814f0a?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
             $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
             button3.style.color = '#15920a';
+            button6.style.color = 'black';
+            button5.style.color = 'black';
             button4.style.color = 'black';
+            button7.style.color = 'black';
         });
     
         var button4 = document.createElement("button");
@@ -263,6 +266,9 @@ function pickVideo(n) {
             $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/2f3d5fd1-90e0-4222-a98f-3927466e5b9b?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
             $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
             button4.style.color = '#15920a';
+            button6.style.color = 'black';
+            button5.style.color = 'black';
+            button7.style.color = 'black';
             button3.style.color = 'black';
         });
 
@@ -273,8 +279,10 @@ function pickVideo(n) {
             $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
             $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");
             button5.style.color = '#15920a';
-            button3.style.color = 'black';
+            button6.style.color = 'black';
+            button7.style.color = 'black';
             button4.style.color = 'black';
+            button3.style.color = 'black';
         });
 
         var button6 = document.createElement("button");
@@ -284,6 +292,7 @@ function pickVideo(n) {
             $(".video").attr("src", "https://go.screenpal.com/player/cZe3cmV7B9u?width=100%&height=100%&ff=1&title=0");
             $("h1[title]").text("Senior 1 Operation On Vector").css("text-align", "left");
             button6.style.color = '#15920a';
+            button7.style.color = 'black';
             button5.style.color = 'black';
             button4.style.color = 'black';
             button3.style.color = 'black';
