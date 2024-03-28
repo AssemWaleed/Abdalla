@@ -300,8 +300,16 @@ function pickVideo(n) {
         var tooltipTextID = '1111';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
-    
-        $(".video").attr("src", "https://player.vdocipher.com/v2/?otp=20160313versUSE323DYyv5ps9DXcg3cxhhjejSpyS0N3ZQIQat7TouK0otXNdUs&playbackInfo=eyJ2aWRlb0lkIjoiNDUwZTMzZTkyNTBlNGMzYjlkMGQ1MzAxNmJkNjc1MDYifQ==");
+        var videoContainer = document.querySelector('.videoContainer'); // Changed to class selector
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('src', 'https://player.vdocipher.com/v2/?otp=20160313versUSE323LSJ7A8RphLXrtbQZcyBXOtpDAivGDmEclwnP5OtAWymONT&playbackInfo=eyJ2aWRlb0lkIjoiNjA0OWMyYTYwNjljNDcyNzk0Y2ViMjcyYTFkMGIxMDUifQ==');
+        iframe.setAttribute('style', 'border:0;max-width:100%;position:absolute;top:0;left:0;height:100%;width:100%;');
+        iframe.setAttribute('allowFullScreen', 'true');
+        iframe.setAttribute('allow', 'encrypted-media');
+        videoContainer.appendChild(iframe);
+
+
+
         $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
     
         
