@@ -12,6 +12,7 @@ const numbers = [
     ["2314"],   // Fareda hethm 
     ["2771"],   // Roaia Elsafi 
     ["4441"],   // Jana Mahmoud 
+    ["3214"],   //  Salma Ashraf
 ];
 
 var tries = [];
@@ -1246,7 +1247,7 @@ function pickVideo(n) { // Samir Yasser 5547
         if (count10 >= 3) {
             document.getElementById('error').play();
             alert("لقد انتهت المشاهدات عندك");
-            h3Element9.textContent = 'تم انتهاء عدد المشاهدات';
+            h3Element10.textContent = 'تم انتهاء عدد المشاهدات';
         }
         
         localStorage.setItem('viewCount10', count10);
@@ -1358,7 +1359,7 @@ function pickVideo(n) { // Samir Yasser 5547
         if (count11 >= 3) {
             document.getElementById('error').play();
             alert("لقد انتهت المشاهدات عندك");
-            h3Element9.textContent = 'تم انتهاء عدد المشاهدات';
+            h3Element11.textContent = 'تم انتهاء عدد المشاهدات';
         }
         
         localStorage.setItem('viewCount11', count11);
@@ -1466,7 +1467,7 @@ function pickVideo(n) { // Samir Yasser 5547
         if (count12 >= 3) {
             document.getElementById('error').play();
             alert("لقد انتهت المشاهدات عندك");
-            h3Element9.textContent = 'تم انتهاء عدد المشاهدات';
+            h3Element12.textContent = 'تم انتهاء عدد المشاهدات';
         }
         
         localStorage.setItem('viewCount12', count12);
@@ -1527,6 +1528,112 @@ function pickVideo(n) { // Samir Yasser 5547
        
         });
     }
+
+
+    if (n === 13) {  // Salma Ashraf 3214
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is  Salma Ashraf , Id is <span style="color:red; cursor:pointer;" >3214</span>';
+        var tooltipTextID = '3214';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        
+        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/2f3d5fd1-90e0-4222-a98f-3927466e5b9b?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+        $(".video").attr("controlsList", "nodownload");
+        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+    
+        var count13 = localStorage.getItem('viewCount13');
+
+        if (count13 === null) {
+            count13 = 0;
+        }
+        
+
+
+
+        var watchDiv = document.querySelector('.watch');
+        var h3Element13 = document.createElement('h3');
+        
+        h3Element13.textContent = 'مشاهدات : ' + count13;
+        h3Element13.style.textAlign = 'right';
+        
+        var buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.appendChild(h3Element13);
+        
+        count13++;
+        
+        h3Element13.textContent = 'مشاهدات : ' + count13;
+        
+        if (count13 === 1) {
+            alert("تنبيه: لديك مشاهدتين فقط ");
+        
+        } else if (count13 === 2) {
+            alert("تنبيه: لديك مشاهدة واحدة فقط");
+        
+        }
+        
+        if (count13 >= 3) {
+            document.getElementById('error').play();
+            alert("لقد انتهت المشاهدات عندك");
+            h3Element13.textContent = 'تم انتهاء عدد المشاهدات';
+        }
+        
+        localStorage.setItem('viewCount13', count13);
+        
+        
+        
+        
+        if (count13 >= 3) {
+            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });;
+        }
+        
+        var button = document.createElement("button");
+        
+        button.innerText = "فديو الواجب";
+        button.style.fontSize = '30px';
+        button.style.paddingTop = '9px';
+        
+        button.addEventListener("click", function() {  // الواجب
+
+            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        
+            if (re) {
+                $(".video").attr("src", "https://www.youtube.com/embed/a15XRQQe2YQ");
+                button.style.color = '#15920a';
+            } else {
+                none;
+            }
+
+        });
+        
+        
+        var container = document.getElementById("watcher");
+        container.appendChild(button);
+        
+        
+
+        
+
+
+        $("button#myButton4").click(() => {  // الامتحان
+            //const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (result) {
+                $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+                $("#myButton4").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton2").css("color", "black");
+                $("#myButton3").css("color", "black");
+            } else {
+                none;
+            }
+       
+        });
+    }
+   
    
    
 
