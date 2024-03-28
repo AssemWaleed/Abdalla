@@ -242,7 +242,7 @@ function pickVideo(n) {
         var tooltipTextID = '1450';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
     
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/8c16ed20-acec-4278-9f59-eae061814f0a?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
         $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
     
         var button3 = document.createElement("button");
@@ -250,7 +250,7 @@ function pickVideo(n) {
         button3.style.fontSize = '20px';
         button3.style.color = '#15920a';
         button3.addEventListener("click", function() {
-            $(".video").attr("src", "https://go.screenpal.com/player/cZeODfV77qZ?width=100%&height=100%&ff=1&title=0");
+            $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/8c16ed20-acec-4278-9f59-eae061814f0a?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
             $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
             button3.style.color = '#15920a';
             button4.style.color = 'black';
