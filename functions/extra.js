@@ -236,54 +236,41 @@ function pickVideo(n) {
     }
 
     if (n == 2) {    // saloma 1450
-
         var imageSrc = 'images/profile.png';
         var altText = 'avatar';
-        var tooltipText = 'Name is Salma , Id is <span style="color:red; cursor:pointer;" >1450</span>';
+        var tooltipText = 'Name is Salma, Id is <span style="color:red; cursor:pointer;">1450</span>';
         var tooltipTextID = '1450';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
- 
-
-       
-        $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");
     
-        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
+    
         var button3 = document.createElement("button");
-
-        button3.innerText = "Math Trignometric Identities";
+        button3.innerText = "Multiplying Matrices";
         button3.style.fontSize = '20px';
-
-
+        button3.style.color = '#15920a';
         button3.addEventListener("click", function() {
-            $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Math Trignometric Identities").css("text-align", "left");
-        });
-
-
-        var button4 = document.createElement("button");
-
-        button4.innerText = "Multiplying Matrices";
-        button4.style.fontSize = '20px';
-
-        button4.addEventListener("click", function() {
-            $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeODfV77qZ?width=100%&height=100%&ff=1&title=0");
             $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
+            button3.style.color = '#15920a';
+            button4.style.color = 'black';
         });
-
-
+    
+        var button4 = document.createElement("button");
+        button4.innerText = "Determinants";
+        button4.style.fontSize = '20px';
+        button4.addEventListener("click", function() {
+            $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/2f3d5fd1-90e0-4222-a98f-3927466e5b9b?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+            $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+            button4.style.color = '#15920a';
+            button3.style.color = 'black';
+        });
+    
         var container = document.getElementById("buttonContainer");
-
-
         container.appendChild(button3);
         container.appendChild(button4);
-
-
-        
-
-
-
     }
+    
 
 
 
@@ -300,16 +287,8 @@ function pickVideo(n) {
         var tooltipTextID = '1111';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
-        var videoContainer = document.querySelector('.videoContainer'); // Changed to class selector
-        var iframe = document.createElement('iframe');
-        iframe.setAttribute('src', 'https://player.vdocipher.com/v2/?otp=20160313versUSE323LSJ7A8RphLXrtbQZcyBXOtpDAivGDmEclwnP5OtAWymONT&playbackInfo=eyJ2aWRlb0lkIjoiNjA0OWMyYTYwNjljNDcyNzk0Y2ViMjcyYTFkMGIxMDUifQ==');
-        iframe.setAttribute('style', 'border:0;max-width:100%;position:absolute;top:0;left:0;height:100%;width:100%;');
-        iframe.setAttribute('allowFullScreen', 'true');
-        iframe.setAttribute('allow', 'encrypted-media');
-        videoContainer.appendChild(iframe);
-
-
-
+    
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
         $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
     
         
