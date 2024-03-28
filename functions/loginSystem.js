@@ -719,9 +719,9 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZei3oVKNhc?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZnOqXVKFN1?width=100%&height=100%&ff=1&title=0");
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2  Rectilinear motion with uniform acceleration").css("text-align", "left");
+        $("h1[title]").text("Senior 2 Math Arithmetic Sequences").css("text-align", "left");
     
         var count5 = localStorage.getItem('viewCount5');
 
@@ -763,6 +763,7 @@ function pickVideo(n) { // Samir Yasser 5547
     
         localStorage.setItem('viewCount5', count5);
         
+        
        
 
     
@@ -772,20 +773,30 @@ function pickVideo(n) { // Samir Yasser 5547
             });;
         }
 
-        $("button#myButton2").click(() => {  // فديو الواجب
-            const result5 = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        var button = document.createElement('button');
+        button.innerText = "Arithmetic Series";
+        button.style.fontSize = '30px';
+        button.style.paddingTop = '9px';
+        
+        
+        button.addEventListener("click", function() {  // الواجب
 
-            if (result5) {
-                $(".video").attr("src", "https://www.youtube.com/embed/Kkp8-qHWWno?start=1370");
-                $("#myButton2").css("color", "#15920a");
-                $("#myButton").css("color", "black");
-                $("#myButton3").css("color", "black");
-                $("#myButton4").css("color", "black");
+            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        
+            if (re) {
+                $(".video").attr("src", "https://go.screenpal.com/player/cZeY34V744q?width=100%&height=100%&ff=1&title=0");
+                $("h1[title]").text("Senior 2 Math Arithmetic Series").css("text-align", "left");
+
+                button.style.color = '#15920a';
             } else {
                 none;
             }
-           
+
         });
+
+        
+        var container = document.getElementById("watcher");
+        container.appendChild(button);
 
 
 
