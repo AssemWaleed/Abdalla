@@ -910,9 +910,9 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeIcLV7iGq?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeY34V744q?width=100%&height=100%&ff=1&title=0");
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2 Calculas Differentiation").css("text-align", "left");
+        $("h1[title]").text("Senior 2 Math Arithmetic Series").css("text-align", "left");
     
         var count7 = localStorage.getItem('viewCount7');
 
@@ -953,6 +953,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount7', count7);
+        localStorage.setItem('viewCount7', 0);
         
         
        
@@ -964,20 +965,28 @@ function pickVideo(n) { // Samir Yasser 5547
             });;
         }
 
-        $("button#myButton2").click(() => {  // فديو الواجب
-            const result7 = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        var button = document.createElement('button');
+        button.innerText = "فديو الواجب";
+        button.style.fontSize = '30px';
+        button.style.paddingTop = '9px';
+        
+        
+        button.addEventListener("click", function() {  // الواجب
 
-            if (result7) {
-                $(".video").attr("src", "https://www.youtube.com/embed/ZSxXoTyPXkk");
-                $("#myButton2").css("color", "#15920a");
-                $("#myButton").css("color", "black");
-                $("#myButton3").css("color", "black");
-                $("#myButton4").css("color", "black");
+            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        
+            if (re) {
+                $(".video").attr("src", "https://www.youtube.com/embed/XNpffJd6Cn8");
+                button.style.color = '#15920a';
             } else {
                 none;
             }
-           
+
         });
+        
+        
+        var container = document.getElementById("watcher");
+        container.appendChild(button);
 
 
 
