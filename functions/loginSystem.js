@@ -826,9 +826,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeIc4V7i50?width=100%&height=100%&ff=1&title=0");
-        $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");
     
         var count6 = localStorage.getItem('viewCount6');
 
@@ -879,20 +878,29 @@ function pickVideo(n) { // Samir Yasser 5547
             });;
         }
 
-        $("button#myButton2").click(() => {  // فديو الواجب
-            const result6 = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        var button = document.createElement('button');
+        button.innerText = "فديو الواجب";
+        button.style.fontSize = '30px';
+        button.style.paddingTop = '9px';
+        
+        
+        button.addEventListener("click", function() {  // الواجب
 
-            if (result6) {
-                $(".video").attr("src", "https://youtu.be/wM7joX-DvN8?si=rWIetVNnG34NyKPN");
-                $("#myButton2").css("color", "#15920a");
-                $("#myButton").css("color", "black");
-                $("#myButton3").css("color", "black");
-                $("#myButton4").css("color", "black");
+            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        
+            if (re) {
+                $(".video").attr("src", "https://www.youtube.com/embed/9PccYlOoT1c");
+                button.style.color = '#15920a';
             } else {
                 none;
             }
-           
+
         });
+        
+        
+        var container = document.getElementById("watcher");
+        container.appendChild(button);
+
 
 
 
