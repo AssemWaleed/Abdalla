@@ -6,6 +6,7 @@ const numbers = [
     ["2211"], // فريده احمد 
     ["2048"], // Sama Mohamed 
     ["6969"], // sara
+    ["6911"], // Menna Essam 
 ];
 
 var tries = [];
@@ -610,9 +611,106 @@ function pickVideo(n) {
 
 
         container.appendChild(button14);
-        container.appendChild(button15);
+        container.appendChild(button15); 
 
 
+    }
+
+
+    if (n === 7) {  // Menna Essam 6911
+
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Menna Essam , Id is <span style="color:red; cursor:pointer;" >6911</span>';
+        var tooltipTextID = '6911';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+
+
+    
+        $(".video").attr("src", "https://go.screenpal.com/player/cZnF3hVdLMr?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Sequence & Series").css("text-align", "left");
+    
+        
+        var button16 = document.createElement("button");
+
+        button16.innerText = "1-Sequence & Series";
+        button16.style.fontSize = '20px';
+        button16.style.color = '#15920a';
+
+
+        button16.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZnF3hVdLMr?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Sequence & Series").css("text-align", "left");
+            button16.style.color = '#15920a';
+            button17.style.color = 'black';
+            button17.style.color = 'black';
+            button19.style.color = 'black';
+        });
+
+
+        var button17 = document.createElement("button");
+
+        button17.innerText = "2-Arithmetic Sequences";
+        button17.style.fontSize = '20px';
+        
+
+        button17.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZnOqXVKFN1?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Math Arithmetic Sequences").css("text-align", "left");
+            button17.style.color = '#15920a';
+            button16.style.color = 'black';
+            button18.style.color = 'black';
+            button19.style.color = 'black';
+        });
+
+        
+        var button18 = document.createElement("button");
+
+        button18.innerText = "3-Rate Of Change";
+        button18.style.fontSize = '20px';
+        
+
+        button18.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
+            button18.style.color = '#15920a';
+            button16.style.color = 'black';
+            button17.style.color = 'black';
+            button19.style.color = 'black';
+    
+        });
+
+
+        var button19 = document.createElement("button");
+
+        button19.innerText = "4-Differentiation";
+        button19.style.fontSize = '20px';
+        
+
+        button19.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeIcLV7iGq?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Calculas Differentiation").css("text-align", "left");
+            button19.style.color = '#15920a';
+            button16.style.color = 'black';
+            button17.style.color = 'black';
+            button18.style.color = 'black';
+    
+        });
+
+        
+
+        var container = document.getElementById("buttonContainer");
+
+
+        container.appendChild(button16);
+        container.appendChild(button17);
+        container.appendChild(button18);
+        container.appendChild(button19);
 
 
 
