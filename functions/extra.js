@@ -141,7 +141,7 @@ function pickVideo(n) {
         });
 
 
-        /*var button01 = document.createElement("button");
+        var button01 = document.createElement("button");
 
         button01.innerText = "Rate Of Change";
         button01.style.fontSize = '20px';
@@ -168,7 +168,7 @@ function pickVideo(n) {
             button01.style.color = 'black'
             button00.style.color = 'black'
         });
-        */
+       
 
         var container = document.getElementById("buttonContainer");
 
