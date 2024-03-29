@@ -121,27 +121,27 @@ function pickVideo(n) {
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
  
       
-        $(".video").attr("src", "https://go.screenpal.com/player/cZnOqXVKFN1?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Math Arithmetic Sequences").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeY34V744q?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Arthimic Series").css("text-align", "left");
     
         
         var button00 = document.createElement("button");
 
-        button00.innerText = "Arithmetic Sequences";
+        button00.innerText = "Arthimic Series";
         button00.style.fontSize = '20px';
         button00.style.color = '#15920a'
 
 
         button00.addEventListener("click", function() {
-            $(".video").attr("src", "https://go.screenpal.com/player/cZnOqXVKFN1?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Senior 2 Math Arithmetic Sequences").css("text-align", "left");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeY34V744q?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Arthimic Series").css("text-align", "left");
             button00.style.color = '#15920a'
             button01.style.color = 'black'
             button02.style.color = 'black'
         });
 
 
-        var button01 = document.createElement("button");
+        /*var button01 = document.createElement("button");
 
         button01.innerText = "Rate Of Change";
         button01.style.fontSize = '20px';
@@ -168,14 +168,14 @@ function pickVideo(n) {
             button01.style.color = 'black'
             button00.style.color = 'black'
         });
-
+        */
 
         var container = document.getElementById("buttonContainer");
 
 
         container.appendChild(button00);
-        container.appendChild(button01);
-        container.appendChild(button02);
+       // container.appendChild(button01);
+        //container.appendChild(button02);
 
     
        
@@ -597,7 +597,7 @@ function pickVideo(n) {
 
         button15.addEventListener("click", function() {
             
-            $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeIcLV7iGq?width=100%&height=100%&ff=1&title=0");
             $("h1[title]").text("Senior 2 Calculas Differentiation").css("text-align", "left");
             button15.style.color = '#15920a';
             button14.style.color = 'black';
