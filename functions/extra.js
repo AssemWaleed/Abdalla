@@ -7,6 +7,7 @@ const numbers = [
     ["2048"], // Sama Mohamed 
     ["6969"], // sara
     ["6911"], // Menna Essam 
+    ["2111"], // Rodina
 ];
 
 var tries = [];
@@ -711,6 +712,109 @@ function pickVideo(n) {
         container.appendChild(button17);
         container.appendChild(button18);
         container.appendChild(button19);
+
+
+
+        
+
+
+    }
+
+
+    if (n === 8) {  // Rodina 2111
+
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Rodina , Id is <span style="color:red; cursor:pointer;" >2111</span>';
+        var tooltipTextID = '2111';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+
+
+    
+        $(".video").attr("src", "https://go.screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Rectilinear Motion Secondterm Mechanics Essay Questions").css("text-align", "left");
+    
+        
+        var button20 = document.createElement("button");
+
+        button20.innerText = "1-Rectilinear Motion";
+        button20.style.fontSize = '20px';
+        button20.style.color = '#15920a';
+
+
+        button20.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Rectilinear Motion Secondterm Mechanics Essay Questions").css("text-align", "left");
+            button20.style.color = '#15920a';
+            button21.style.color = 'black';
+            button22.style.color = 'black';
+            button23.style.color = 'black';
+        });
+
+
+        var button21 = document.createElement("button");
+
+        button21.innerText = "2-Uniform acceleration";
+        button21.style.fontSize = '20px';
+        
+
+        button21.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZei3oVKNhc?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2  Rectilinear motion with uniform acceleration").css("text-align", "left");
+            button21.style.color = '#15920a';
+            button20.style.color = 'black';
+            button22.style.color = 'black';
+            button23.style.color = 'black';
+        });
+
+        
+        var button22 = document.createElement("button");
+
+        button22.innerText = "3-Motion Under Effect Of Gravity";
+        button22.style.fontSize = '20px';
+        
+
+        button22.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeD0jV7YUG?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Mechanics Motion Under Effect Of Gravity").css("text-align", "left");
+            button22.style.color = '#15920a';
+            button20.style.color = 'black';
+            button21.style.color = 'black';
+            button23.style.color = 'black';
+    
+        });
+
+
+        /*var button23 = document.createElement("button");
+
+        button23.innerText = "4-Differentiation";
+        button23.style.fontSize = '20px';
+        
+
+        button23.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeIcLV7iGq?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Calculas Differentiation").css("text-align", "left");
+            button23.style.color = '#15920a';
+            button20.style.color = 'black';
+            button21.style.color = 'black';
+            button22.style.color = 'black';
+    
+        });
+
+        */
+
+        var container = document.getElementById("buttonContainer");
+
+        
+        container.appendChild(button20);
+        container.appendChild(button21);
+        container.appendChild(button22);
+        container.appendChild(button23);
 
 
 
