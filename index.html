@@ -168,8 +168,7 @@
                     <p class="p1" style="color: #07861c; font-size: 26px;">"اللهم إني أستودعك ما قرأت وما حفظت، وما تعلمت، فرده عند حاجتي إليه، إنك على كل شيء قدير، حسبنا الله ونعم الوكيل"</p>   
                     <p class="p1" style="color: #07861c; font-size: 26px;">اللهم اجعل ألستنا عامرة بذكرك، وقلوبنا بخشيتك</p>
                     <p class="p1" style="color: #07861c; font-size: 26px;">وأسرارنا بطاعتك، إنك على كل شيء قدير وبالإجابة جدير</p> 
-                    <p id="countdown" class="p11">موعد شامل الماث :</p>
-                    <p id="countdown2" class="p11" style="color: purple;">موعد شامل الدينامكس : <span id="timeLeft" style="color: #15920a;">يومين</span></p>
+                   
                 </div>
             </div>
             
@@ -293,59 +292,6 @@
             });
         });
 
-
-
-        function countdownMath() {
-            var countdownElement = document.getElementById("countdown");
-            // الحصول على الوقت الحالي من التخزين المحلي، إذا كان متاحا
-            var currentTimeSeconds = localStorage.getItem("countdownTime") || (19 * 3600); // 19 ساعة بالثواني
-
-            var hours = Math.floor(currentTimeSeconds / 3600);
-            var minutes = Math.floor((currentTimeSeconds % 3600) / 60);
-            var seconds = currentTimeSeconds % 60;
-
-            // عرض الزمن الحالي في العنصر
-            countdownElement.textContent = "موعد شامل الماث : " + hours + " ساعة " + minutes + " دقيقة " + seconds + " ثانية";
-            countdownElement.style.color = 'blue';
-
-            // تناقص الزمن كل ثانية باستخدام setInterval
-            var countdownInterval = setInterval(function() {
-                // تحديث الزمن
-                currentTimeSeconds--;
-                // حفظ الزمن المحدث في التخزين المحلي
-                localStorage.setItem("countdownTime", currentTimeSeconds);
-
-                var hours = Math.floor(currentTimeSeconds / 3600);
-                var minutes = Math.floor((currentTimeSeconds % 3600) / 60);
-                var seconds = currentTimeSeconds % 60;
-
-                // عرض الزمن المحدث
-                countdownElement.textContent = "موعد شامل الماث : " + hours + " ساعة " + minutes + " دقيقة " + seconds + " ثانية";
-                countdownElement.style.color = 'blue';
-
-                // التحقق إذا كان الوقت قد انتهى
-                if (currentTimeSeconds <= 0) {
-                    // إيقاف العداد عندما يصل الزمن إلى صفر
-                    clearInterval(countdownInterval);
-                    // تعديل النص بمجرد انتهاء العداد
-                    countdownElement.textContent = "! انتهى الوقت";
-                    countdownElement.style.color = 'red';
-                    //localStorage.removeItem("countdownTime");
-                }
-            }, 1000); 
-        }
-
-
-        window.onload = function() {
-                
-                countdownMath();
-                countdownDynam();
-              
-        
-            };
-        
-    
-      
 
             </script>
 
