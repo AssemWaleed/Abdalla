@@ -150,7 +150,7 @@ function pickVideo(n) { // Samir Yasser 5547
             addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
 
-            $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0")
+            $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/761689b2-a7f4-4aa0-a933-f2bf46829f63?autoplay=false&loop=false&muted=false&preload=true&responsive=true")
             $(".video").attr("controlsList", "nodownload");
             $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");
 
@@ -614,9 +614,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZe3VqV7BWD?width=100%&height=100%&ff=1&title=0");
-        $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2 Newton Universal Gravitation Law").css("text-align", "left");
+        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/761689b2-a7f4-4aa0-a933-f2bf46829f63?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+        $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
     
         var count4 = localStorage.getItem('viewCount4');
 
@@ -657,7 +656,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount4', count4);
-        
+    
        
 
     
