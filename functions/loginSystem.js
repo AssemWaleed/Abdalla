@@ -502,9 +502,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeD0jV7YUG?width=100%&height=100%&ff=1&title=0");
-        $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2 Mechanics Motion Under Effect Of Gravity").css("text-align", "left");
+        $(".video").attr("src", "");
+        $("h1[title]").text("Senior 2 Newton Universal Gravitation Law").css("text-align", "left");
     
         var count3 = localStorage.getItem('viewCount3');
 
@@ -548,7 +547,7 @@ function pickVideo(n) { // Samir Yasser 5547
     
         localStorage.setItem('viewCount3', count3);
         
-       
+        localStorage.setItem('viewCount3', 0);
 
     
         if (count3 >= 3) {
@@ -567,7 +566,7 @@ function pickVideo(n) { // Samir Yasser 5547
             const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
 
             if (re) {
-                $(".video").attr("src", "https://www.youtube.com/embed/L9jzv2PXNjU");
+                $(".video").attr("src", "https://www.youtube.com/embed/GPK7ZvT1M-w");
                 // Change the text color of the button to green
                 button.style.color = "#15920a";
                 $("#myButton2").css("color", "#15920a");
@@ -657,7 +656,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount4', count4);
-    
+       
        
 
     
