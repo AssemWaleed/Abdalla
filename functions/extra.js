@@ -8,6 +8,7 @@ const numbers = [
     ["6969"], // sara
     ["6911"], // Menna Essam 
     ["2111"], // Rodina
+    ["2314"], // Fareda hethm 
 ];
 
 var tries = [];
@@ -822,5 +823,115 @@ function pickVideo(n) {
 
 
     }
+
+    if (n === 9) {  // Fareda hethm  2314
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Farida Hesham , Id is <span style="color:red; cursor:pointer;" >2314</span>';
+        var tooltipTextID = '2314';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+
+
+    
+        $(".video").attr("src", "https://go.screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Rectilinear Motion Secondterm Mechanics Essay Questions").css("text-align", "left");
+    
+        
+        var button24 = document.createElement("button");
+
+        button24.innerText = "1-Rectilinear Motion";
+        button24.style.fontSize = '20px';
+        button24.style.color = '#15920a';
+
+
+        button24.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Rectilinear Motion Secondterm Mechanics Essay Questions").css("text-align", "left");
+            button24.style.color = '#15920a';
+            button25.style.color = 'black';
+            button26.style.color = 'black';
+            button27.style.color = 'black';
+        });
+
+
+        var button25 = document.createElement("button");
+
+        button25.innerText = "2-Uniform acceleration";
+        button25.style.fontSize = '20px';
+        
+
+        button25.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZei3oVKNhc?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2  Rectilinear motion with uniform acceleration").css("text-align", "left");
+            button25.style.color = '#15920a';
+            button24.style.color = 'black';
+            button26.style.color = 'black';
+            button27.style.color = 'black';
+        });
+
+        
+        var button26 = document.createElement("button");
+
+        button26.innerText = "3-Motion Under Effect Of Gravity";
+        button26.style.fontSize = '20px';
+        
+
+        button26.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeD0jV7YUG?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Mechanics Motion Under Effect Of Gravity").css("text-align", "left");
+            button26.style.color = '#15920a';
+            button25.style.color = 'black';
+            button24.style.color = 'black';
+            button27.style.color = 'black';
+    
+        });
+
+
+        var button27 = document.createElement("button");
+
+        button27.innerText = "4-Universal Gravitation Law";
+        button27.style.fontSize = '20px';
+        
+
+        button27.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/0e4d8b88-fa76-4990-9c5d-9c6911b742a9?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+            $("h1[title]").text("Senior 2 Newton Universal Gravitation Law").css("text-align", "left");
+            button27.style.color = '#15920a';
+            button25.style.color = 'black';
+            button26.style.color = 'black';
+            button24.style.color = 'black';
+    
+        });
+
+        
+
+        var container = document.getElementById("buttonContainer");
+
+        
+        container.appendChild(button24);
+        container.appendChild(button25);
+        container.appendChild(button26);
+        container.appendChild(button27);
+
+
+
+        
+
+
+    }
+
+
+
+
+
+
+
+
         
 }
