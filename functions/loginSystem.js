@@ -152,7 +152,7 @@ function pickVideo(n) { // Samir Yasser 5547
             addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
 
 
-            $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/761689b2-a7f4-4aa0-a933-f2bf46829f63?autoplay=false&loop=false&muted=false&preload=true&responsive=true")
+            $(".video").attr("src", "https://player.vimeo.com/video/897769201?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479")
             $(".video").attr("controlsList", "nodownload");
             $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");
 
@@ -1353,9 +1353,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeY34V744q?width=100%&height=100%&ff=1&title=0");
-        $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2 Math Arithmetic Series").css("text-align", "left");
+        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/761689b2-a7f4-4aa0-a933-f2bf46829f63?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+        $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
     
         var count11 = localStorage.getItem('viewCount11');
 
@@ -1394,7 +1393,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
         
         localStorage.setItem('viewCount11', count11);
-        
+       
         
         
         if (count11 >= 3) {
@@ -1403,7 +1402,7 @@ function pickVideo(n) { // Samir Yasser 5547
             });;
         }
         
-        var button = document.createElement("button");
+        //var button = document.createElement("button");
         
         button.innerText = "فديو الواجب";
         button.style.fontSize = '30px';
