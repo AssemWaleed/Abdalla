@@ -835,21 +835,21 @@ function pickVideo(n) {
 
 
     
-        $(".video").attr("src", "https://player.vimeo.com/video/915355367?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479");
-        $("h1[title]").text("Senior 2 Rectilinear Motion Secondterm Mechanics").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Rectilinear Motion Secondterm Mechanics Essay Questions").css("text-align", "left");
     
         
         var button24 = document.createElement("button");
 
-        button24.innerText = "1-Rectilinear Motion";
+        button24.innerText = "1-Rectilinear Motion Essay";
         button24.style.fontSize = '20px';
         button24.style.color = '#15920a';
 
 
         button24.addEventListener("click", function() {
         
-            $(".video").attr("src", "https://player.vimeo.com/video/915355367?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479");
-            $("h1[title]").text("Senior 2 Rectilinear Motion Secondterm Mechanics").css("text-align", "left");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Rectilinear Motion Secondterm Mechanics Essay Questions").css("text-align", "left");
             button24.style.color = '#15920a';
             button25.style.color = 'black';
             button26.style.color = 'black';
