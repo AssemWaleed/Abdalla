@@ -9,6 +9,7 @@ const numbers = [
     ["6911"], // Menna Essam 
     ["2111"], // Rodina
     ["2314"], // Fareda hethm 
+    ["1422"], // Salma Elsayed 1422
 ];
 
 var tries = [];
@@ -925,6 +926,71 @@ function pickVideo(n) {
 
 
     }
+
+
+    if (n === 10) {  // Salma Elsayed 1422
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Salma Elsayed , Id is <span style="color:red; cursor:pointer;" >1422</span>';
+        var tooltipTextID = '1422';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+
+
+    
+        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/2f3d5fd1-90e0-4222-a98f-3927466e5b9b?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+    
+        
+        var button28 = document.createElement("button");
+
+        button28.innerText = "1-Determinants";
+        button28.style.fontSize = '20px';
+        button28.style.color = '#15920a';
+
+
+        button28.addEventListener("click", function() {
+        
+           
+        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/2f3d5fd1-90e0-4222-a98f-3927466e5b9b?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+            button28.style.color = '#15920a';
+            button29.style.color = 'black';
+           
+        });
+
+
+        var button29 = document.createElement("button");
+
+        button29.innerText = "2-Multiplying Matrices";
+        button29.style.fontSize = '20px';
+        
+
+        button29.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/8c16ed20-acec-4278-9f59-eae061814f0a?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+            $("h1[title]").text("Senior 1 Multiplying Matrices").css("text-align", "left");
+            button29.style.color = '#15920a';
+            button28.style.color = 'black';
+            
+        });
+
+        
+       
+
+        var container = document.getElementById("buttonContainer");
+
+        
+        container.appendChild(button28);
+        container.appendChild(button29);
+      
+
+        
+
+
+    }
+
 
 
 
