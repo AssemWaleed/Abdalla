@@ -722,9 +722,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZnOqXVKFN1?width=100%&height=100%&ff=1&title=0");
-        $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2 Math Arithmetic Sequences").css("text-align", "left");
+        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/0e4d8b88-fa76-4990-9c5d-9c6911b742a9?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+        $("h1[title]").text("Senior 2 Newton Universal Gravitation Law").css("text-align", "left");
     
         var count5 = localStorage.getItem('viewCount5');
 
@@ -777,7 +776,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
 
         var button = document.createElement('button');
-        button.innerText = "Arithmetic Series";
+        button.innerText = "فديو الواجب";
         button.style.fontSize = '30px';
         button.style.paddingTop = '9px';
         
@@ -787,16 +786,14 @@ function pickVideo(n) { // Samir Yasser 5547
             const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
         
             if (re) {
-                $(".video").attr("src", "https://go.screenpal.com/player/cZeY34V744q?width=100%&height=100%&ff=1&title=0");
-                $("h1[title]").text("Senior 2 Math Arithmetic Series").css("text-align", "left");
-
+                $(".video").attr("src", "https://www.youtube.com/embed/GPK7ZvT1M-w");
                 button.style.color = '#15920a';
             } else {
                 none;
             }
 
         });
-
+        
         
         var container = document.getElementById("watcher");
         container.appendChild(button);
