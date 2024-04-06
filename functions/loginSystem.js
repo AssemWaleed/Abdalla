@@ -1570,9 +1570,9 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/2f3d5fd1-90e0-4222-a98f-3927466e5b9b?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/e92d9af9-ee02-4137-a495-77ef42cb4607?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+        $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");
     
         var count13 = localStorage.getItem('viewCount13');
 
@@ -1632,7 +1632,7 @@ function pickVideo(n) { // Samir Yasser 5547
             const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
         
             if (re) {
-                $(".video").attr("src", "https://www.youtube.com/embed/a15XRQQe2YQ");
+                $(".video").attr("src", "https://www.youtube.com/embed/9PccYlOoT1c?si=hI7ASra32A5Ob7vQ");
                 button.style.color = '#15920a';
             } else {
                 none;
