@@ -572,21 +572,23 @@ function pickVideo(n) {
 
 
     
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
+        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/ca9ca09a-04ed-4bd4-8af0-28b48573eccd?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+        $("h1[title]").text("Senior 2 Calculus Chain Rule").css("text-align", "left");
     
         
         var button14 = document.createElement("button");
 
-        button14.innerText = "1-Rate Of Change";
+        button14.innerText = "1-Chain Rule";
         button14.style.fontSize = '20px';
         button14.style.color = '#15920a';
 
 
         button14.addEventListener("click", function() {
             
-            $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
+           
+            $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/ca9ca09a-04ed-4bd4-8af0-28b48573eccd?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+            $("h1[title]").text("Senior 2 Calculus Chain Rule").css("text-align", "left");
+    
             button14.style.color = '#15920a';
             button15.style.color = 'black';
            
@@ -595,14 +597,14 @@ function pickVideo(n) {
 
         var button15 = document.createElement("button");
 
-        button15.innerText = "2-Differentiation";
+        button15.innerText = "2-Derivatives Of Trignomtric Functions";
         button15.style.fontSize = '20px';
         
 
         button15.addEventListener("click", function() {
             
-            $(".video").attr("src", "https://go.screenpal.com/player/cZeIcLV7iGq?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Senior 2 Calculas Differentiation").css("text-align", "left");
+            $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/69804bde-e8ec-483a-b7ca-c35d95071350?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+            $("h1[title]").text("Senior 2 Derivatives Of Trignomtric Functions").css("text-align", "left");
             button15.style.color = '#15920a';
             button14.style.color = 'black';
     
