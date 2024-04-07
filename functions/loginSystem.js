@@ -1984,8 +1984,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/761689b2-a7f4-4aa0-a933-f2bf46829f63?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
-        $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
+        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/b41f5b2b-40ff-4357-9f24-0317f357d6ee?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+        $("h1[title]").text("Senior 2 Problems Lesson 2").css("text-align", "left");
     
         var count17 = localStorage.getItem('viewCount17');
 
@@ -2034,10 +2034,10 @@ function pickVideo(n) { // Samir Yasser 5547
             });;
         }
         
-       // var button = document.createElement("button");
+        var button = document.createElement("button");
         
-        button.innerText = "فديو الواجب";
-        button.style.fontSize = '30px';
+        button.innerText = "Derivatives Of Trignomtric Functions";
+        button.style.fontSize = '25px';
         button.style.paddingTop = '9px';
         
         button.addEventListener("click", function() {  // الواجب
@@ -2045,7 +2045,8 @@ function pickVideo(n) { // Samir Yasser 5547
             const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
         
             if (re) {
-                $(".video").attr("src", "https://www.youtube.com/embed/FXyiZry3Ukw");
+                $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/69804bde-e8ec-483a-b7ca-c35d95071350?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+                $("h1[title]").text("Senior 2 Derivatives Of Trignomtric Functions").css("text-align", "left");
                 button.style.color = '#15920a';
             } else {
                 none;
