@@ -13,21 +13,21 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-uyfGjt9Y3lmxhQvzv9k2wqQ1Hhuw5fc0wShKoF3PpF3qHVlZqET+ZrPmWpLRyLZkxd2fRz8v4YXhjSMvygrgLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
             
-            /* CSS for button containers */
+            
             .button-container {
                 display:flex;
                 flex-direction: row; 
                 justify-content: space-between; 
                 border: 1px solid #ccc; 
 
-                padding: 15px; /* Add padding for spacing */
+                padding: 15px; 
                
-                margin-bottom: 10px; /* Add margin between containers */
+                margin-bottom: 10px; 
                 
             }
         
             .button-container button {
-                /* Optional button styling */
+               
                 padding: 5px 10px;
                 background-color: #f0f0f0;
                 border: 1px solid #ccc;
@@ -36,13 +36,13 @@
                
         
                 
-                transition: transform 0.2s ease; /* Apply transition to transform property */
+                transition: transform 0.2s ease; 
             }
         
             /* Hover effect */
             .button-container button:hover {
-                background-color: #e0e0e0; /* Change background color on hover */
-                transform: scale(1.1); /* Increase size by 10% on hover */
+                background-color: #e0e0e0; 
+                transform: scale(1.1); 
             }
 
             
@@ -65,9 +65,9 @@
                 border-radius: 10px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                 text-align: center;
-                width: 80%; /* Adjust the width as needed */
-                max-width: 750px; /* Set a maximum width */
-                height: auto; /* Let the height adjust based on content */
+                width: 80%; 
+                max-width: 750px; 
+                height: auto; 
                 opacity: 0;
                 transition: opacity 0.5s ease;
             }
@@ -90,9 +90,9 @@
                     border-radius: 10px;
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                     text-align: center;
-                    width: 80%; /* Adjust the width as needed */
-                    max-width: 800px; /* Set a maximum width */
-                    height: auto; /* Let the height adjust based on content */
+                    width: 80%; 
+                    max-width: 800px; 
+                    height: auto; 
                     opacity: 0;
                     transition: opacity 0.5s ease;
                 }
@@ -102,7 +102,7 @@
                 }
 
                 .p1 {
-                    font-size: 37px !important; /* Adjust the font size as needed */
+                    font-size: 37px !important; 
                 }
 
 
@@ -142,9 +142,6 @@
             <a href="contact.html" class="contact">للتواصل</a>
         </nav>
         
-        
-
-        
 
         <content>
 
@@ -162,7 +159,7 @@
             <div class="popup-overlay" id="popup-overlay">
                 <div class="popup" id="popup">
                     <span class="close-btn" id="close-btn">&times;</span>
-                    <p class="p1" style="font-size: 30px;">🌙 رمضان كريم ومبارك عليكم الشهر </p> 
+                    <p class="p1" style="font-size: 30px;">عيد سعيد</p> 
                     <p class="p1" style="font-size: 25px;">: نـحـب نذكركم بدعاء المذاكره</p>
                     <p class="p1" style="color: #07861c; font-size: 26px;">"اللهم إنى أسألك سرعة الحفظ والفهم والبديهة وقوة الملاحظة"</p>
                     <p class="p1" style="color: #07861c; font-size: 26px;">"اللهم إني أستودعك ما قرأت وما حفظت، وما تعلمت، فرده عند حاجتي إليه، إنك على كل شيء قدير، حسبنا الله ونعم الوكيل"</p>   
@@ -257,7 +254,7 @@
             const closeBtn = document.getElementById("close-btn");
             const popSound = document.getElementById("popSound");
 
-            // Function to play pop sound after a delay
+            
             function playPopSoundWithDelay() {
                 setTimeout(function() {
                     if (popSound) {
@@ -267,24 +264,24 @@
                     } else {
                         console.error("Audio element not found");
                     }
-                }, 50); // 1000 milliseconds = 1 second
+                }, 50); 
             }
 
-            // Show the popup when the page loads
+            
             popupOverlay.style.display = "flex";
 
-            // Add animation class to show popup
+           
             popup.classList.add('show');
 
-            // Play sound effect after a delay
+          
             playPopSoundWithDelay();
 
-            // Close the popup when close button is clicked
+            
             closeBtn.addEventListener("click", function() {
                 popupOverlay.style.display = "none";
             });
 
-            // Close the popup when clicked outside of it
+            
             window.addEventListener("click", function(event) {
                 if (event.target === popupOverlay) {
                     popupOverlay.style.display = "none";
