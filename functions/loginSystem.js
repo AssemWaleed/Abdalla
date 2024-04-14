@@ -505,8 +505,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/761689b2-a7f4-4aa0-a933-f2bf46829f63?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
-        $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZff0BVsFnv?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Problems Lesson 2").css("text-align", "left");
     
         var count3 = localStorage.getItem('viewCount3');
 
@@ -549,7 +549,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount3', count3);
-        localStorage.setItem('viewCount3', 0);
+        
         
 
     
@@ -560,7 +560,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
 
 
-        var button = document.createElement("button");
+        //var button = document.createElement("button");
         button.innerText = "فديو الواجب";
         button.style.fontSize = '30px';
         button.style.paddingTop = '9px';
