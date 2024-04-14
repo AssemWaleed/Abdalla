@@ -572,7 +572,7 @@ function pickVideo(n) {
 
 
     
-        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/ca9ca09a-04ed-4bd4-8af0-28b48573eccd?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfnFUVsQO1?width=100%&height=100%&ff=1&title=0");
         $("h1[title]").text("Senior 2 Calculus Chain Rule").css("text-align", "left");
     
         
@@ -586,7 +586,7 @@ function pickVideo(n) {
         button14.addEventListener("click", function() {
             
            
-            $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/ca9ca09a-04ed-4bd4-8af0-28b48573eccd?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfnFUVsQO1?width=100%&height=100%&ff=1&title=0");
             $("h1[title]").text("Senior 2 Calculus Chain Rule").css("text-align", "left");
     
             button14.style.color = '#15920a';
@@ -603,7 +603,7 @@ function pickVideo(n) {
 
         button15.addEventListener("click", function() {
             
-            $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/69804bde-e8ec-483a-b7ca-c35d95071350?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZff0rVsFc8?width=100%&height=100%&ff=1&title=0");
             $("h1[title]").text("Senior 2 Derivatives Of Trignomtric Functions").css("text-align", "left");
             button15.style.color = '#15920a';
             button14.style.color = 'black';
