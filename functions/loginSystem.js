@@ -2090,7 +2090,7 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/b41f5b2b-40ff-4357-9f24-0317f357d6ee?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZff0BVsFnv?width=100%&height=100%&ff=1&title=0");
         $("h1[title]").text("Senior 2 Problems Lesson 2").css("text-align", "left");
     
         var count18 = localStorage.getItem('viewCount18');
