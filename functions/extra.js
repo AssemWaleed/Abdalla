@@ -10,6 +10,7 @@ const numbers = [
     ["2111"], // Rodina
     ["2314"], // Fareda hethm 
     ["1422"], // Salma Elsayed 1422
+    ["2252"], // Ahmed reda 2252
 ];
 
 var tries = [];
@@ -993,6 +994,84 @@ function pickVideo(n) {
 
     }
 
+
+    if (n === 11) {  // Ahmed reda 2252
+
+        var imageSrc = 'images/profileMan.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Ahmed reda , Id is <span style="color:red; cursor:pointer;" >2252</span>';
+        var tooltipTextID = '2252';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+
+
+    
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeODfV77qZ?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+    
+        
+        var button30 = document.createElement("button");
+
+        button30.innerText = "1-Determinants";
+        button30.style.fontSize = '20px';
+        button30.style.color = '#15920a';
+
+
+        button30.addEventListener("click", function() {
+        
+           
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeODfV77qZ?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+            button30.style.color = '#15920a';
+            button31.style.color = 'black';
+            button32.style.color = 'black';
+        });
+
+
+        var button31 = document.createElement("button");
+
+        button31.innerText = "2-Trigonometric Equation";
+        button31.style.fontSize = '20px';
+        
+
+        button31.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfVb3VshoS?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Solving Trigonometric Equation").css("text-align", "left");
+            button31.style.color = '#15920a';
+            button30.style.color = 'black';
+            button32.style.color = 'black';
+        });
+
+
+        var button32 = document.createElement("button");
+
+        button32.innerText = "2-Right Angle Triangle";
+        button32.style.fontSize = '20px';
+        
+
+        button32.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZf6rtVsaTe?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Solving Right Angle Triangle").css("text-align", "left");
+            button32.style.color = '#15920a';
+            button30.style.color = 'black';
+            button31.style.color = 'black';
+        });
+        
+       
+
+        var container = document.getElementById("buttonContainer");
+
+        
+        container.appendChild(button30);
+        container.appendChild(button31);
+        container.appendChild(button32);
+
+        
+
+
+    }
 
 
 
