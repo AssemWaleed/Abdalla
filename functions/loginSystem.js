@@ -1522,10 +1522,10 @@ function pickVideo(n) { // Samir Yasser 5547
         
         button.addEventListener("click", function() {  // الواجب
 
-            //const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
         
             if (re) {
-                $(".video").attr("src", "https://www.youtube.com/embed/ZSxXoTyPXkk");
+                $(".video").attr("src", "https://www.youtube.com/embed/XbEnSmVbSSU?si=jYrlx5ZN5I44UxcP");
                 button.style.color = '#15920a';
             } else {
                 none;
