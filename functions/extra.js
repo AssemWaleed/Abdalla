@@ -1180,8 +1180,8 @@ function pickVideo(n) {
         button36.addEventListener("click", function() {
         
            
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeODfV77qZ?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfnFUVsQO1?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Calculus Chain Rule").css("text-align", "left");
             button36.style.color = '#15920a';
             button37.style.color = 'black';
             button38.style.color = 'black';
@@ -1196,7 +1196,7 @@ function pickVideo(n) {
 
         button37.addEventListener("click", function() {
             
-            $(".video").attr("src", "https://go.screenpal.com/player/undefined?width=100%&height=100%&ff=1&title=0");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZff0rVsFc8?width=100%&height=100%&ff=1&title=0");
             $("h1[title]").text("Senior 2 Derivatives Of Trignomtric Functions").css("text-align", "left");
             button37.style.color = '#15920a';
             button36.style.color = 'black';
