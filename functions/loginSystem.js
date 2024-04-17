@@ -1459,9 +1459,9 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeOVAV7JdX?width=100%&height=100%&ff=1&title=0");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfnFUVsQO1?width=100%&height=100%&ff=1&title=0");
         $(".video").attr("controlsList", "nodownload");
-        $("h1[title]").text("Senior 2 Lesson 5 And 6 Geometric Sequence").css("text-align", "left");
+        $("h1[title]").text("Senior 2 Calculus Chain Rule").css("text-align", "left");
     
         var count12 = localStorage.getItem('viewCount12');
 
@@ -1500,7 +1500,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
         
         localStorage.setItem('viewCount12', count12);
-       
+        
         
         
         
@@ -1510,7 +1510,7 @@ function pickVideo(n) { // Samir Yasser 5547
             });;
         }
         
-        var button = document.createElement("button");
+        //var button = document.createElement("button");
         
         button.innerText = "فديو الواجب";
         button.style.fontSize = '30px';
