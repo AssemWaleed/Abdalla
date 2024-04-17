@@ -13,6 +13,7 @@ const numbers = [
     ["2252"], // Ahmed reda 2252
     ["4141"], //𝘼𝘽𝘿 𝘼𝙇 𝙆𝘼𝘿𝙀𝙍 4141
     ["1141"], // Mohamed 1141
+    
 ];
 
 var tries = [];
@@ -1087,22 +1088,21 @@ function pickVideo(n) {
 
 
     
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeODfV77qZ?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZf6rtVsaTe?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Solving Right Angle Triangle").css("text-align", "left");
     
         
         var button33 = document.createElement("button");
 
-        button33.innerText = "1-Determinants";
+        button33.innerText = "1-Senior 1 Solving Right Angle Triangle";
         button33.style.fontSize = '20px';
         button33.style.color = '#15920a';
 
 
         button33.addEventListener("click", function() {
         
-           
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeODfV77qZ?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZf6rtVsaTe?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Solving Right Angle Triangle").css("text-align", "left");
             button33.style.color = '#15920a';
             button34.style.color = 'black';
             button35.style.color = 'black';
@@ -1144,11 +1144,11 @@ function pickVideo(n) {
 
         var container = document.getElementById("buttonContainer");
 
-        
+       
         container.appendChild(button33);
-        container.appendChild(button34);
+        /*container.appendChild(button34);
         container.appendChild(button35);
-
+        */
         
 
 
