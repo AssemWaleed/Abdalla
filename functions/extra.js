@@ -11,6 +11,8 @@ const numbers = [
     ["2314"], // Fareda hethm 
     ["1422"], // Salma Elsayed 1422
     ["2252"], // Ahmed reda 2252
+    ["4141"], //𝘼𝘽𝘿 𝘼𝙇 𝙆𝘼𝘿𝙀𝙍 4141
+    ["1141"], // Mohamed 1141
 ];
 
 var tries = [];
@@ -1072,6 +1074,166 @@ function pickVideo(n) {
 
 
     }
+
+
+    if (n === 12) {  //𝘼𝘽𝘿 𝘼𝙇 𝙆𝘼𝘿𝙀𝙍 4141
+
+        var imageSrc = 'images/profileMan.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is 𝘼𝘽𝘿 𝘼𝙇 𝙆𝘼𝘿𝙀𝙍 , Id is <span style="color:red; cursor:pointer;" >4141</span>';
+        var tooltipTextID = '4141';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+
+
+    
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeODfV77qZ?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+    
+        
+        var button33 = document.createElement("button");
+
+        button33.innerText = "1-Determinants";
+        button33.style.fontSize = '20px';
+        button33.style.color = '#15920a';
+
+
+        button33.addEventListener("click", function() {
+        
+           
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeODfV77qZ?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+            button33.style.color = '#15920a';
+            button34.style.color = 'black';
+            button35.style.color = 'black';
+        });
+
+
+        var button34 = document.createElement("button");
+
+        button34.innerText = "2-Trigonometric Equation";
+        button34.style.fontSize = '20px';
+        
+
+        button34.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfVb3VshoS?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Solving Trigonometric Equation").css("text-align", "left");
+            button34.style.color = '#15920a';
+            button33.style.color = 'black';
+            button35.style.color = 'black';
+        });
+
+
+        var button35 = document.createElement("button");
+
+        button35.innerText = "2-Right Angle Triangle";
+        button35.style.fontSize = '20px';
+        
+
+        button35.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZf6rtVsaTe?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Solving Right Angle Triangle").css("text-align", "left");
+            button35.style.color = '#15920a';
+            button33.style.color = 'black';
+            button34.style.color = 'black';
+        });
+        
+       
+
+        var container = document.getElementById("buttonContainer");
+
+        
+        container.appendChild(button33);
+        container.appendChild(button34);
+        container.appendChild(button35);
+
+        
+
+
+    }
+
+
+    if (n === 13) {  // Mohamed 1141
+
+        var imageSrc = 'images/profileMan.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Mohamed , Id is <span style="color:red; cursor:pointer;" >1141</span>';
+        var tooltipTextID = '1141';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+
+
+    
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfnFUVsQO1?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Calculus Chain Rule").css("text-align", "left");
+    
+        
+        var button36 = document.createElement("button");
+
+        button36.innerText = "1-Chain Rule";
+        button36.style.fontSize = '20px';
+        button36.style.color = '#15920a';
+
+
+        button36.addEventListener("click", function() {
+        
+           
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeODfV77qZ?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+            button36.style.color = '#15920a';
+            button37.style.color = 'black';
+            button38.style.color = 'black';
+        });
+
+
+        var button37 = document.createElement("button");
+
+        button37.innerText = "2-Trignomtric Functions";
+        button37.style.fontSize = '20px';
+        
+
+        button37.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/undefined?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Derivatives Of Trignomtric Functions").css("text-align", "left");
+            button37.style.color = '#15920a';
+            button36.style.color = 'black';
+            button38.style.color = 'black';
+        });
+
+
+        var button38 = document.createElement("button");
+
+        button38.innerText = "2-Problems Lesson 1";
+        button38.style.fontSize = '20px';
+        
+
+        button38.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZevqjVsVDn?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
+            button38.style.color = '#15920a';
+            button36.style.color = 'black';
+            button37.style.color = 'black';
+        });
+        
+       
+
+        var container = document.getElementById("buttonContainer");
+
+        
+        container.appendChild(button36);
+        container.appendChild(button37);
+        container.appendChild(button38);
+
+        
+
+
+    }
+
+
 
 
 
