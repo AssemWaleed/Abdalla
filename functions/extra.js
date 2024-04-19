@@ -740,21 +740,21 @@ function pickVideo(n) {
 
 
     
-        $(".video").attr("src", "https://go.screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Rectilinear Motion Secondterm Mechanics Essay Questions").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
     
         
         var button20 = document.createElement("button");
 
-        button20.innerText = "1-Rectilinear Motion";
+        button20.innerText = "1-Rate Of Change";
         button20.style.fontSize = '20px';
         button20.style.color = '#15920a';
 
 
         button20.addEventListener("click", function() {
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Rectilinear Motion Secondterm Mechanics Essay Questions").css("text-align", "left");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Calculus Rate Of Change").css("text-align", "left");
             button20.style.color = '#15920a';
             button21.style.color = 'black';
             button22.style.color = 'black';
@@ -764,21 +764,21 @@ function pickVideo(n) {
 
         var button21 = document.createElement("button");
 
-        button21.innerText = "2-Uniform acceleration";
+        button21.innerText = "2-Differentiation";
         button21.style.fontSize = '20px';
         
 
         button21.addEventListener("click", function() {
             
-            $(".video").attr("src", "https://go.screenpal.com/player/cZei3oVKNhc?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Senior 2  Rectilinear motion with uniform acceleration").css("text-align", "left");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZeIcLV7iGq?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Calculas Differentiation").css("text-align", "left");
             button21.style.color = '#15920a';
             button20.style.color = 'black';
             button22.style.color = 'black';
             button23.style.color = 'black';
         });
 
-        
+       /* 
         var button22 = document.createElement("button");
 
         button22.innerText = "3-Motion Under Effect Of Gravity";
