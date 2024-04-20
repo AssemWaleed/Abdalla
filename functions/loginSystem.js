@@ -21,6 +21,8 @@ const numbers = [
     ["5881"], // ~....5881
     ["5281"], // Habiba 5281
     ["6281"], // Jana Hamzawy 6281
+    ["6221"], // Mariam Diab 6221
+    ["5353"], // Malak 5353
 ];
 
 var tries = [];
@@ -2421,7 +2423,7 @@ function pickVideo(n) { // Samir Yasser 5547
         var watchDiv = document.querySelector('.watch');
         var h3Element21 = document.createElement('h3');
         
-        h3Element21.textContent = 'مشاهدات : ' + count20;
+        h3Element21.textContent = 'مشاهدات : ' + count21;
         h3Element21.style.textAlign = 'right';
         
         var buttonContainer = document.getElementById('buttonContainer');
@@ -2445,12 +2447,220 @@ function pickVideo(n) { // Samir Yasser 5547
             h3Element21.textContent = 'تم انتهاء عدد المشاهدات';
         }
         
-        localStorage.setItem('viewCount20', count21);
+        localStorage.setItem('viewCount21', count21);
         
         
         
         
         if (count21 >= 3) {
+            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });;
+        }
+        
+      // var button = document.createElement("button");
+        
+        button.innerText = "فديو الواجب";
+        button.style.fontSize = '30px';
+        button.style.paddingTop = '9px';
+        
+        button.addEventListener("click", function() {  // الواجب
+
+            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        
+            if (re) {
+                $(".video").attr("src", "https://www.youtube.com/embed/uYRVePsnBI0?si=1ArOfJjTdfmIytMW");
+                button.style.color = '#15920a';
+            } else {
+                none;
+            }
+
+        });
+        
+        
+        var container = document.getElementById("watcher");
+        container.appendChild(button);
+        
+        
+
+        
+
+
+        $("button#myButton4").click(() => {  // الامتحان
+            //const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (result) {
+                $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+                $("#myButton4").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton2").css("color", "black");
+                $("#myButton3").css("color", "black");
+            } else {
+                none;
+            }
+       
+        });
+    }
+   
+
+    if (n === 22) { // Mariam Diab 6221
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is  Mariam Diab , Id is <span style="color:red; cursor:pointer;" >6221</span>';
+        var tooltipTextID = '6221';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        
+        $(".video").attr("src", "");
+        $("h1[title]").text("").css("text-align", "left");
+    
+        var count22 = localStorage.getItem('viewCount22');
+
+        if (count22 === null) {
+            count22 = 0;
+        }
+        
+
+
+
+        var watchDiv = document.querySelector('.watch');
+        var h3Element22 = document.createElement('h3');
+        
+        h3Element22.textContent = 'مشاهدات : ' + count22;
+        h3Element22.style.textAlign = 'right';
+        
+        var buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.appendChild(h3Element22);
+        
+        count22++;
+        
+        h3Element22.textContent = 'مشاهدات : ' + count22;
+        
+        if (count22 === 1) {
+            alert("تنبيه: لديك مشاهدتين فقط ");
+        
+        } else if (count22 === 2) {
+            alert("تنبيه: لديك مشاهدة واحدة فقط");
+        
+        }
+        
+        if (count22 >= 3) {
+            document.getElementById('error').play();
+            alert("لقد انتهت المشاهدات عندك");
+            h3Element22.textContent = 'تم انتهاء عدد المشاهدات';
+        }
+        
+        localStorage.setItem('viewCount22', count22);
+        localStorage.setItem('viewCount22', 0);
+        
+        
+        
+        if (count22 >= 3) {
+            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });;
+        }
+        
+      // var button = document.createElement("button");
+        
+        button.innerText = "فديو الواجب";
+        button.style.fontSize = '30px';
+        button.style.paddingTop = '9px';
+        
+        button.addEventListener("click", function() {  // الواجب
+
+            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        
+            if (re) {
+                $(".video").attr("src", "https://www.youtube.com/embed/uYRVePsnBI0?si=1ArOfJjTdfmIytMW");
+                button.style.color = '#15920a';
+            } else {
+                none;
+            }
+
+        });
+        
+        
+        var container = document.getElementById("watcher");
+        container.appendChild(button);
+        
+        
+
+        
+
+
+        $("button#myButton4").click(() => {  // الامتحان
+            //const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (result) {
+                $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+                $("#myButton4").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton2").css("color", "black");
+                $("#myButton3").css("color", "black");
+            } else {
+                none;
+            }
+       
+        });
+    }
+    
+
+    if (n === 23) { // Malak 5353
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is  Malak , Id is <span style="color:red; cursor:pointer;" >5353/span>';
+        var tooltipTextID = '5353';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfoqeVsdVz?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Calculas Applications Of Derivatives").css("text-align", "left");
+    
+        var count23 = localStorage.getItem('viewCount23');
+
+        if (count23 === null) {
+            count23 = 0;
+        }
+        
+
+
+
+        var watchDiv = document.querySelector('.watch');
+        var h3Element23 = document.createElement('h3');
+        
+        h3Element23.textContent = 'مشاهدات : ' + count23;
+        h3Element23.style.textAlign = 'right';
+        
+        var buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.appendChild(h3Element23);
+        
+        count23++;
+        
+        h3Element23.textContent = 'مشاهدات : ' + count23;
+        
+        if (count23 === 1) {
+            alert("تنبيه: لديك مشاهدتين فقط ");
+        
+        } else if (count23 === 2) {
+            alert("تنبيه: لديك مشاهدة واحدة فقط");
+        
+        }
+        
+        if (count23 >= 3) {
+            document.getElementById('error').play();
+            alert("لقد انتهت المشاهدات عندك");
+            h3Element23.textContent = 'تم انتهاء عدد المشاهدات';
+        }
+        
+        localStorage.setItem('viewCount23', count23);
+      
+        
+        
+        
+        if (count23 >= 3) {
             $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
                 e.preventDefault();
             });;
