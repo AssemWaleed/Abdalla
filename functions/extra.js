@@ -129,20 +129,20 @@ function pickVideo(n) {
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
  
       
-        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/761689b2-a7f4-4aa0-a933-f2bf46829f63?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
-        $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfFVbVsPSV?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Alg Unit 2 Counting Principle And Permutations").css("text-align", "left");
     
         
         var button00 = document.createElement("button");
 
-        button00.innerText = "Problems Lesson 1";
+        button00.innerText = "Counting Principle And Permutations";
         button00.style.fontSize = '20px';
         button00.style.color = '#15920a'
 
 
         button00.addEventListener("click", function() {
-            $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/761689b2-a7f4-4aa0-a933-f2bf46829f63?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
-            $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfFVbVsPSV?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Alg Unit 2 Counting Principle And Permutations").css("text-align", "left");
             button00.style.color = '#15920a'
             button01.style.color = 'black'
             button02.style.color = 'black'
