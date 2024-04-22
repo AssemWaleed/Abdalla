@@ -969,14 +969,14 @@ function pickVideo(n) {
 
         var button29 = document.createElement("button");
 
-        button29.innerText = "2-Multiplying inverse of matrix";
+        button29.innerText = "2-Solving Right Angle Triangle";
         button29.style.fontSize = '20px';
         
 
         button29.addEventListener("click", function() {
             
-            $(".video").attr("src", "https://hf-files-oregon.s3.amazonaws.com/hdpcssd11_kb_attachments/2020/08-14/3c3584cf-21ca-4068-b7d8-ac169c5ae949/1.jpg");
-            $("h1[title]").text("Senior 1 Multiplying inverse of matrix").css("text-align", "left");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZf6rtVsaTe?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Solving Right Angle Triangle").css("text-align", "left");
             button29.style.color = '#15920a';
             button28.style.color = 'black';
             
