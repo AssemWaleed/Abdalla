@@ -13,7 +13,7 @@ const numbers = [
     ["2252"], // Ahmed reda 2252
     ["4141"], //𝘼𝘽𝘿 𝘼𝙇 𝙆𝘼𝘿𝙀𝙍 4141
     ["1141"], // Mohamed 1141
-    
+    ["1242"], // Mariam Ahmed 1242
 ];
 
 var tries = [];
@@ -1227,6 +1227,81 @@ function pickVideo(n) {
         container.appendChild(button36);
         container.appendChild(button37);
         container.appendChild(button38);
+
+        
+
+
+    }
+
+    if (n === 14) {  // Mariam Ahmed 1242
+
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Mariam Ahmed , Id is <span style="color:red; cursor:pointer;" >1242</span>';
+        var tooltipTextID = '1242';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+
+        $(".video").attr("src", "https://go.screenpal.com/player/cZf0FwVMIDc?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Equation Of Straight Line").css("text-align", "left");
+    
+        
+        var button39 = document.createElement("button");
+
+        button39.innerText = "1-Equation Of Straight Line";
+        button39.style.fontSize = '20px';
+        button39.style.color = '#15920a';
+
+
+        button39.addEventListener("click", function() {
+        
+            $(".video").attr("src", "https://go.screenpal.com/player/cZf0FwVMIDc?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Equation Of Straight Line").css("text-align", "left");
+            button39.style.color = '#15920a';
+            button40.style.color = 'black';
+            button41.style.color = 'black';
+        });
+
+
+        /*var button37 = document.createElement("button");
+
+        button37.innerText = "2-Trignomtric Functions";
+        button37.style.fontSize = '20px';
+        
+
+        button37.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZff0rVsFc8?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Derivatives Of Trignomtric Functions").css("text-align", "left");
+            button37.style.color = '#15920a';
+            button36.style.color = 'black';
+            button38.style.color = 'black';
+        });
+
+
+        var button38 = document.createElement("button");
+
+        button38.innerText = "2-Problems Lesson 1";
+        button38.style.fontSize = '20px';
+        
+
+        button38.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZevqjVsVDn?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
+            button38.style.color = '#15920a';
+            button36.style.color = 'black';
+            button37.style.color = 'black';
+        });
+        
+       */ 
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button39);
+        //container.appendChild(button37);
+        //container.appendChild(button38);
 
         
 
