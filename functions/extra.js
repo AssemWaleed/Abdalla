@@ -969,14 +969,14 @@ function pickVideo(n) {
 
         var button29 = document.createElement("button");
 
-        button29.innerText = "2-Solving Right Angle Triangle";
+        button29.innerText = "2-Application On Vector";
         button29.style.fontSize = '20px';
         
-
+ 
         button29.addEventListener("click", function() {
             
-            $(".video").attr("src", "https://go.screenpal.com/player/cZf6rtVsaTe?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Senior 1 Solving Right Angle Triangle").css("text-align", "left");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZf0cfVM6V3?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Application On Vector").css("text-align", "left");
             button29.style.color = '#15920a';
             button28.style.color = 'black';
             
