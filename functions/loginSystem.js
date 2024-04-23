@@ -2302,8 +2302,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZevqjVsVDn?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Probability Lesson 1").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfFVbVsPSV?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Alg Unit 2 Counting Principle And Permutations").css("text-align", "left");
     
         var count20 = localStorage.getItem('viewCount20');
 
@@ -2342,7 +2342,6 @@ function pickVideo(n) { // Samir Yasser 5547
         }
         
         localStorage.setItem('viewCount20', count20);
-       
         
         
         
@@ -2354,7 +2353,7 @@ function pickVideo(n) { // Samir Yasser 5547
         
        var button = document.createElement("button");
         
-        button.innerText = "فديو الواجب";
+        button.innerText = "Combination";
         button.style.fontSize = '30px';
         button.style.paddingTop = '9px';
         
@@ -2363,7 +2362,9 @@ function pickVideo(n) { // Samir Yasser 5547
             const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
         
             if (re) {
-                $(".video").attr("src", "https://www.youtube.com/embed/uYRVePsnBI0?si=1ArOfJjTdfmIytMW");
+
+                $(".video").attr("src", "https://go.screenpal.com/player/cZf3qlVMQYs?width=100%&height=100%&ff=1&title=0");
+                $("h1[title]").text("Senior 2 Alg Unit 2 Lesson 2 Combination").css("text-align", "left");
                 button.style.color = '#15920a';
             } else {
                 none;
