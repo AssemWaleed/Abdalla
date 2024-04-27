@@ -1464,8 +1464,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZfFVbVsPSV?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Alg Unit 2 Counting Principle And Permutations").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZf3qlVMQYs?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Alg Unit 2 Lesson 2 Combination").css("text-align", "left");
     
         var count12 = localStorage.getItem('viewCount12');
 
@@ -1505,7 +1505,7 @@ function pickVideo(n) { // Samir Yasser 5547
         
         localStorage.setItem('viewCount12', count12);
         
-        
+       
         
         
         
