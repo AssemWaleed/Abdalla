@@ -970,7 +970,7 @@ function pickVideo(n) {
         });
 
 
-      /*  var button29 = document.createElement("button");
+        var button29 = document.createElement("button");
 
         button29.innerText = "2-Application On Vector";
         button29.style.fontSize = '20px';
@@ -985,7 +985,7 @@ function pickVideo(n) {
             
         });
 
-       */ 
+      
        
 
         var container = document.getElementById("buttonContainer");
