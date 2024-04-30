@@ -948,13 +948,13 @@ function pickVideo(n) {
 
 
     
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeODfV77qZ?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfOFuVMZAj?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Lesson 6 And 7 Circular Segment").css("text-align", "left");
     
         
         var button28 = document.createElement("button");
 
-        button28.innerText = "1-Determinants";
+        button28.innerText = "1-Circular Segment";
         button28.style.fontSize = '20px';
         button28.style.color = '#15920a';
 
@@ -962,15 +962,15 @@ function pickVideo(n) {
         button28.addEventListener("click", function() {
         
            
-        $(".video").attr("src", "https://go.screenpal.com/player/cZeODfV77qZ?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 1 Determinants").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfOFuVMZAj?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Lesson 6 And 7 Circular Segment").css("text-align", "left");
             button28.style.color = '#15920a';
             button29.style.color = 'black';
            
         });
 
 
-        var button29 = document.createElement("button");
+      /*  var button29 = document.createElement("button");
 
         button29.innerText = "2-Application On Vector";
         button29.style.fontSize = '20px';
@@ -985,7 +985,7 @@ function pickVideo(n) {
             
         });
 
-        
+       */ 
        
 
         var container = document.getElementById("buttonContainer");
