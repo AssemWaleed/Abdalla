@@ -832,8 +832,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 1 Math Trignometric Identities").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZf0FwVMIDc?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Equation Of Straight Line").css("text-align", "left");
     
         var count6 = localStorage.getItem('viewCount6');
 
@@ -874,7 +874,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount6', count6);
-       
+        
         
        
 
@@ -885,7 +885,7 @@ function pickVideo(n) { // Samir Yasser 5547
             });;
         }
 
-        var button = document.createElement('button');
+        //var button = document.createElement('button');
         button.innerText = "فديو الواجب";
         button.style.fontSize = '30px';
         button.style.paddingTop = '9px';
