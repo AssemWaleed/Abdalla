@@ -16,6 +16,7 @@ const numbers = [
     ["1242"], // Mariam Ahmed 1242
     ["1212"], // Malak Wahed 1212
     ["2222"], // Jana Eslam 2222
+    ["2112"], // RATOJA 2112
 ];
 
 var tries = [];
@@ -1432,6 +1433,67 @@ function pickVideo(n) {
 
 
     }
+
+    if (n === 17) {  // RATOJA 2112
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is RATOJA, Id is <span style="color:red; cursor:pointer;" >2112</span>';
+        var tooltipTextID = '2112';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
+    
+        
+        var button39 = document.createElement("button");
+
+        button39.innerText = "1-Revision Algebra";
+        button39.style.fontSize = '20px';
+        button39.style.color = '#15920a';
+
+
+        button39.addEventListener("click", function() {
+        
+            $(".video").attr("src", "https://go.screenpal.com/player/cZf0FwVMIDc?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Equation Of Straight Line").css("text-align", "left");
+            button39.style.color = '#15920a';
+            button40.style.color = 'black';
+        });
+
+
+        /*
+
+
+        var button40 = document.createElement("button");
+
+        button40.innerText = "2-Problems Lesson 1";
+        button40.style.fontSize = '20px';
+        
+
+        button40.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZevqjVsVDn?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
+            button38.style.color = '#15920a';
+            button36.style.color = 'black';
+            button37.style.color = 'black';
+        });
+        
+       */ 
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button39);
+        //container.appendChild(button40);
+        //container.appendChild(button41);
+
+        
+
+
+    }
+
 
 
 
