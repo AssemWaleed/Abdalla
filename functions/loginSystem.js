@@ -728,8 +728,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://iframe.mediadelivery.net/embed/224107/0e4d8b88-fa76-4990-9c5d-9c6911b742a9?autoplay=false&loop=false&muted=false&preload=true&responsive=true");
-        $("h1[title]").text("Senior 2 Newton Universal Gravitation Law").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
     
         var count5 = localStorage.getItem('viewCount5');
 
@@ -781,7 +781,7 @@ function pickVideo(n) { // Samir Yasser 5547
             });;
         }
 
-        var button = document.createElement('button');
+        //var button = document.createElement('button');
         button.innerText = "فديو الواجب";
         button.style.fontSize = '30px';
         button.style.paddingTop = '9px';
