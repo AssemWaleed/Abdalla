@@ -2344,7 +2344,7 @@ function pickVideo(n) { // Samir Yasser 5547
         
         localStorage.setItem('viewCount20', count20);
        
-        
+        localStorage.setItem('viewCount20', 0);
         
         if (count20 >= 3) {
             $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
