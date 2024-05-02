@@ -2303,8 +2303,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZfFVbVsPSV?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Alg Unit 2 Counting Principle And Permutations").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
     
         var count20 = localStorage.getItem('viewCount20');
 
@@ -2343,7 +2343,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
         
         localStorage.setItem('viewCount20', count20);
-        
+       
         
         
         if (count20 >= 3) {
@@ -2352,7 +2352,7 @@ function pickVideo(n) { // Samir Yasser 5547
             });;
         }
         
-       var button = document.createElement("button");
+      // var button = document.createElement("button");
         
         button.innerText = "Combination";
         button.style.fontSize = '30px';
