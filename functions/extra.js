@@ -846,21 +846,22 @@ function pickVideo(n) {
 
 
     
-        $(".video").attr("src", "https://go.screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Rectilinear Motion Secondterm Mechanics Essay Questions").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZevqjVsVDn?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
     
         
         var button24 = document.createElement("button");
 
-        button24.innerText = "1-Rectilinear Motion Essay";
+        button24.innerText = "1-Problems Lesson 1";
         button24.style.fontSize = '20px';
         button24.style.color = '#15920a';
 
 
         button24.addEventListener("click", function() {
         
-            $(".video").attr("src", "https://go.screenpal.com/player/cZnU3VVKwPB?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Senior 2 Rectilinear Motion Secondterm Mechanics Essay Questions").css("text-align", "left");
+           
+        $(".video").attr("src", "https://go.screenpal.com/player/cZevqjVsVDn?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
             button24.style.color = '#15920a';
             button25.style.color = 'black';
             button26.style.color = 'black';
@@ -870,14 +871,14 @@ function pickVideo(n) {
 
         var button25 = document.createElement("button");
 
-        button25.innerText = "2-Uniform acceleration";
+        button25.innerText = "2-Problems Lesson 2";
         button25.style.fontSize = '20px';
         
 
         button25.addEventListener("click", function() {
             
-            $(".video").attr("src", "https://go.screenpal.com/player/cZei3oVKNhc?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Senior 2  Rectilinear motion with uniform acceleration").css("text-align", "left");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZff0BVsFnv?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Problems Lesson 2").css("text-align", "left");
             button25.style.color = '#15920a';
             button24.style.color = 'black';
             button26.style.color = 'black';
