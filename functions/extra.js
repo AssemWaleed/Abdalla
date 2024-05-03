@@ -1887,7 +1887,7 @@ function pickVideo(n) {
         
         var button50 = document.createElement("button");
 
-        button50.innerText = "1-Revision Algebra";
+        button50.innerText = "1-Revision Geometry";
         button50.style.fontSize = '20px';
         button50.style.color = '#15920a';
 
