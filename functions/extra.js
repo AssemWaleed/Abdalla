@@ -1879,8 +1879,10 @@ function pickVideo(n) {
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
 
-        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+    
     
         
         var button50 = document.createElement("button");
@@ -1892,8 +1894,10 @@ function pickVideo(n) {
 
         button50.addEventListener("click", function() {
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
+       
+            $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+        
            
             button50.style.color = '#15920a';
             button51.style.color = 'black';
