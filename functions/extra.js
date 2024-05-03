@@ -25,6 +25,7 @@ const numbers = [
     ["6281"], //Jana Hamzawy 6281
     ["6182"], //abdelrahman.ibrahim  6182
     ["6222"], // Unknown 6222
+    ["1222"], // Unknown 1222
 ];
 
 var tries = [];
@@ -1978,6 +1979,64 @@ function pickVideo(n) {
 
     }
 
+
+    if (n === 26) {  // Unknown 1222
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Unknown, Id is <span style="color:red; cursor:pointer;" >1222</span>';
+        var tooltipTextID = '1222';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+    
+        
+        var button54 = document.createElement("button");
+
+        button54.innerText = "1-Revision Geometry";
+        button54.style.fontSize = '20px';
+        button54.style.color = '#15920a';
+
+
+        button54.addEventListener("click", function() {
+        
+            $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+           
+            button54.style.color = '#15920a';
+            button55.style.color = 'black';
+        });
+
+
+        
+        /*
+
+        var button46 = document.createElement("button");
+        button46.innerText = "2-Revision Mechanics";
+        button46.style.fontSize = '20px';
+        
+
+        button46.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Session 2 Revision Mechanics").css("text-align", "left");
+            button46.style.color = '#15920a';
+            button45.style.color = 'black';
+        });
+        
+    */
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button54);
+        //container.appendChild(button46);
+        //container.appendChild(button41);
+
+        
+
+
+    }
 
 
 
