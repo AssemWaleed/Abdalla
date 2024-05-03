@@ -1718,8 +1718,7 @@ function pickVideo(n) {
 
 
         var button46 = document.createElement("button");
-
-        button46.innerText = "2-Problems Lesson 1";
+        button46.innerText = "2-Revision Mechanics";
         button46.style.fontSize = '20px';
         
 
