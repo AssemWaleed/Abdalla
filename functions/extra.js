@@ -23,6 +23,7 @@ const numbers = [
     ["5353"], // Malak 5353
     ["5153"], // Mahmoud 5153
     ["6281"], //Jana Hamzawy 6281
+    ["6182"], //abdelrahman.ibrahim  6182
 ];
 
 var tries = [];
@@ -1860,6 +1861,52 @@ function pickVideo(n) {
        
         container.appendChild(button48);
         container.appendChild(button49);
+        //container.appendChild(button41);
+
+        
+
+
+    }
+
+
+    if (n === 24) { //abdelrahman.ibrahim  6182
+        var imageSrc = 'images/profileMan.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is abdelrahman.ibrahim, Id is <span style="color:red; cursor:pointer;" >6182</span>';
+        var tooltipTextID = '6182';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
+    
+        
+        var button50 = document.createElement("button");
+
+        button50.innerText = "1-Revision Algebra";
+        button50.style.fontSize = '20px';
+        button50.style.color = '#15920a';
+
+
+        button50.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
+           
+            button50.style.color = '#15920a';
+            button51.style.color = 'black';
+        });
+
+
+        
+
+    
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button50);
+        //container.appendChild(button49);
         //container.appendChild(button41);
 
         
