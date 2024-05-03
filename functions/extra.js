@@ -21,6 +21,7 @@ const numbers = [
     ["5110"], // Sama Zayed 5110
     ["1112"], // MohameD 1112
     ["5353"], // Malak 5353
+    ["5153"], // Mahmoud 5153
 ];
 
 var tries = [];
@@ -1745,7 +1746,124 @@ function pickVideo(n) {
     }
 
 
+    if (n === 22) {  // MohameD 1112
+        var imageSrc = 'images/profileMan.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is MohameD, Id is <span style="color:red; cursor:pointer;" >1112</span>';
+        var tooltipTextID = '1112';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
 
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+    
+        
+        var button44 = document.createElement("button");
+
+        button44.innerText = "1-Revision Geometry";
+        button44.style.fontSize = '20px';
+        button44.style.color = '#15920a';
+
+
+        button44.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+         $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");    
+            button44.style.color = '#15920a';
+            button45.style.color = 'black';
+        });
+
+
+        /*
+
+
+        var button40 = document.createElement("button");
+
+        button40.innerText = "2-Problems Lesson 1";
+        button40.style.fontSize = '20px';
+        
+
+        button40.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZevqjVsVDn?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
+            button38.style.color = '#15920a';
+            button36.style.color = 'black';
+            button37.style.color = 'black';
+        });
+        
+       */ 
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button44);
+        //container.appendChild(button40);
+        //container.appendChild(button41);
+
+        
+
+
+    }
+
+
+    if (n === 23) { // Mahmoud 5153
+        var imageSrc = 'images/profileMan.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Mahmoud, Id is <span style="color:red; cursor:pointer;" >5153</span>';
+        var tooltipTextID = '5153';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+    
+        
+        var button47 = document.createElement("button");
+
+        button47.innerText = "1-Revision Geometry";
+        button47.style.fontSize = '20px';
+        button47.style.color = '#15920a';
+
+
+        button47.addEventListener("click", function() {
+        
+            $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+           
+            button47.style.color = '#15920a';
+            button48.style.color = 'black';
+        });
+
+
+        
+        /*
+
+        var button46 = document.createElement("button");
+        button46.innerText = "2-Revision Mechanics";
+        button46.style.fontSize = '20px';
+        
+
+        button46.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Session 2 Revision Mechanics").css("text-align", "left");
+            button46.style.color = '#15920a';
+            button45.style.color = 'black';
+        });
+        
+    */
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button47);
+        //container.appendChild(button46);
+        //container.appendChild(button41);
+
+        
+
+
+    }
 
 
 
