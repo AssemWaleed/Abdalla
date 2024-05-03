@@ -20,6 +20,7 @@ const numbers = [
     ["5520"], // !
     ["5110"], // Sama Zayed 5110
     ["1112"], // MohameD 1112
+    ["5353"], // Malak 5353
 ];
 
 var tries = [];
@@ -1683,6 +1684,66 @@ function pickVideo(n) {
 
     }
 
+
+    if (n === 20) {  // Malak 5353
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Malak, Id is <span style="color:red; cursor:pointer;" >5353</span>';
+        var tooltipTextID = '5353';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
+    
+        
+        var button45 = document.createElement("button");
+
+        button45.innerText = "1-Revision Algebra";
+        button45.style.fontSize = '20px';
+        button45.style.color = '#15920a';
+
+
+        button45.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
+           
+            button45.style.color = '#15920a';
+            button46.style.color = 'black';
+        });
+
+
+        
+
+
+        var button46 = document.createElement("button");
+
+        button46.innerText = "2-Problems Lesson 1";
+        button46.style.fontSize = '20px';
+        
+
+        button46.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Session 2 Revision Mechanics").css("text-align", "left");
+            button46.style.color = '#15920a';
+            button45.style.color = 'black';
+        });
+        
+    
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button45);
+        container.appendChild(button46);
+        //container.appendChild(button41);
+
+        
+
+
+    }
 
 
 
