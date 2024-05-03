@@ -1328,8 +1328,8 @@ function pickVideo(n) {
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
 
-        $(".video").attr("src", "https://go.screenpal.com/player/cZf0FwVMIDc?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 1 Equation Of Straight Line").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
     
         
         var button39 = document.createElement("button");
@@ -1341,8 +1341,9 @@ function pickVideo(n) {
 
         button39.addEventListener("click", function() {
         
-            $(".video").attr("src", "https://go.screenpal.com/player/cZf0FwVMIDc?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Senior 1 Equation Of Straight Line").css("text-align", "left");
+          
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
             button39.style.color = '#15920a';
             button40.style.color = 'black';
         });
