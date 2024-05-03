@@ -1747,68 +1747,10 @@ function pickVideo(n) {
     }
 
 
-    if (n === 22) {  // MohameD 1112
-        var imageSrc = 'images/profileMan.png';
-        var altText = 'avatar';
-        var tooltipText = 'Name is MohameD, Id is <span style="color:red; cursor:pointer;" >1112</span>';
-        var tooltipTextID = '1112';
-        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
-       
-
-        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
     
-        
-        var button44 = document.createElement("button");
-
-        button44.innerText = "1-Revision Geometry";
-        button44.style.fontSize = '20px';
-        button44.style.color = '#15920a';
 
 
-        button44.addEventListener("click", function() {
-        
-        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
-         $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");    
-            button44.style.color = '#15920a';
-            button45.style.color = 'black';
-        });
-
-
-        /*
-
-
-        var button40 = document.createElement("button");
-
-        button40.innerText = "2-Problems Lesson 1";
-        button40.style.fontSize = '20px';
-        
-
-        button40.addEventListener("click", function() {
-            
-            $(".video").attr("src", "https://go.screenpal.com/player/cZevqjVsVDn?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
-            button38.style.color = '#15920a';
-            button36.style.color = 'black';
-            button37.style.color = 'black';
-        });
-        
-       */ 
-
-        var container = document.getElementById("buttonContainer");
-
-       
-        container.appendChild(button44);
-        //container.appendChild(button40);
-        //container.appendChild(button41);
-
-        
-
-
-    }
-
-
-    if (n === 23) { // Mahmoud 5153
+    if (n === 22) { // Mahmoud 5153
         var imageSrc = 'images/profileMan.png';
         var altText = 'avatar';
         var tooltipText = 'Name is Mahmoud, Id is <span style="color:red; cursor:pointer;" >5153</span>';
@@ -1866,7 +1808,7 @@ function pickVideo(n) {
 
     }
 
-    if (n === 24) {  // Jana Hamzawy  6281
+    if (n === 23) {  // Jana Hamzawy  6281
         var imageSrc = 'images/profile.png';
         var altText = 'avatar';
         var tooltipText = 'Name is Jana Hamzawy, Id is <span style="color:red; cursor:pointer;" >6281</span>';
@@ -1878,19 +1820,19 @@ function pickVideo(n) {
         $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
     
         
-        var button45 = document.createElement("button");
+        var button48 = document.createElement("button");
 
-        button45.innerText = "1-Revision Algebra";
-        button45.style.fontSize = '20px';
-        button45.style.color = '#15920a';
+        button48.innerText = "1-Revision Algebra";
+        button48.style.fontSize = '20px';
+        button48.style.color = '#15920a';
 
 
-        button45.addEventListener("click", function() {
+        button48.addEventListener("click", function() {
         
         $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
         $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
            
-            button45.style.color = '#15920a';
+            button48.style.color = '#15920a';
             button46.style.color = 'black';
         });
 
@@ -1898,17 +1840,17 @@ function pickVideo(n) {
         
 
 
-        var button46 = document.createElement("button");
-        button46.innerText = "2-Revision Mechanics";
-        button46.style.fontSize = '20px';
+        var button49 = document.createElement("button");
+        button49.innerText = "2-Revision Mechanics";
+        button49.style.fontSize = '20px';
         
 
-        button46.addEventListener("click", function() {
+        button49.addEventListener("click", function() {
             
             $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
             $("h1[title]").text("Senior 2 Session 2 Revision Mechanics").css("text-align", "left");
-            button46.style.color = '#15920a';
-            button45.style.color = 'black';
+            button49.style.color = '#15920a';
+            button48.style.color = 'black';
         });
         
     
@@ -1916,8 +1858,8 @@ function pickVideo(n) {
         var container = document.getElementById("buttonContainer");
 
        
-        container.appendChild(button45);
-        container.appendChild(button46);
+        container.appendChild(button48);
+        container.appendChild(button49);
         //container.appendChild(button41);
 
         
