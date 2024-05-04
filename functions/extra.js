@@ -29,6 +29,7 @@ const numbers = [
     ["7222"], // Mariam Diab 7222
     ["7727"], // yossefelzanaty 7727
     ["7777"], // Nada Aiad 7777
+    ["7373"], // Rodina 7373
 ];
 
 var tries = [];
@@ -2278,6 +2279,63 @@ function pickVideo(n) {
 
 
     }
+
+
+    if (n === 29) { // Rodina 7373
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Rodina, Id is <span style="color:red; cursor:pointer;" >7373</span>';
+        var tooltipTextID = '7373';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
+    
+        
+        var button62 = document.createElement("button");
+
+        button62.innerText = "1-Revision Algebra";
+        button62.style.fontSize = '20px';
+        button62.style.color = '#15920a';
+
+
+        button62.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
+           
+            button62.style.color = '#15920a';
+            button63.style.color = 'black';
+        });
+
+
+        
+   
+
+        var button63 = document.createElement("button");
+        button63.innerText = "2-Revision Mechanics";
+        button63.style.fontSize = '20px';
+        
+
+        button63.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Session 2 Revision Mechanics").css("text-align", "left");
+            button63.style.color = '#15920a';
+            button62.style.color = 'black';
+        });
+        
+
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button62);
+        container.appendChild(button63);
+        //container.appendChild(button41);
+
+    }
+
 
 
         
