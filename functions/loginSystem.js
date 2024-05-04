@@ -831,8 +831,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZf0FwVMIDc?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 1 Equation Of Straight Line").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
     
         var count6 = localStorage.getItem('viewCount6');
 
@@ -873,7 +873,7 @@ function pickVideo(n) { // Samir Yasser 5547
         }
     
         localStorage.setItem('viewCount6', count6);
-        
+       
         
        
 
