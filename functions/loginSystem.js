@@ -24,6 +24,7 @@ const numbers = [
     ["6221"], // Mariam Diab 6221
     ["5353"], // Malak 5353
     ["5551"], // Habiba2 5551
+    ["1551"], // Aljoo 1551
 ];
 
 var tries = [];
@@ -2814,6 +2815,107 @@ function pickVideo(n) { // Samir Yasser 5547
     }
    
    
+    if (n === 25) { // Aljoo 1551
+
+        var imageSrc = 'images/profileMan.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is  Aljoo , Id is <span style="color:red; cursor:pointer;" >1551</span>';
+        var tooltipTextID = '1551';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZf0FwVMIDc?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Equation Of Straight Line").css("text-align", "left");
+    
+        var count25 = localStorage.getItem('viewCount25');
+
+        if (count25 === null) {
+            count25 = 0;
+        }
+        
+
+
+
+        var watchDiv = document.querySelector('.watch');
+        var h3Element25 = document.createElement('h3');
+        
+        h3Element25.textContent = 'مشاهدات : ' + count25;
+        h3Element25.style.textAlign = 'right';
+        
+        var buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.appendChild(h3Element25);
+        
+        count25++;
+        
+        h3Element25.textContent = 'مشاهدات : ' + count25;
+        
+        if (count25 === 1) {
+            alert("تنبيه: لديك مشاهدتين فقط ");
+        
+        } else if (count25 === 2) {
+            alert("تنبيه: لديك مشاهدة واحدة فقط");
+        
+        }
+        
+        if (count25 >= 3) {
+            document.getElementById('error').play();
+            alert("لقد انتهت المشاهدات عندك");
+            h3Element25.textContent = 'تم انتهاء عدد المشاهدات';
+        }
+        
+        localStorage.setItem('viewCount25', count25);
+        
+        
+        
+        if (count25 >= 3) {
+            $(".video").attr("src", "https://media.discordapp.net/attachments/1142201401540345986/1214812434242736158/Untitled-1.png?ex=65fa793e&is=65e8043e&hm=cdff451e5cd694d0dc6b0dc3d0e38c736df4e01dc7873656c234372aeebef0ac&=&format=webp&quality=lossless&width=980&height=560").addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });;
+        }
+        
+      // var button = document.createElement("button");
+        
+        button.innerText = "فديو الواجب";
+        button.style.fontSize = '30px';
+        button.style.paddingTop = '9px';
+        
+        button.addEventListener("click", function() {  // الواجب
+
+            const re = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+        
+            if (re) {
+                $(".video").attr("src", "https://www.youtube.com/embed/uYRVePsnBI0?si=1ArOfJjTdfmIytMW");
+                button.style.color = '#15920a';
+            } else {
+                none;
+            }
+
+        });
+        
+        
+        var container = document.getElementById("watcher");
+        container.appendChild(button);
+        
+        
+
+        
+
+
+        $("button#myButton4").click(() => {  // الامتحان
+            //const result = window.confirm("ستقوم بفقدان المشاهده الخاصه بك");
+
+            if (result) {
+                $(".video").attr("src", "https://screenpal.com/player/cZee3aVKBOm?width=100%&height=100%&ff=1&title=0");
+                $("#myButton4").css("color", "#15920a");
+                $("#myButton").css("color", "black");
+                $("#myButton2").css("color", "black");
+                $("#myButton3").css("color", "black");
+            } else {
+                none;
+            }
+       
+        });
+    }
    
 
 
