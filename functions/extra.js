@@ -1602,31 +1602,30 @@ function pickVideo(n) {
         });
 
 
-        /*
+     
 
 
-        var button40 = document.createElement("button");
+        var button44 = document.createElement("button");
 
-        button40.innerText = "2-Problems Lesson 1";
-        button40.style.fontSize = '20px';
+        button44.innerText = "2-Trig Revision";
+        button44.style.fontSize = '20px';
         
 
-        button40.addEventListener("click", function() {
+        button44.addEventListener("click", function() {
             
-            $(".video").attr("src", "https://go.screenpal.com/player/cZevqjVsVDn?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Senior 2 Problems Lesson 1").css("text-align", "left");
-            button38.style.color = '#15920a';
-            button36.style.color = 'black';
-            button37.style.color = 'black';
+            $(".video").attr("src", "https://go.screenpal.com/player/cZhhlsVMHZx?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Trig Revision").css("text-align", "left");
+            button44.style.color = '#15920a';
+            button43.style.color = 'black';
         });
         
-       */ 
+      
 
         var container = document.getElementById("buttonContainer");
 
        
         container.appendChild(button43);
-        //container.appendChild(button40);
+        container.appendChild(button44);
         //container.appendChild(button41);
 
         
@@ -2341,7 +2340,7 @@ function pickVideo(n) {
     }
 
 
-    
+
     if (n === 32) { // Amira 2552
         var imageSrc = 'images/profile.png';
         var altText = 'avatar';
