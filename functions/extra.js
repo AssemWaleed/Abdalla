@@ -31,6 +31,7 @@ const numbers = [
     ["7777"], // Nada Aiad 7777
     ["7373"], // Rodina 7373
     ["7773"], // Medo 7773
+    ["2552"], // Amira 2552
 ];
 
 var tries = [];
@@ -2335,6 +2336,63 @@ function pickVideo(n) {
        
         container.appendChild(button64);
         //container.appendChild(button63);
+        //container.appendChild(button41);
+
+    }
+
+
+    
+    if (n === 32) { // Amira 2552
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Amira, Id is <span style="color:red; cursor:pointer;" >2552</span>';
+        var tooltipTextID = '2552';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+    
+        
+        var button66 = document.createElement("button");
+
+        button66.innerText = "1-Revision Geometry";
+        button66.style.fontSize = '20px';
+        button66.style.color = '#15920a';
+
+
+        button66.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+           
+            button66.style.color = '#15920a';
+            button67.style.color = 'black';
+        });
+
+
+        
+   
+
+        var button67 = document.createElement("button");
+        button67.innerText = "2-Revision Trig";
+        button67.style.fontSize = '20px';
+        
+
+        button67.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZhhlsVMHZx?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Trig Revision").css("text-align", "left");
+            button67.style.color = '#15920a';
+            button66.style.color = 'black';
+        });
+        
+
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button66);
+        container.appendChild(button67);
         //container.appendChild(button41);
 
     }
