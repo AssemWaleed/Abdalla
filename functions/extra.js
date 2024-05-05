@@ -2285,7 +2285,7 @@ function pickVideo(n) {
     }
 
     if (n === 31) {// Medo 7773
-        var imageSrc = 'images/profile.png';
+        var imageSrc = 'images/profileMan.png';
         var altText = 'avatar';
         var tooltipText = 'Name is Medo, Id is <span style="color:red; cursor:pointer;" >7773</span>';
         var tooltipTextID = '7773';
