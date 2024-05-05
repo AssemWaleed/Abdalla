@@ -622,8 +622,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Mechanics").css("text-align", "left");
     
         var count4 = localStorage.getItem('viewCount4');
 
