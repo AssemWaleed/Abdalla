@@ -2043,9 +2043,68 @@ function pickVideo(n) {
     }
 
 
+    if (n === 27) {  // Mariam Diab 7222
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Mariam Diab, Id is <span style="color:red; cursor:pointer;" >7222</span>';
+        var tooltipTextID = '7222';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+    
+        
+        var button154 = document.createElement("button");
+
+        button154.innerText = "1-Revision Geometry";
+        button154.style.fontSize = '20px';
+        button154.style.color = '#15920a';
 
 
-    if (n === 27) { // yossefelzanaty 7727
+        button154.addEventListener("click", function() {
+        
+            $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+           
+            button154.style.color = '#15920a';
+            button155.style.color = 'black';
+        });
+
+
+        
+        /*
+
+        var button46 = document.createElement("button");
+        button46.innerText = "2-Revision Mechanics";
+        button46.style.fontSize = '20px';
+        
+
+        button46.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Session 2 Revision Mechanics").css("text-align", "left");
+            button46.style.color = '#15920a';
+            button45.style.color = 'black';
+        });
+        
+    */
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button154);
+        //container.appendChild(button46);
+        //container.appendChild(button41);
+
+        
+
+
+    }
+
+
+
+
+    if (n === 28) { // yossefelzanaty 7727
         var imageSrc = 'images/profileMan.png';
         var altText = 'avatar';
         var tooltipText = 'Name is yossefelzanaty, Id is <span style="color:red; cursor:pointer;" >7727</span>';
@@ -2066,8 +2125,9 @@ function pickVideo(n) {
         button58.addEventListener("click", function() {
         
           
-        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
+          
+         $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Mechanics").css("text-align", "left");
     
            
             button58.style.color = '#15920a';
@@ -2084,9 +2144,8 @@ function pickVideo(n) {
         
 
         button59.addEventListener("click", function() {
-            
-            $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Senior 2 Session 2 Revision Mechanics").css("text-align", "left");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
             button59.style.color = '#15920a';
             button58.style.color = 'black';
         });
@@ -2097,7 +2156,7 @@ function pickVideo(n) {
 
        
         container.appendChild(button58);
-        //container.appendChild(button46);
+        container.appendChild(button59);
         //container.appendChild(button41);
 
         
@@ -2109,7 +2168,7 @@ function pickVideo(n) {
    
 
 
-    if (n === 28) { // Nada Aiad 7777
+    if (n === 29) { // Nada Aiad 7777
         var imageSrc = 'images/profile.png';
         var altText = 'avatar';
         var tooltipText = 'Name is Nada Aiad, Id is <span style="color:red; cursor:pointer;" >7777</span>';
@@ -2169,7 +2228,7 @@ function pickVideo(n) {
     }
 
 
-    if (n === 29) { // Rodina 7373
+    if (n === 30) { // Rodina 7373
         var imageSrc = 'images/profile.png';
         var altText = 'avatar';
         var tooltipText = 'Name is Rodina, Id is <span style="color:red; cursor:pointer;" >7373</span>';
