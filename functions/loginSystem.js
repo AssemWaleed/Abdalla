@@ -622,8 +622,8 @@ function pickVideo(n) { // Samir Yasser 5547
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
         
-        $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Session 2 Revision Mechanics").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZf3YrVMQ4r?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Sum Or Difference Of Angles").css("text-align", "left");
     
         var count4 = localStorage.getItem('viewCount4');
 
@@ -663,9 +663,7 @@ function pickVideo(n) { // Samir Yasser 5547
             h3Element4.textContent = 'تم انتهاء عدد المشاهدات';
         }
     
-        localStorage.setItem('viewCount4', count4);
-       
-        
+        localStorage.setItem('viewCount4', count4);  
 
     
         if (count4 >= 3) {
