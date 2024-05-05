@@ -30,6 +30,7 @@ const numbers = [
     ["7727"], // yossefelzanaty 7727
     ["7777"], // Nada Aiad 7777
     ["7373"], // Rodina 7373
+    ["7773"], // Medo 7773
 ];
 
 var tries = [];
@@ -2283,6 +2284,60 @@ function pickVideo(n) {
 
     }
 
+    if (n === 31) {// Medo 7773
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Medo, Id is <span style="color:red; cursor:pointer;" >7773</span>';
+        var tooltipTextID = '7773';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+    
+        
+        var button64 = document.createElement("button");
+
+        button64.innerText = "1-Revision Geometry";
+        button64.style.fontSize = '20px';
+        button64.style.color = '#15920a';
+
+
+        button64.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+           
+            button64.style.color = '#15920a';
+            button65.style.color = 'black';
+        });
+
+
+        
+   
+/*
+        var button63 = document.createElement("button");
+        button63.innerText = "2-Revision Mechanics";
+        button63.style.fontSize = '20px';
+        
+
+        button63.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Session 2 Revision Mechanics").css("text-align", "left");
+            button63.style.color = '#15920a';
+            button62.style.color = 'black';
+        });
+        
+
+*/
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button64);
+        //container.appendChild(button63);
+        //container.appendChild(button41);
+
+    }
 
 
         
