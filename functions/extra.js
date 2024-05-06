@@ -35,6 +35,7 @@ const numbers = [
     ["2182"], // Rodina Hossam 2182
     ["1181"], // Adam ahmed Zaki 1181
     ["2221"], // 𝑺𝒂𝒎𝒂𝒔𝒆𝒎𝒐𝒐𝒐 2221
+    ["3323"], // Ibrahim Ahmed 3323
 ];
 
 var tries = [];
@@ -2456,7 +2457,7 @@ function pickVideo(n) {
 
 
     if (n === 34) { // Adam ahmed Zaki 1181
-        var imageSrc = 'images/profile.png';
+        var imageSrc = 'images/profileMan.png';
         var altText = 'avatar';
         var tooltipText = 'Name is Adam ahmed, Id is <span style="color:red; cursor:pointer;" >1181</span>';
         var tooltipTextID = '1181';
@@ -2562,6 +2563,62 @@ function pickVideo(n) {
        
         container.appendChild(button72);
        // container.appendChild(button71);
+        //container.appendChild(button41);
+
+    }
+
+
+    if (n === 36) { // Ibrahim Ahmed 3323
+        var imageSrc = 'images/profileMan.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Ibrahim Ahmed, Id is <span style="color:red; cursor:pointer;" >3323</span>';
+        var tooltipTextID = '3323';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+    
+        
+        var button74 = document.createElement("button");
+
+        button74.innerText = "1-Revision Geometry";
+        button74.style.fontSize = '20px';
+        button74.style.color = '#15920a';
+
+
+        button74.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+           
+            button74.style.color = '#15920a';
+            button75.style.color = 'black';
+        });
+
+
+        
+   
+
+        var button75 = document.createElement("button");
+        button75.innerText = "2-Revision Trig";
+        button75.style.fontSize = '20px';
+        
+
+        button75.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZhhlsVMHZx?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Trig Revision").css("text-align", "left");
+            button75.style.color = '#15920a';
+            button74.style.color = 'black';
+        });
+        
+
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button74);
+        container.appendChild(button75);
         //container.appendChild(button41);
 
     }
