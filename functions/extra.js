@@ -2511,7 +2511,7 @@ function pickVideo(n) {
     }
 
 
-    if (n === 34) { // 𝑺𝒂𝒎𝒂𝒔𝒆𝒎𝒐𝒐𝒐 2221
+    if (n === 35) { // 𝑺𝒂𝒎𝒂𝒔𝒆𝒎𝒐𝒐𝒐 2221
         var imageSrc = 'images/profile.png';
         var altText = 'avatar';
         var tooltipText = 'Name is 𝑺𝒂𝒎𝒂𝒔𝒆𝒎𝒐𝒐𝒐, Id is <span style="color:red; cursor:pointer;" >2221</span>';
