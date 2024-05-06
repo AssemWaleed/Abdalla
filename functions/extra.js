@@ -32,6 +32,8 @@ const numbers = [
     ["7373"], // Rodina 7373
     ["7773"], // Medo 7773
     ["2552"], // Amira 2552
+    ["2182"], // Rodina Hossam 2182
+    ["1181"], // Adam ahmed Zaki 1181
 ];
 
 var tries = [];
@@ -2396,6 +2398,115 @@ function pickVideo(n) {
 
     }
 
+    if (n === 33) { // Rodina Hossam 2182
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Rodina Hossam, Id is <span style="color:red; cursor:pointer;" >2182</span>';
+        var tooltipTextID = '2182';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+    
+        
+        var button68 = document.createElement("button");
 
+        button68.innerText = "1-Revision Geometry";
+        button68.style.fontSize = '20px';
+        button68.style.color = '#15920a';
+
+
+        button68.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+           
+            button68.style.color = '#15920a';
+            button69.style.color = 'black';
+        });
+
+
+        
+   
+
+        var button69 = document.createElement("button");
+        button69.innerText = "2-Revision Trig";
+        button69.style.fontSize = '20px';
+        
+
+        button69.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZhhlsVMHZx?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Trig Revision").css("text-align", "left");
+            button69.style.color = '#15920a';
+            button68.style.color = 'black';
+        });
+        
+
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button68);
+        container.appendChild(button69);
+        //container.appendChild(button41);
+
+    }
+
+
+    if (n === 34) { // Adam ahmed Zaki 1181
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Adam ahmed, Id is <span style="color:red; cursor:pointer;" >1181</span>';
+        var tooltipTextID = '1181';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+    
+        
+        var button70 = document.createElement("button");
+
+        button70.innerText = "1-Revision Geometry";
+        button70.style.fontSize = '20px';
+        button70.style.color = '#15920a';
+
+
+        button70.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+           
+            button70.style.color = '#15920a';
+            button71.style.color = 'black';
+        });
+
+
+        
+   
+
+        var button71 = document.createElement("button");
+        button71.innerText = "2-Revision Trig";
+        button71.style.fontSize = '20px';
+        
+
+        button71.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZhhlsVMHZx?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Trig Revision").css("text-align", "left");
+            button71.style.color = '#15920a';
+            button70.style.color = 'black';
+        });
+        
+
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button70);
+        container.appendChild(button71);
+        //container.appendChild(button41);
+
+    }
         
 }
