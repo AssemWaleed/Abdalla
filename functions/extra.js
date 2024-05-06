@@ -34,6 +34,7 @@ const numbers = [
     ["2552"], // Amira 2552
     ["2182"], // Rodina Hossam 2182
     ["1181"], // Adam ahmed Zaki 1181
+    ["2221"], // 𝑺𝒂𝒎𝒂𝒔𝒆𝒎𝒐𝒐𝒐 2221
 ];
 
 var tries = [];
@@ -2505,6 +2506,62 @@ function pickVideo(n) {
        
         container.appendChild(button70);
         container.appendChild(button71);
+        //container.appendChild(button41);
+
+    }
+
+
+    if (n === 34) { // 𝑺𝒂𝒎𝒂𝒔𝒆𝒎𝒐𝒐𝒐 2221
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is 𝑺𝒂𝒎𝒂𝒔𝒆𝒎𝒐𝒐𝒐, Id is <span style="color:red; cursor:pointer;" >2221</span>';
+        var tooltipTextID = '2221';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+    
+        
+        var button72 = document.createElement("button");
+
+        button72.innerText = "1-Revision Geometry";
+        button72.style.fontSize = '20px';
+        button72.style.color = '#15920a';
+
+
+        button72.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+           
+            button72.style.color = '#15920a';
+            button73.style.color = 'black';
+        });
+
+
+        
+   
+        /*
+        var button71 = document.createElement("button");
+        button71.innerText = "2-Revision Trig";
+        button71.style.fontSize = '20px';
+        
+
+        button71.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZhhlsVMHZx?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Trig Revision").css("text-align", "left");
+            button71.style.color = '#15920a';
+            button70.style.color = 'black';
+        });
+        
+*/
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button72);
+       // container.appendChild(button71);
         //container.appendChild(button41);
 
     }
