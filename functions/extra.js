@@ -37,6 +37,7 @@ const numbers = [
     ["2221"], // 𝑺𝒂𝒎𝒂𝒔𝒆𝒎𝒐𝒐𝒐 2221
     ["3323"], // Ibrahim Ahmed 3323
     ["3321"], // Hamza 3321
+    ["6661"], // Asraa 6661
 ];
 
 var tries = [];
@@ -2675,6 +2676,62 @@ function pickVideo(n) {
        
         container.appendChild(button76);
         container.appendChild(button77);
+        //container.appendChild(button41);
+
+    }
+
+
+    if (n === 38) { // Asraa 6661
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Asraa, Id is <span style="color:red; cursor:pointer;" >6661</span>';
+        var tooltipTextID = '6661';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
+    
+        
+        var button78 = document.createElement("button");
+
+        button78.innerText = "1-Revision Algebra";
+        button78.style.fontSize = '20px';
+        button78.style.color = '#15920a';
+
+
+        button78.addEventListener("click", function() {
+        
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
+           
+            button78.style.color = '#15920a';
+            button79.style.color = 'black';
+        });
+
+
+        
+   
+
+        var button79 = document.createElement("button");
+        button79.innerText = "2-Revision Dynamics";
+        button79.style.fontSize = '20px';
+        
+
+        button79.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Session 2 Revision Dynamics").css("text-align", "left");
+            button79.style.color = '#15920a';
+            button78.style.color = 'black';
+        });
+        
+
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button78);
+        container.appendChild(button79);
         //container.appendChild(button41);
 
     }
