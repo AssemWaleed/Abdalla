@@ -38,6 +38,7 @@ const numbers = [
     ["3323"], // Ibrahim Ahmed 3323
     ["3321"], // Hamza 3321
     ["5881"], // Asraa 5881
+    ["5551"], // Habiba2 5551
 ];
 
 var tries = [];
@@ -2736,4 +2737,38 @@ function pickVideo(n) {
 
     }
         
+
+    if (n === 39) {// Habiba2 5551
+        var imageSrc = 'images/profile.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Habiba, Id is <span style="color:red; cursor:pointer;" >5551</span>';
+        var tooltipTextID = '5551';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhhlsVMHZx?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Trig Revision").css("text-align", "left");
+
+        var button80 = document.createElement("button");
+        button80.innerText = "2-Revision Trig";
+        button80.style.fontSize = '20px';
+        
+
+        button80.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZhhlsVMHZx?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Trig Revision").css("text-align", "left");
+            button80.style.color = '#15920a';
+            button81.style.color = 'black';
+        });
+        
+
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button80);
+      //  container.appendChild(button81);
+        //container.appendChild(button41);
+
+    }
 }
