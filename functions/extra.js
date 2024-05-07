@@ -2765,7 +2765,6 @@ function pickVideo(n) {
 
         var button81 = document.createElement("button");
         button81.innerText = "2-Revision Geometry";
-        button81.style.color = '#15920a';
         button81.style.fontSize = '20px';
         
 
