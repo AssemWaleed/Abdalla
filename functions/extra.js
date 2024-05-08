@@ -154,20 +154,20 @@ function pickVideo(n) {
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
  
       
-        $(".video").attr("src", "https://go.screenpal.com/player/cZfFVbVsPSV?width=100%&height=100%&ff=1&title=0");
-        $("h1[title]").text("Senior 2 Alg Unit 2 Counting Principle And Permutations").css("text-align", "left");
+        $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 2 Session 2 Revision Dynamics").css("text-align", "left");
     
         
         var button00 = document.createElement("button");
 
-        button00.innerText = "Counting Principle And Permutations";
+        button00.innerText = "Revision Dynamics";
         button00.style.fontSize = '20px';
         button00.style.color = '#15920a'
 
 
         button00.addEventListener("click", function() {
-            $(".video").attr("src", "https://go.screenpal.com/player/cZfFVbVsPSV?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Senior 2 Alg Unit 2 Counting Principle And Permutations").css("text-align", "left");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfuFZVMtT8?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Session 2 Revision Dynamics").css("text-align", "left");
             button00.style.color = '#15920a'
             button01.style.color = 'black'
             button02.style.color = 'black'
@@ -176,12 +176,12 @@ function pickVideo(n) {
 
         var button01 = document.createElement("button");
 
-        button01.innerText = "Rate Of Change";
+        button01.innerText = "Revision Algebra";
         button01.style.fontSize = '20px';
 
         button01.addEventListener("click", function() {
-            $(".video").attr("src", "https://go.screenpal.com/player/cZeerxVKBYF?width=100%&height=100%&ff=1&title=0");
-            $("h1[title]").text("Calculas Rate Of Change").css("text-align", "left");
+            $(".video").attr("src", "https://go.screenpal.com/player/cZfv2qVMySo?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 2 Session 2 Revision Algebra").css("text-align", "left");
             button01.style.color = '#15920a'
             button00.style.color = 'black'
             button02.style.color = 'black'
@@ -189,7 +189,7 @@ function pickVideo(n) {
 
 
 
-        var button02 = document.createElement("button");
+        //var button02 = document.createElement("button");
 
         button02.innerText = "Calculas Differentiation";
         button02.style.fontSize = '20px';
@@ -207,9 +207,9 @@ function pickVideo(n) {
 
 
         container.appendChild(button00);
-        /*container.appendChild(button01);
-        container.appendChild(button02);
-        */
+        container.appendChild(button01);
+        //container.appendChild(button02);
+        
     
        
         
