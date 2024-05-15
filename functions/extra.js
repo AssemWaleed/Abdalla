@@ -2791,7 +2791,7 @@ function pickVideo(n) {
     if (n === 40) {  // Abdullah Mostafa 701
         var imageSrc = 'images/profileMan.png';
         var altText = 'avatar';
-        var tooltipText = 'Name is Abdullah Mostafa, Id is <span style="color:green; cursor:pointer;" >701</span>';
+        var tooltipText = 'Name is Abdullah Mostafa, Id is <span style="color:red; cursor:pointer;" >701</span>';
         var tooltipTextID = '5551';
         addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
        
