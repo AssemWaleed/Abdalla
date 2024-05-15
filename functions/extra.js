@@ -39,6 +39,7 @@ const numbers = [
     ["3321"], // Hamza 3321
     ["5881"], // Asraa 5881
     ["5551"], // Habiba2 5551
+    ["701"], // Abdullah Mostafa 701
 ];
 
 var tries = [];
@@ -2784,6 +2785,95 @@ function pickVideo(n) {
         container.appendChild(button80);
         container.appendChild(button81);
         //container.appendChild(button41);
+
+    }
+
+    if (n === 40) {  // Abdullah Mostafa 701
+        var imageSrc = 'images/profileMan.png';
+        var altText = 'avatar';
+        var tooltipText = 'Name is Abdullah Mostafa, Id is <span style="color:green; cursor:pointer;" >701</span>';
+        var tooltipTextID = '5551';
+        addProfileImageAndTooltip(imageSrc, altText, tooltipText, tooltipTextID);
+       
+        $(".video").attr("src", "https://go.screenpal.com/player/cZhhlsVMHZx?width=100%&height=100%&ff=1&title=0");
+        $("h1[title]").text("Senior 1 Trig Revision").css("text-align", "left");
+
+        var button80 = document.createElement("button");
+        button80.innerText = "2-Revision Trig";
+        button80.style.color = '#15920a';
+        button80.style.fontSize = '20px';
+        
+
+        button80.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZhhlsVMHZx?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Trig Revision").css("text-align", "left");
+            button80.style.color = '#15920a';
+            button82.style.color = 'black';
+            button81.style.color = 'black';
+            button83.style.color = 'black';
+        });
+
+
+        var button81 = document.createElement("button");
+        button81.innerText = "2-Revision Trig Part2";
+        button81.style.fontSize = '20px';
+        
+
+        button81.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://www.youtube.com/embed/B2o-aH9FCQs?si=EnPUv8o6AfhDwNA_");
+            $("h1[title]").text("Senior 1 mathematics- Trig summary").css("text-align", "left");
+            button81.style.color = '#15920a';
+            button82.style.color = 'black';
+            button83.style.color = 'black';
+            button80.style.color = 'black';
+        });
+
+
+        var button82 = document.createElement("button");
+        button82.innerText = "2-Revision Geometry";
+        button82.style.fontSize = '20px';
+        
+
+        button82.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://go.screenpal.com/player/cZhnr6VMp9u?width=100%&height=100%&ff=1&title=0");
+            $("h1[title]").text("Senior 1 Revision Geometry").css("text-align", "left");
+            button82.style.color = '#15920a';
+            button83.style.color = 'black';
+            button81.style.color = 'black';
+            button80.style.color = 'black';
+        });
+
+
+        var button83 = document.createElement("button");
+        button83.innerText = "2-Revision Geometry Part2";
+        button83.style.fontSize = '20px';
+        
+
+        button83.addEventListener("click", function() {
+            
+            $(".video").attr("src", "https://www.youtube.com/embed/dm3ovRo0tag?si=2-0lRy4UQbSOa9Dp");
+            $("h1[title]").text("Geometry tricks part 2 - senior 1").css("text-align", "left");
+            button83.style.color = '#15920a';
+            button82.style.color = 'black';
+            button81.style.color = 'black';
+            button80.style.color = 'black';
+        });
+
+        
+        
+
+
+        var container = document.getElementById("buttonContainer");
+
+       
+        container.appendChild(button80);
+        container.appendChild(button81);
+        container.appendChild(button82);
+        container.appendChild(button83);
+
 
     }
 }
