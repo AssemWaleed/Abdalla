@@ -1,4 +1,4 @@
-const numbers = [
+/*const numbers = [
     ["2375"],  //عبدالرحمان
     ["4040"], // Malak mohammed
     ["1450"], // saloma
@@ -41,7 +41,7 @@ const numbers = [
     ["5551"], // Habiba2 5551
     ["701"], // Abdullah Mostafa 701
 ];
-
+*/
 var tries = [];
 
 
